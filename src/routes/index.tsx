@@ -4,12 +4,10 @@ import type { DocumentHead } from '@builder.io/qwik-city'
 export default component$(() => {
   return (
     <>
-      <h1>Hi 👋</h1>
-      <p class='font-mono'>
-        Can't wait to see what you build with qwik!
-        <br />
-        Happy coding.
-      </p>
+      <section>
+        <h1 class='font-serif text-5xl font-bold'>Sebastián García</h1>
+        <p class='font-serif text-secondary'>Desarrollador de software</p>
+      </section>
     </>
   )
 })

@@ -21,7 +21,7 @@ export default component$(() => {
         <meta charSet='utf-8' />
         <link rel='manifest' href='/manifest.json' />
       </head>
-      <body lang='es'>
+      <body lang='es' class='bg-background flex justify-center flex-col'>
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>

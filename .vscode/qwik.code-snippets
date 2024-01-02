@@ -9,6 +9,14 @@
       "});"
     ]
   },
+  "Qwik import (simple)": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "imp",
+    "description": "Simple import",
+    "body": [
+      "import {$2} from \"$1\""
+    ]
+  },
   "Qwik component (props)": {
     "scope": "typescriptreact",
     "prefix": "qcomponent$ + props",

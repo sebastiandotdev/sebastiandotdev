@@ -20,6 +20,8 @@ export default component$(() => {
       <head>
         <meta charSet='utf-8' />
         <link rel='manifest' href='/manifest.json' />
+        <link rel='icon' href='/favicon.svg' />
+        <title>Sebastián García</title>
       </head>
       <body
         lang='es'

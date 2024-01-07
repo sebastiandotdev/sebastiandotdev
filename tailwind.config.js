@@ -4,6 +4,10 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        'onest-regular': 'var(--font-onest-regular)',
+        'onest-bold': 'var(--font-onest-bold)',
+      },
       colors: {
         primary: '#F5F5F7',
         secondary: '#A1A1AA',

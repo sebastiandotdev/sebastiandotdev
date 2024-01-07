@@ -10,10 +10,10 @@
 
 @font-face {
   font-family: 'onest-bold';
-  src: url('/static/fonts/Onest-Bold.ttf');
+  src: url('/fonts/Onest-Bold.ttf');
 }
 
 @font-face {
   font-family: 'onest-regular';
-  src: url('/static/fonts/Onest-Regular.ttf');
+  src: url('/fonts/Onest-Regular.ttf');
 }

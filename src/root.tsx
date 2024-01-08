@@ -23,10 +23,7 @@ export default component$(() => {
         <link rel='icon' href='/favicon.svg' />
         <title>Sebastián García</title>
       </head>
-      <body
-        lang='es'
-        class='flex min-h-screen flex-col justify-center bg-background'
-      >
+      <body lang='es' class='flex min-h-screen flex-col justify-center'>
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>

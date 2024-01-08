@@ -9,25 +9,25 @@ export const Header = component$(() => {
         <Link
           href='https://github.com/seb-24'
           target='_blank'
-          class='flex items-center gap-2 text-secondary font-onest-regular cursor-pointer hover:opacity-90 hover:underline hover:transition-all'
+          class='flex items-center gap-2 text-secondary font-onest-regular cursor-pointer hover:opacity-90  hover:transition-all'
         >
           <Github />
-          Github
+          <b class='hover:text-tertiary'>Github</b>
         </Link>
         <Link
           href='https://www.linkedin.com/in/castrogarciajs/'
           target='_blank'
-          class='flex items-center gap-2 text-secondary font-onest-regular py-3 cursor-pointer hover:opacity-90 hover:underline hover:transition-all'
+          class='flex items-center gap-2 text-secondary font-onest-regular py-3 cursor-pointer hover:opacity-90 hover:transition-all'
         >
           <LinkedIn />
-          Linkein
+          <b class='hover:text-tertiary'>Linkedin</b>
         </Link>
         <Link
           href='mailto:johancs.mm@gmail.com'
-          class='flex items-center gap-2 text-secondary font-onest-regular cursor-pointer hover:opacity-90 hover:underline hover:transition-all'
+          class='flex items-center gap-2 text-secondary font-onest-regular cursor-pointer hover:opacity-90 hover:transition-all'
         >
           <Email />
-          Correo Electrinico
+          <b class='hover:text-tertiary'>Correo Electrinico</b>
         </Link>
       </nav>
     </>

@@ -1,15 +1,15 @@
+import { Experience } from '@/components/Experience'
 import { Header } from '@/components/Header'
-import { Location, Available, Arrow } from '@/components/icons'
+import { Location, Available } from '@/components/icons'
 import { Briefcase } from '@/components/icons/Briefcase'
-import { EXPERIENCIE } from '@/lib/const'
 import { component$ } from '@builder.io/qwik'
-import { type DocumentHead, Link } from '@builder.io/qwik-city'
+import { type DocumentHead } from '@builder.io/qwik-city'
 
 export default component$(() => {
   return (
     <>
       <section>
-        <article class='flex flex-col items-start justify-start'>
+        <article class='flex flex-col items-start justify-start pt-44'>
           <h1 class='font-onest-bold text-5xl font-bold'>
             Hey, Soy Sebastián García
           </h1>
@@ -29,7 +29,7 @@ export default component$(() => {
             <Location />
             Cesar, Valledupar
           </p>
-          <p class='flex items-center gap-1 text-secondary font-onest-regular'>
+          <p class='flex items-center gap-0.5 text-secondary font-onest-regular'>
             <Available />
             Disponible para trabajar
           </p>
@@ -41,31 +41,7 @@ export default component$(() => {
           <Briefcase class='size-8' />
           Experiencia laboral
         </h2>
-        <ol class='relative border-s border-gray-200 ml-3'>
-          {EXPERIENCIE.map((experiencie) => (
-            <li class='mb-10 ms-4'>
-              <div class='absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-indigo-100 bg-white'></div>
-              <time class='mb-1 text-sm font-normal font-onest-regular text-primary'>
-                {experiencie.date}
-              </time>
-              <h3 class='text-lg font-semibold text-tertiary font-onest-regular mt-2'>
-                {experiencie.title}
-              </h3>
-              <p class='mb-4 text-base font-normal text-pretty text-secondary font-onest-regular'>
-                {experiencie.description}
-              </p>
-              {experiencie.link && (
-                <Link
-                  href={experiencie.link}
-                  target='_blank'
-                  class='bg-background border dark:border-white/10 border-gray-300 rounded-full inline-flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-xs md:text-base transition hover:scale-110 font-onest-regular'
-                >
-                  Saber más... <Arrow />
-                </Link>
-              )}
-            </li>
-          ))}
-        </ol>
+        <Experience />
       </section>
     </>
   )

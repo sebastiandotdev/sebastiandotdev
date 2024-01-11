@@ -9,7 +9,7 @@ export const LinkItem = component$<LinkProps>((props) => {
       <Link
         href={props.path}
         target={value}
-        class='flex items-center gap-2 text-secondary cursor-pointer hover:opacity-90  hover:transition-all py-2'
+        class='flex items-center gap-2 text-secondary cursor-pointer hover:opacity-90  hover:transition-all py-2 test'
       >
         <Slot />
       </Link>

@@ -11,18 +11,20 @@ export default component$(() => {
     <>
       <section>
         <article class='flex flex-col items-start justify-start pt-44'>
-          <h1 class='font-onest-bold text-5xl font-bold'>
+          <h1 class='text-5xl font-bold'>
             Hey, Soy Sebastián García
           </h1>
-          <p class='font-onest-regular text-secondary pt-4 pb-5'>
+          <p class='text-secondary pt-4 pb-5'>
             Desarrollador de software
           </p>
-          <p class='font-onest-regular text-secondary text-base text-balance'>
+          <p class='text-secondary text-base text-balance'>
             +2 Años de experiencia.{' '}
-            <b class='text-tertiary'>De Colombia, Cesar.</b> Especializado en el
-            desarrollo de aplicaciones únicas. <br />
-            Amante de la infraestructura que mejoran la experiencia del
-            desarrollo.
+            <b class='text-tertiary'>De Colombia, Cesar.</b> Amante de la
+            infraestructura que mejoran la experiencia del desarrollador.
+          </p>
+          <br />
+          <p class='text-secondary'>
+          Aprenda, trabaje y piense de forma de código abierto. - {' '} <b>Xuanwo</b>
           </p>
         </article>
         <article class='pt-6 flex gap-8 items-center'>
@@ -46,7 +48,6 @@ export default component$(() => {
       </section>
 
       <section id='projects' class='pt-28'>
-
         <Title>
           <Code class='size-8' />
           Proyectos

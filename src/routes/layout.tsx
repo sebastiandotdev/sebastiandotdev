@@ -1,3 +1,4 @@
+import { Footer } from '@/components/Footer'
 import { component$, Slot } from '@builder.io/qwik'
 import type { RequestHandler } from '@builder.io/qwik-city'
 
@@ -18,6 +19,7 @@ export default component$(() => {
       <main class='container mx-auto max-w-4xl px-4 relative'>
         <Slot />
       </main>
+      <Footer />
     </>
   )
 })

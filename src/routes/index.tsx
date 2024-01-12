@@ -18,11 +18,6 @@ export default component$(() => {
             <b class='text-tertiary'>De Colombia, Cesar.</b> Amante de la
             infraestructura que mejoran la experiencia del desarrollador.
           </p>
-          <br />
-          <p class='text-secondary'>
-            Aprenda, trabaje y piense de forma de código abierto. -{' '}
-            <b>Xuanwo</b>
-          </p>
         </article>
         <article class='pt-6 flex gap-8 items-center'>
           <p class='flex items-center gap-2 text-secondary'>

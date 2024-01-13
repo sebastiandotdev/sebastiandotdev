@@ -18,7 +18,11 @@ export const Footer = component$(() => {
           </div>
           <small class='text-secondary'>
             © Todos los derecho a{' '}
-            <a href='https://midu.dev' target='_blank' class='hover:underline hover:text-white'>
+            <a
+              href='https://midu.dev'
+              target='_blank'
+              class='hover:underline hover:text-white'
+            >
               @midudev
             </a>
           </small>

@@ -1,5 +1,6 @@
 import { Experience } from '@/components/Experience'
 import { Header } from '@/components/Header'
+import { Projects } from '@/components/Projects'
 import { Title } from '@/components/Title'
 import { Location, Available, Code } from '@/components/icons'
 import { Briefcase } from '@/components/icons/Briefcase'
@@ -44,6 +45,7 @@ export default component$(() => {
           <Code class='size-8' />
           Proyectos
         </Title>
+        <Projects />
       </section>
     </>
   )

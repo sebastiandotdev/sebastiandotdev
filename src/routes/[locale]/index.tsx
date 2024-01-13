@@ -12,12 +12,10 @@ export default component$(() => {
     <>
       <section>
         <article class='flex flex-col items-start justify-start pt-44'>
-          <h1 class='text-5xl font-bold'>{$localize`Hey, I'm Sebastian Garcia`}</h1>
-          <p class='text-secondary pt-4 pb-5'>Desarrollador de software</p>
+          <h1 class='text-5xl font-bold'>{$localize`Hey, I'm Sebastián García`}</h1>
+          <p class='text-secondary pt-4 pb-5'>{$localize`Software developer`}</p>
           <p class='text-secondary text-base text-balance'>
-            +2 Años de experiencia.{' '}
-            <b class='text-tertiary'>De Colombia, Cesar.</b> Amante de la
-            infraestructura que mejoran la experiencia del desarrollador.
+            {$localize`+2 Years of experience. From Colombia, Cesar. lover of infrastructure that improves the developer experience.`}
           </p>
         </article>
         <article class='pt-6 flex gap-8 items-center'>
@@ -32,7 +30,7 @@ export default component$(() => {
         </article>
       </section>
       <Header />
-      
+
       <section class='pt-28'>
         <Title>
           <Briefcase class='size-8' />

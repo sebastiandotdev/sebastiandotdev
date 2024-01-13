@@ -1,9 +1,8 @@
 {
-    "locale": "es",
-    "translations": {
-      "1573294495032945047": "Hey, Soy Sebastián García",
-      "8569626659814641312": "Desarrollador de software",
-      "6563882999249543998": "Translation is performed as part of the build step so translated strings are inlined into the application, there is no need to load or look them up at runtime. However, these advantages mean that the user cannot change the language without refreshing the page."
-    }
+  "locale": "es",
+  "translations": {
+    "1330042170338272478": "Hey, Soy Sebastián García",
+    "4332832691609170768": "Desarrollador de software",
+    "465079717416571161": " +2 Años de experiencia. De Colombia, Cesar. Amante de la infraestructura que mejoran la experiencia del desarrollador."
   }
-  
+}

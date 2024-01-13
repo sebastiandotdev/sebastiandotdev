@@ -5,13 +5,15 @@ export const Colombia = component$(() => {
     <>
       <svg
         xmlns='http://www.w3.org/2000/svg'
-        viewBox='0 0 30 20'
-        id='colombia-flag'
+        width='20'
+        height='20'
+        viewBox='0 0 640 480'
       >
-        <path d='M0 0h30v20H0z'></path>
-        <path fill='#fcd116' d='M1 1h28v9H1z'></path>
-        <path fill='#ce1126' d='M1 15h28v4H1z'></path>
-        <path fill='#003893' d='M1 10h28v5H1z'></path>
+        <g fill-rule='evenodd' stroke-width='1pt'>
+          <path fill='#ffe800' d='M0 0h640v480H0z' />
+          <path fill='#00148e' d='M0 240h640v240H0z' />
+          <path fill='#da0010' d='M0 360h640v120H0z' />
+        </g>
       </svg>
     </>
   )

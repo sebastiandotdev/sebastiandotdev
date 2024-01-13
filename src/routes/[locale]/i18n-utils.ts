@@ -8,7 +8,7 @@ import EN from "../../locales/message.en.json";
 import ES from "../../locales/message.es.json";
 
 // Make sure it's obvious when the default locale was selected
-const DEFAULT_LOCALE = "en";
+export const DEFAULT_LOCALE = "en";
 
 /**
  * This file is left for the developer to customize to get the behavior they want for localization.

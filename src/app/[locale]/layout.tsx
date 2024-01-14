@@ -1,3 +1,5 @@
+import Footer from "@/components/footer";
+import Menu from "@/components/menu";
 import type { ReactNode } from "react";
 
 type Props = {
@@ -8,7 +10,13 @@ type Props = {
 export default function LocaleLayout({ children, params: { locale } }: Props) {
   return (
     <html lang={locale}>
-      <body>{children}</body>
+      <body>
+        <Menu />
+        <main className="container mx-auto max-w-4xl px-4 relative">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }

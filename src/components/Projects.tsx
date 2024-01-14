@@ -28,7 +28,7 @@ export const Projects = component$(() => {
     <>
       {PROJECTS.map(({ image, title, description, tags }) => (
         <article>
-          <h3 class='text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2'>
+          <h3 class='text-2xl font-semibold text-tertiary mb-2'>
             {title}
           </h3>
           <p class='text-lg mb-4 text-pretty'>{description}</p>

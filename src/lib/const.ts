@@ -1,21 +1,19 @@
 export const EXPERIENCIE = [
     {
-      date: "Actualmente...",
-      title: "Desarrollador Frontend - Bogota",
-      description:
-        "En mi rol como Desarrollador Frontend en Diens, formo parte integral de un equipo dedicado a la creación y mantenimiento de una aplicación avanzada para la gestión de pedidos con tecnologías de vanguardia.",
+      date: $localize`At the moment...`,
+      title: $localize`Frontend Developer - Bogota`,
+      description: $localize`In my role as a Frontend Developer at Diens, I am an integral part of a team dedicated to the creation and maintenance of an advanced application for order management with cutting-edge technologies.`,
       link: "https://info.domiplace.com",
     },
     {
       date: 'Noviembre 2023',
       title: 'Full Stack Free Lance - Ecuador',
-      description: 'Durante un período de tiempo, tuve el privilegio de desempeñar el rol de Full Stack Freelance en Ecuador, contribuyendo al éxito de Nestlé a través del desarrollo y mantenimiento de una aplicación integral de promociones. En esta posición, lideré la creación y evolución tanto del frontend como del backend, asegurando una experiencia de usuario optimizada y un rendimiento robusto del sistema.',
+      description: $localize`Over a period of time, I had the privilege of playing the role of Full Stack Freelance in Ecuador, contributing to the success of Nestlé through the development and maintenance of a comprehensive promotions application. In this position, I led the creation and evolution of both the frontend and backend, ensuring an optimized user experience and robust system performance.`,
       link: 'https://www.nestle-contigo.ec/promotangogamers'
     },
     {
       date: "Noviembre 2022",
-      title: "Mentor Frontend - Valledupar",
-      description:
-        "Desempeñé el rol de docente en la academia Syntactic en Valledupar, impartiendo clases presenciales de React. En este rol docente, proporciono las bases necesarias en React para capacitar a estudiantes en el desarrollo y gestión efectiva de aplicaciones web.",
+      title: $localize`Frontend Mentor - Valledupar`,
+      description: $localize`I played the role of teacher at the Syntactic academy in Valledupar, teaching React classes in person. In this teaching role, I provide the necessary foundations in React to train students in the effective development and management of web applications.`,
     },
 ]

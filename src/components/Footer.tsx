@@ -4,7 +4,7 @@ import qwikImg from '/svg/qwik.svg'
 export const Footer = component$(() => {
   return (
     <>
-      <footer class='rounded-lg m-4 backdrop-blur-lg w-full xl:w-[1120px] mx-auto mb-6'>
+      <footer class='rounded-lg mt-4 backdrop-blur-lg w-full xl:w-[1120px] mx-auto py-4'>
         <div class='w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between'>
           <div class='flex items-center gap-3'>
             <span class='text-sm sm:text-center'>

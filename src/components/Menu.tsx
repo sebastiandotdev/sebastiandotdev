@@ -1,9 +1,4 @@
-import {
-  $,
-  component$,
-  useSignal,
-  useVisibleTask$,
-} from '@builder.io/qwik'
+import { $, component$, useSignal, useVisibleTask$ } from '@builder.io/qwik'
 import { Colombia, Moon, Sun, Usa } from './icons'
 
 export const Menu = component$(() => {
@@ -43,25 +38,31 @@ export const Menu = component$(() => {
         <div class='relative inline-block text-left'>
           <ul class='menu menu-horizontal mt-6'>
             {LOCALES.map((locale) => (
-              <li>
-                <a href={locale.href} class='tooltip tooltip-right' data-tip={locale.name}>
+              <li class='pt-0.5'>
+                <a
+                  href={locale.href}
+                  class='tooltip'
+                  data-tip={locale.name}
+                >
                   {<locale.Flag />}
                 </a>
               </li>
             ))}
             <li>
-              <label class='swap swap-rotate'>
-                <input
-                  type='checkbox'
-                  class='theme-controller'
-                  value='synthwave'
-                  checked={moonSelected.value === 'light' ? true : false}
-                  onChange$={handleToogle}
-                />
+              <a href='#' class='tooltip'>
+                <label class='swap swap-rotate'>
+                  <input
+                    type='checkbox'
+                    class='theme-controller'
+                    value='synthwave'
+                    checked={moonSelected.value === 'light' ? true : false}
+                    onChange$={handleToogle}
+                  />
 
-                <Sun />
-                <Moon />
-              </label>
+                  <Sun />
+                  <Moon />
+                </label>
+              </a>
             </li>
           </ul>
         </div>

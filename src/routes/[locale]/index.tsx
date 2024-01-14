@@ -2,6 +2,7 @@ import { Experience } from '@/components/Experience'
 import { Header } from '@/components/Header'
 import { Projects } from '@/components/Projects'
 import { Title } from '@/components/Title'
+import { Top } from '@/components/Top'
 import { Location, Available, Code } from '@/components/icons'
 import { Briefcase } from '@/components/icons/Briefcase'
 import { component$ } from '@builder.io/qwik'
@@ -10,6 +11,7 @@ import { type DocumentHead } from '@builder.io/qwik-city'
 export default component$(() => {
   return (
     <>
+      <Top />
       <section>
         <article class='flex flex-col items-start justify-start pt-44'>
           <h1 class='text-5xl font-bold text-white'>{$localize`Hey, I'm Sebastián García`}</h1>

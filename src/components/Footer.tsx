@@ -17,7 +17,7 @@ export const Footer = component$(() => {
             />
           </div>
           <small class='text-secondary'>
-            © Todos los derecho a{' '}
+            © Todos los derecho reservado a{' '}
             <a
               href='https://midu.dev'
               target='_blank'

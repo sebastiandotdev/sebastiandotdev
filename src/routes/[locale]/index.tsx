@@ -44,7 +44,7 @@ export default component$(() => {
       <section id='projects' class='pt-28'>
         <Title>
           <Code class='size-8' />
-          Proyectos
+          {$localize`Projects`}
         </Title>
         <Projects />
       </section>

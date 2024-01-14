@@ -6,7 +6,7 @@ export default function Header() {
   const t = useTranslations('Menu')
   return (
     <>
-      <nav className="container pt-6">
+      <nav className="pt-6">
         <Item path="https://github.com/seb-24" target>
           <Github />
           <b className="hover:text-tertiary">Github</b>

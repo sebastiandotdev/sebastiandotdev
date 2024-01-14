@@ -1,6 +1,5 @@
-import qwikImg from "/svg/qwik.svg";
 import Image from "next/image";
-import nextImg from 'static/next.svg'
+import nextImg from 'static/nextjs.svg'
 
 export default function Footer() {
   return (
@@ -14,7 +13,7 @@ export default function Footer() {
             <Image
               src={nextImg}
               alt="Nextjs herramienta frontend portafolio"
-              className="size-16"
+              className="size-8"
             />
           </div>
           <small className="text-secondary">

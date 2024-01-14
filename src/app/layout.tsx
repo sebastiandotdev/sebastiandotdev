@@ -2,9 +2,8 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 
-import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/components/theme-provider'
-import { Props } from 'types/component'
+import type { Props } from 'types/component'
 import Footer from '@/components/footer'
 import Menu from '@/components/menu'
 
@@ -13,9 +12,9 @@ export const metadata: Metadata = {
   description: 'Portafolio personal',
 }
 
-export default function RootLayout({ children }: Props) {
+export default function RootLayout({ children , params}: Props) {
   return (
-    <html lang='en'>
+    <html lang={params.locale}>
       <body>
         <ThemeProvider
           attribute='class'

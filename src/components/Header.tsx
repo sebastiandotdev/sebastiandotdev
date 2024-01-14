@@ -16,11 +16,11 @@ export const Header = component$(() => {
         </LinkItem>
         <LinkItem path='mailto:johancs.mm@gmail.com' target>
           <Email />
-          <b class='hover:text-tertiary'>Correo Electrinico</b>
+          <b class='hover:text-tertiary'>{$localize`Email`}</b>
         </LinkItem>
         <LinkItem path='#projects'>
           <Code />
-          <b class='hover:text-tertiary'>Proyectos</b>
+          <b class='hover:text-tertiary'>{$localize`Projects`}</b>
         </LinkItem>
       </nav>
     </>

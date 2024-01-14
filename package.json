@@ -52,6 +52,7 @@
     "vite-tsconfig-paths": "^4.2.3"
   },
   "dependencies": {
-    "@angular/localize": "^16.2.2"
+    "@angular/localize": "^16.2.2",
+    "daisyui": "4.6.0"
   }
 }

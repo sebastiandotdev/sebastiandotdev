@@ -25,7 +25,7 @@ export const Experience = component$(() => {
                 target='_blank'
                 class='bg-background border dark:border-white/10 border-gray-300 rounded-full inline-flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-xs md:text-base transition hover:scale-110'
               >
-                Saber más... <Arrow />
+                {$localize`Know more...`} <Arrow />
               </Link>
             )}
           </li>

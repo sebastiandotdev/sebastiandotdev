@@ -2,7 +2,7 @@ import { $, component$, useSignal, useVisibleTask$ } from '@builder.io/qwik'
 import { Colombia, Moon, Sun, Usa } from './icons'
 
 export const Menu = component$(() => {
-  const moonSelected = useSignal<string>('black')
+  const darkMode = useSignal('black')
 
   const LOCALES = [
     {
@@ -22,19 +22,21 @@ export const Menu = component$(() => {
   const handleToogle = $((e: Event) => {
     const inputToggle = e.target as HTMLInputElement
     if (inputToggle.checked) {
-      moonSelected.value = 'light'
+      darkMode.value = 'light'
+      document.documentElement.setAttribute('data-theme', darkMode.value)
     } else {
-      moonSelected.value = 'dark'
+      darkMode.value = 'black'
+      document.documentElement.setAttribute('data-theme', darkMode.value)
     }
   })
 
   useVisibleTask$(() => {
-    document.documentElement.setAttribute('data-theme', moonSelected.value)
+    document.documentElement.setAttribute('data-theme', darkMode.value)
   })
 
   return (
     <>
-      <header class='sticky top-0 flex justify-end items-center pr-6 pt-6'>
+      <header class='sticky z-10 top-0 flex justify-end items-center pr-6 pt-6'>
         <div class='relative inline-block text-left'>
           <ul class='menu menu-horizontal mt-6'>
             {LOCALES.map((locale) => (
@@ -50,7 +52,7 @@ export const Menu = component$(() => {
                   type='checkbox'
                   class='theme-controller'
                   value='synthwave'
-                  checked={moonSelected.value === 'light' ? true : false}
+                  checked={darkMode.value === 'light' ? true : false}
                   onChange$={handleToogle}
                 />
 

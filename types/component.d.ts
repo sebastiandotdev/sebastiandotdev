@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from 'react'
 
 /**
  * path is URL Link component
@@ -13,4 +13,9 @@ import type { ReactNode } from "react";
  * @example
  * <LinkItem target />
  */
-export type LinkProps = { path: string; target?: boolean, children: ReactNode }
+export type LinkProps = { path: string; target?: boolean; children: ReactNode }
+
+type Props = {
+  children: ReactNode
+  params: { locale: string }
+}

@@ -4,10 +4,10 @@ import qwikImg from '/svg/qwik.svg'
 export const Footer = component$(() => {
   return (
     <>
-      <footer class='rounded-lg shadow m-4 bg-black/5 dark:bg-black/20 backdrop-blur-lg w-full xl:w-[1120px] mx-auto mb-10'>
+      <footer class='rounded-lg m-4 backdrop-blur-lg w-full xl:w-[1120px] mx-auto mb-6'>
         <div class='w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between'>
           <div class='flex items-center gap-3'>
-            <span class='text-sm sm:text-center text-secondary'>
+            <span class='text-sm sm:text-center'>
               Sebastián García - Hecho con{' '}
             </span>
             <img
@@ -16,7 +16,7 @@ export const Footer = component$(() => {
               class='size-6'
             />
           </div>
-          <small class='text-secondary'>
+          <small>
             © Todos los derecho reservado a{' '}
             <a
               href='https://midu.dev'

@@ -14,18 +14,18 @@ export default component$(() => {
       <Top />
       <section>
         <article class='flex flex-col items-start justify-start pt-44'>
-          <h1 class='text-5xl font-bold text-white'>{$localize`Hey, I'm Sebastián García`}</h1>
-          <p class='text-secondary pt-4 pb-5'>{$localize`Software developer`}</p>
-          <p class='text-secondary text-base text-balance'>
+          <h1 class='text-5xl font-bold'>{$localize`Hey, I'm Sebastián García`}</h1>
+          <p class='pt-4 pb-5'>{$localize`Software developer`}</p>
+          <p class='text-base text-balance'>
             {$localize`+2 Years of experience. From Colombia, Cesar. lover of infrastructure that improves the developer experience.`}
           </p>
         </article>
         <article class='pt-6 flex gap-8 items-center'>
-          <p class='flex items-center gap-2 text-secondary'>
+          <p class='flex items-center gap-2'>
             <Location />
             Cesar, Valledupar
           </p>
-          <p class='flex items-center gap-0.5 text-secondary'>
+          <p class='flex items-center gap-0.5'>
             <Available />
             {$localize`Available to work`}
           </p>

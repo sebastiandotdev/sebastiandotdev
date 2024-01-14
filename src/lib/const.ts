@@ -1,7 +1,7 @@
 export const EXPERIENCIE = [
     {
       date: $localize`At the moment...`,
-      title: $localize`Frontend Developer - Bogota`,
+      title: $localize`Frontend Developer - Bogotá`,
       description: $localize`In my role as a Frontend Developer at Diens, I am an integral part of a team dedicated to the creation and maintenance of an advanced application for order management with cutting-edge technologies.`,
       link: "https://info.domiplace.com",
     },
@@ -13,7 +13,7 @@ export const EXPERIENCIE = [
     },
     {
       date: "Noviembre 2022",
-      title: $localize`Frontend Mentor - Valledupar`,
+      title: $localize`Frontend Mentor - Cesar`,
       description: $localize`I played the role of teacher at the Syntactic academy in Valledupar, teaching React classes in person. In this teaching role, I provide the necessary foundations in React to train students in the effective development and management of web applications.`,
     },
 ]

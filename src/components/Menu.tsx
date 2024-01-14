@@ -39,30 +39,24 @@ export const Menu = component$(() => {
           <ul class='menu menu-horizontal mt-6'>
             {LOCALES.map((locale) => (
               <li class='pt-0.5'>
-                <a
-                  href={locale.href}
-                  class='tooltip'
-                  data-tip={locale.name}
-                >
+                <a href={locale.href} class='tooltip' data-tip={locale.name}>
                   {<locale.Flag />}
                 </a>
               </li>
             ))}
             <li>
-              <a href='#' class='tooltip'>
-                <label class='swap swap-rotate'>
-                  <input
-                    type='checkbox'
-                    class='theme-controller'
-                    value='synthwave'
-                    checked={moonSelected.value === 'light' ? true : false}
-                    onChange$={handleToogle}
-                  />
+              <label class='swap swap-rotate'>
+                <input
+                  type='checkbox'
+                  class='theme-controller'
+                  value='synthwave'
+                  checked={moonSelected.value === 'light' ? true : false}
+                  onChange$={handleToogle}
+                />
 
-                  <Sun />
-                  <Moon />
-                </label>
-              </a>
+                <Sun />
+                <Moon />
+              </label>
             </li>
           </ul>
         </div>

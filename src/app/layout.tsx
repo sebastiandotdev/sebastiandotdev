@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   description: 'Portafolio personal',
 }
 
-export default function RootLayout({ children , params}: Props) {
+export default function RootLayout({ children, params }: Props) {
   return (
-    <html lang={params.locale}>
+    <html lang={params.locale} suppressHydrationWarning={true}>
       <body>
         <ThemeProvider
           attribute='class'

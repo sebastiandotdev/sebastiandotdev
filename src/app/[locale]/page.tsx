@@ -3,6 +3,7 @@ import Header from '@/components/header'
 import { Available, Briefcase, Code, Location } from '@/components/icons'
 import Projects from '@/components/projects'
 import Title from '@/components/title'
+import Top from '@/components/top'
 import { useTranslations } from 'next-intl'
 
 export default function Index() {
@@ -11,6 +12,7 @@ export default function Index() {
   const m = useTranslations('Menu')
   return (
     <>
+    <Top />
       <section>
         <article className='flex flex-col items-start justify-start pt-44'>
           <h1 className='text-5xl font-bold'>{t('title')}</h1>

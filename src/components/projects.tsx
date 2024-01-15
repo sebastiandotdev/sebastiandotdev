@@ -20,7 +20,7 @@ export default function Projects() {
       description: 'Creado desde cero con Next.js, Supabase y Tailwind CSS.',
       link: 'https://petmerch.vercel.app/',
       github: 'https://github.com/seb-24/merch',
-      image: '/webp/merch.webp',
+      image: '/wepb/merch.webp',
       tags: [TAGS.NEXT, TAGS.TAILWIND],
     },
   ]
@@ -47,8 +47,8 @@ export default function Projects() {
             className='rounded shadow-2xl shadow-white/10 object-cover aspect-video'
             src={image}
             alt={`Captura de pantalla del proyecto ${image}`}
-            width={200}
-            height={200}
+            width={800}
+            height={800}
           />
         </article>
       ))}

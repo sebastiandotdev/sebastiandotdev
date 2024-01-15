@@ -20,7 +20,7 @@ export default function Header() {
           <b className='hover:text-tertiary'>{t('email')}</b>
         </Item>
         <Item path='#projects'>
-          <Code className='size-6' />
+          <Code />
           <b className='hover:text-tertiary'>{t('projects')}</b>
         </Item>
       </nav>

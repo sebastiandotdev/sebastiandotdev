@@ -7,7 +7,7 @@ export default function Top() {
 
   const handleVisibleTop = () => {
     const Y = window.scrollY
-    if (Y > 200) {
+    if (Y > 300) {
       setVisable(true)
     } else {
       setVisable(false)
@@ -32,7 +32,7 @@ export default function Top() {
       <>
         {visible && (
           <button
-            className='fixed right-6 bottom-4 bg-green px-3 rounded-xl shadow-xl transition-all flex justify-center py-2 items-center gap-2 font-bold hover:cursor-pointer z-20'
+            className='fixed right-6 bottom-4 bg-green px-3 rounded-xl transition-all flex justify-center py-2 items-center gap-2 font-bold hover:cursor-pointer z-20 animate-bounce'
             onClick={handleTop}
           >
             <svg

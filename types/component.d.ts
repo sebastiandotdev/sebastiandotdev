@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import type { ComponentProps, ReactNode } from 'react'
 
 /**
  * path is URL Link component
@@ -14,8 +14,10 @@ import type { ReactNode } from 'react'
  * <LinkItem target />
  */
 export type LinkProps = { path: string; target?: boolean; children: ReactNode }
+export type CodeProps = ComponentProps<'svg'>
 
 type Props = {
   children: ReactNode
   params: { locale: string }
 }
+

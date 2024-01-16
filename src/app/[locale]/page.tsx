@@ -12,7 +12,7 @@ export default function Index() {
   const m = useTranslations('Menu')
   return (
     <>
-    <Top />
+      <Top />
       <section>
         <article className='flex flex-col items-start justify-start pt-44'>
           <h1 className='text-5xl font-bold'>{t('title')}</h1>

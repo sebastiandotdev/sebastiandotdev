@@ -1,6 +1,6 @@
 import { ComponentProps, FC } from 'react'
 import Image from 'next/image'
-import nextImg from 'static/nextjs.svg'
+import nextImg from 'static/nextjs-white-logo.svg'
 
 type FooterProps = FC<ComponentProps<'footer'>>
 
@@ -14,23 +14,20 @@ const Footer: FooterProps = (props) => {
         <div className='w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between justify-center'>
           <div className='flex items-center gap-3'>
             <span className='text-sm sm:text-center text-secondary'>
-              Sebastián García - Hecho con{' '}
+              Sebastián García - Hecho con NEXT.js
             </span>
-            <Image
-              src={nextImg}
-              alt='Nextjs herramienta frontend portafolio'
-              className='size-8'
-            />
           </div>
           <small className='text-secondary'>
-            © Todos los derecho reservado a{' '}
+            Adapted from the
+            {' '}
             <a
               href='https://midu.dev'
               target='_blank'
               className='hover:underline hover:text-white'
             >
               @midudev
-            </a>
+            </a>{' '}
+            Portfolio
           </small>
         </div>
       </footer>

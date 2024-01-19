@@ -13,6 +13,8 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children, params }: Props) {
+  console.log(params.locale)
+  
   return (
     <html lang={params.locale} suppressHydrationWarning={true}>
       <body>

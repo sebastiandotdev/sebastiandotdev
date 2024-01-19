@@ -13,8 +13,8 @@ const Footer: FooterProps = (props) => {
       >
         <div className='w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between justify-center'>
           <div className='flex items-center gap-3'>
-            <span className='text-sm sm:text-center text-secondary'>
-              Sebastián García - Hecho con NEXT.js
+            <span className='text-sm sm:text-center'>
+              Sebastián García
             </span>
           </div>
           <small className='text-secondary'>
@@ -23,7 +23,7 @@ const Footer: FooterProps = (props) => {
             <a
               href='https://midu.dev'
               target='_blank'
-              className='hover:underline hover:text-white'
+              className='hover:underline'
             >
               @midudev
             </a>{' '}

@@ -1,6 +1,4 @@
-import { ComponentProps, FC } from 'react'
-import Image from 'next/image'
-import nextImg from 'static/nextjs-white-logo.svg'
+import type { ComponentProps, FC } from 'react'
 
 type FooterProps = FC<ComponentProps<'footer'>>
 

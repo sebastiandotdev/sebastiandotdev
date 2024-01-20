@@ -1,6 +1,8 @@
-import { CodeProps } from 'types/component'
+import type { ComponentProps, FC } from 'react'
 
-export function CodeTag(props: CodeProps) {
+type SVGProps = FC<ComponentProps<'svg'>>
+
+export const CodeTag: SVGProps = (props) => {
   return (
     <>
       <svg

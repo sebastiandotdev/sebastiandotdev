@@ -8,7 +8,7 @@ export function Item(props: LinkProps) {
       <Link
         href={props.path}
         target={value}
-        className='flex items-center gap-2 text-secondary cursor-pointer hover:opacity-90  hover:transition-all py-2 test'
+        className='flex items-center gap-2 text-secondary cursor-pointer hover:opacity-90  hover:transition-all py-2'
       >
         {props.children}
       </Link>

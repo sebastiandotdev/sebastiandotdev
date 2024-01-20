@@ -1,5 +1,8 @@
 import Image from 'next/image'
-import { Nextjs, Tailwind } from './icons'
+import { Github, Nextjs, Tailwind } from './icons'
+import { Button } from './ui/button'
+import { Code } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Projects() {
   const TAGS = {
@@ -26,7 +29,7 @@ export default function Projects() {
   ]
   return (
     <>
-      {PROJECTS.map(({ image, title, description, tags }, i) => (
+      {PROJECTS.map(({ image, title, description, tags, github, link }, i) => (
         <article key={i}>
           <h3 className='text-2xl font-semibold text-tertiary mb-2'>{title}</h3>
           <p className='text-lg mb-4 text-pretty'>{description}</p>
@@ -50,6 +53,28 @@ export default function Projects() {
             width={800}
             height={800}
           />
+          <footer className='flex gap-x-4 items-end justify-start mt-4'>
+            {github && (
+              <>
+                <Link
+                  href={github}
+                  target='_blank'
+                  className='bg-white/5 border dark:border-white/10 border-gray-300 rounded-full inline-flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-xs md:text-base transition hover:scale-110 hover:bg-white/10'
+                >
+                  <Github />
+                  Ver código fuente
+                </Link>
+                <Link
+                  href={link}
+                  target='_blank'
+                  className='bg-white/5 border dark:border-white/10 border-gray-300 rounded-full inline-flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-xs md:text-base transition hover:scale-110 hover:bg-white/10'
+                >
+                  <Code />
+                  Ir al sitio Web
+                </Link>
+              </>
+            )}
+          </footer>
         </article>
       ))}
     </>

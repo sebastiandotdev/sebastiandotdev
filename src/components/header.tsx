@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
       <nav className='pt-6'>
-        <Item path='https://github.com/seb-24' target>
+        <Item path='https://github.com/castrogarciajs' target>
           <Github />
           <b className='hover:text-tertiary'>Github</b>
         </Item>

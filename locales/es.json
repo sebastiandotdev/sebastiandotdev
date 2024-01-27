@@ -14,7 +14,8 @@
     "moment": "Actualmente",
     "nov": "Noviembre 2023",
     "nov-old": "Noviembre 2022",
-    "know": "Saber más"
+    "know": "Saber más",
+    "nestle": "Nestle promo tango gamer - Participa por miles de premios"
   },
   "Profession": {
     "frontend": "Frontend Developer - Bogotá",
@@ -24,6 +25,7 @@
   "Description": {
     "f-description": "En mi rol como Desarrollador Frontend en Diens, formo parte integral de un equipo dedicado a la creación y mantenimiento de una aplicación avanzada para la gestión de pedidos con tecnologías de vanguardia.",
     "n-description": "Durante un período de tiempo, tuve el privilegio de desempeñar el rol de Full Stack Freelance en Ecuador, contribuyendo al éxito de Nestlé a través del desarrollo y mantenimiento de una aplicación integral de promociones. En este puesto, lideré la creación y evolución tanto del frontend como del backend, asegurando una experiencia de usuario optimizada y un rendimiento sólido del sistema.",
-    "p-description": "Desempeñé el rol de docente en la academia Sintáctica de Valledupar, impartiendo clases de React de manera presencial. En esta función docente proporciono las bases necesarias en React para formar a los estudiantes en el desarrollo y gestión eficaz de aplicaciones web."
+    "p-description": "Desempeñé el rol de docente en la academia Sintáctica de Valledupar, impartiendo clases de React de manera presencial. En esta función docente proporciono las bases necesarias en React para formar a los estudiantes en el desarrollo y gestión eficaz de aplicaciones web.",
+    "nestle-description": "Aplicación desarollada para Nestlé Ecuador, con el objetivo de involucrar a la comunidad gamer a través de sus productos de la línea Tango. Implementamos un sistema de regalos y sorteos exclusivos, aprovechando los números de lote presentes en los productos Tango."
   }
 }

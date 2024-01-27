@@ -15,7 +15,7 @@ export default function Header() {
           <LinkedIn />
           <b className='hover:text-tertiary'>Linkedin</b>
         </Item>
-        <Item path='mailto:johancs.mm@gmail.com' target>
+        <Item path='mailto:sebastian@castrogarciajs.dev' target>
           <Email />
           <b className='hover:text-tertiary'>{t('email')}</b>
         </Item>

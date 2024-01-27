@@ -4,8 +4,11 @@ import { Code } from 'lucide-react'
 import Link from 'next/link'
 import { Badge } from './ui/badge'
 import { Carousel } from './carousel'
+import { useTranslations } from 'next-intl'
 
 export default function Projects() {
+  const translate = useTranslations('Title')
+  const translateDescription = useTranslations('Description')
   const TAGS = {
     NEXT: {
       name: 'Next.js',
@@ -35,33 +38,37 @@ export default function Projects() {
   }
   const PROJECTS = [
     {
-      title: 'Nestle Promo tango gamer - Participa por miles de premios',
-      description:
-        'Creado desde cero con FastAPI, Preact.js, Supabase y Tailwind CSS.',
+      title: translate('nestle'),
+      description: translateDescription('nestle-description'),
       link: 'https://www.nestle-contigo.ec/promotangogamers',
       github: '',
-      image: '/wepb/nestle.webp',
+      images: ['/wepb/nestle.webp', '/wepb/register.webp'],
       tags: [TAGS.FASTAPI, TAGS.PREACT, TAGS.TAILWIND, TAGS.SUPABASE],
     },
     {
       title: 'Merch - Comercio para comprar el accesorio de tu mascota',
       description: 'Creado desde cero con Next.js, Supabase y Tailwind CSS.',
       link: 'https://petmerch.vercel.app/',
-      github: 'https://github.com/seb-24/merch',
-      image: '/wepb/merch.webp',
+      github: 'https://github.com/castrogarciajs/merch',
+      images: ['/wepb/merch.webp', '/wepb/product.webp'],
       tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.SUPABASE],
     },
   ]
   return (
     <>
-      {PROJECTS.map(({ image, title, description, tags, github, link }, i) => (
+      {PROJECTS.map(({ images, title, description, tags, github, link }, i) => (
         <article key={i} className='mt-16'>
-          <h3 className='text-2xl font-semibold text-tertiary mb-2 text-balance'>{title}</h3>
+          <h3 className='text-2xl font-semibold text-tertiary mb-2 text-balance'>
+            {title}
+          </h3>
           <p className='text-lg mb-4 text-pretty'>{description}</p>
           <ul className='flex gap-x-2 flex-row mb-2'>
             <Carousel>
               {tags.map((tag, j) => (
-                <li key={j} className='shrink-0 snap-start'>
+                <li
+                  key={j}
+                  className='shrink-0 snap-start hover:cursor-pointer hover:scale-105 transition-transform'
+                >
                   <Badge className={tag.className} variant='outline'>
                     {<tag.icon className='size-6' />}
                     <small className='px-2'>{tag.name}</small>
@@ -70,14 +77,20 @@ export default function Projects() {
               ))}
             </Carousel>
           </ul>
-          <Image
-            loading='lazy'
-            className='rounded shadow-2xl shadow-white/10 object-cover aspect-video'
-            src={image}
-            alt={`Captura de pantalla del proyecto ${image}`}
-            width={800}
-            height={800}
-          />
+          <Carousel>
+            {images.map((img, k) => (
+              <figure key={k} className='min-w-0 flex-[0_0_100%] cursor-grab'>
+                <Image
+                  loading='lazy'
+                  className='rounded shadow-2xl shadow-white/10 object-cover aspect-video'
+                  src={img}
+                  alt={`Captura de pantalla del proyecto ${img}`}
+                  width={800}
+                  height={800}
+                />
+              </figure>
+            ))}
+          </Carousel>
           <footer className='flex gap-x-4 items-end justify-start mt-4'>
             {github && (
               <Link

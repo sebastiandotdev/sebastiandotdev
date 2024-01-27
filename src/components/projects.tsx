@@ -35,7 +35,7 @@ export default function Projects() {
   }
   const PROJECTS = [
     {
-      title: 'Nestle Promo - Participa por miles de premios',
+      title: 'Nestle Promo tango gamer - Participa por miles de premios',
       description:
         'Creado desde cero con FastAPI, Preact.js, Supabase y Tailwind CSS.',
       link: 'https://www.nestle-contigo.ec/promotangogamers',
@@ -56,7 +56,7 @@ export default function Projects() {
     <>
       {PROJECTS.map(({ image, title, description, tags, github, link }, i) => (
         <article key={i} className='mt-16'>
-          <h3 className='text-2xl font-semibold text-tertiary mb-2'>{title}</h3>
+          <h3 className='text-2xl font-semibold text-tertiary mb-2 text-balance'>{title}</h3>
           <p className='text-lg mb-4 text-pretty'>{description}</p>
           <ul className='flex gap-x-2 flex-row mb-2'>
             <Carousel>

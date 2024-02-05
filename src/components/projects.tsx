@@ -45,14 +45,6 @@ export default function Projects() {
       images: ['/wepb/nestle.webp', '/wepb/register.webp'],
       tags: [TAGS.FASTAPI, TAGS.PREACT, TAGS.TAILWIND, TAGS.SUPABASE],
     },
-    {
-      title: 'Merch - Comercio para comprar el accesorio de tu mascota',
-      description: 'Creado desde cero con Next.js, Supabase y Tailwind CSS.',
-      link: 'https://petmerch.vercel.app/',
-      github: 'https://github.com/castrogarciajs/merch',
-      images: ['/wepb/merch.webp', '/wepb/product.webp'],
-      tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.SUPABASE],
-    },
   ]
   return (
     <>

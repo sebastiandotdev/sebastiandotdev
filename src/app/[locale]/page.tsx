@@ -1,6 +1,7 @@
+import About from '@/components/about'
 import Experience from '@/components/experience'
 import Header from '@/components/header'
-import { Available, Briefcase, Code, Location } from '@/components/icons'
+import { Available, Briefcase, Check, Code, Location } from '@/components/icons'
 import Projects from '@/components/projects'
 import Title from '@/components/title'
 import Top from '@/components/top'
@@ -46,6 +47,13 @@ export default function Index() {
           {m('projects')}
         </Title>
         <Projects />
+      </section>
+      <section className='pt-28'>
+        <Title>
+          <Check />
+          Sobre mi
+        </Title>
+        <About />
       </section>
     </>
   )

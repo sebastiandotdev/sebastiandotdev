@@ -21,7 +21,7 @@ export default function About() {
       <Image
         width={200}
         height={200}
-        src='https://res.cloudinary.com/du2jpakme/image/upload/v1707857941/quickstart_butterfly.jpg'
+        src='/sebastian.jpg'
         alt={imageALT}
         className='order-1 object-cover w-64 h-full p-1 bg-white md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl dark:bg-yellow-500/5 ring-1 ring-white/20'
         style={{

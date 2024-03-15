@@ -45,6 +45,14 @@ export default function Projects() {
       images: ['/wepb/nestle.webp', '/wepb/register.webp'],
       tags: [TAGS.FASTAPI, TAGS.PREACT, TAGS.TAILWIND, TAGS.SUPABASE],
     },
+    {
+      title: translate('costanet'),
+      description: translateDescription('costanet-description'),
+      link: 'https://costanetcolombia.com/',
+      github: '',
+      images: ['/wepb/preview-costanet-col.webp', '/wepb/costanet-test.webp', '/wepb/costanet-client.webp'],
+      tags: [TAGS.NEXT, TAGS.TAILWIND],
+    },
   ]
   return (
     <>

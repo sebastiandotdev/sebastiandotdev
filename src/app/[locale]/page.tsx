@@ -51,7 +51,7 @@ export default function Index() {
       <section className='pt-28'>
         <Title>
           <Check />
-          Sobre mi
+          {e('about-title')}
         </Title>
         <About />
       </section>

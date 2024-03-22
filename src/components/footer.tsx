@@ -9,8 +9,8 @@ const Footer: FooterProps = (props) => {
         {...props}
         className='rounded-lg backdrop-blur-lg w-full xl:w-[1120px] mx-auto mt-10'
       >
-        <div className='w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between justify-center'>
-          <div className='flex items-center gap-3'>
+        <div className='w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between justify-center gap-4'>
+          <div className='flex items-center gap-3 justify-center'>
             <span className='text-sm sm:text-center'>
               @copyrigth - all rights reserved to  <a
               href='https://midu.dev'
@@ -21,7 +21,7 @@ const Footer: FooterProps = (props) => {
             </a>{' '}
             </span>
           </div>
-          <nav className='text-secondary flex items-center gap-2 text-sm'>
+          <nav className='text-secondary flex items-center gap-2 text-sm justify-center'>
             Adapted from the
             {' '}
             <a

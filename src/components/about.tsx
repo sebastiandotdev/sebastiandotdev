@@ -5,10 +5,10 @@ export default function About() {
   const imageALT = 'Sebastián García'
   const d = useTranslations('Description')
   return (
-    <article className='flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row'>
-      <div className='[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1'>
+    <article className='flex flex-col sm:items-start items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row'>
+      <p className='mt-12 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1'>
        {d("about")}
-      </div>
+      </p>
       <Image
         width={200}
         height={200}

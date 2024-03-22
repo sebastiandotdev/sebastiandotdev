@@ -6,5 +6,5 @@ This is the source code for https://castrogarciajs.dev, my portfolio website.
 
 > [!IMPORTANT]
 > The rest of this README is only relevant to those interested in getting to know me
-> > al portafolio castrogarciajs.dev. Si buscas información sobre mí
+> to the castrogarciajs.dev portfolio. If you are looking for information about me
 > portfolio, please see https://castrogarciajs.dev

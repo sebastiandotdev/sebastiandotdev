@@ -5,7 +5,7 @@
 This is the source code for https://castrogarciajs.dev, my portfolio website.
 
 ## Features
-- Built with Shadcn UI and [Tailwind CSS](https://tailwindcss.com)
+- Built with [Shadcn UI](https://ui.shadcn.com) and [Tailwind CSS](https://tailwindcss.com)
 - Dark mode support
 - Customizable
 - Language support

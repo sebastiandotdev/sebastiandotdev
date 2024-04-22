@@ -2,7 +2,7 @@
 
 <img src="./public/sebastian.jpg" width="200" align="right" alt="the jsr logo">
 
-This is the source code for https://castrogarciajs.dev, my portfolio website.
+This is the source code to my portfolio website.
 
 ## Features
 - Built with [Shadcn UI](https://ui.shadcn.com) and [Tailwind CSS](https://tailwindcss.com)

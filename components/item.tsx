@@ -1,5 +1,21 @@
 import Link from 'next/link'
-import { LinkProps } from 'types/component'
+import type { ReactNode } from 'react'
+
+/**
+ * path is URL Link component
+ * @example
+ *
+ * <LinkItem path='URL'/>
+ *
+ * @default
+ * @type {boolean}
+ * target
+ *
+ * @example
+ * <LinkItem target />
+ */
+export type LinkProps = { path: string; target?: boolean; children: ReactNode }
+
 
 export function Item(props: LinkProps) {
   const value = props.target ? '_blank' : ''

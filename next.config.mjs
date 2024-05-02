@@ -1,4 +1,5 @@
 import withNextIntl from 'next-intl/plugin'
+import {setupDevPlatform} from '@cloudflare/next-on-pages/next-dev'
 
 const locale = withNextIntl()
 
@@ -12,6 +13,10 @@ const nextConfig = {
       },
     ],
   },
+}
+
+if(process.env.NODE_ENV === 'development') {
+  await setupDevPlatform()
 }
 
 export default locale(nextConfig)

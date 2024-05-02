@@ -1,11 +1,13 @@
-import About from '@/components/about'
-import Experience from '@/components/experience'
-import Header from '@/components/header'
-import { Available, Briefcase, Check, Code, Location } from '@/components/icons'
-import Projects from '@/components/projects'
-import Title from '@/components/title'
-import Top from '@/components/top'
+import About from '@components/about'
+import Experience from '@components/experience'
+import Header from '@components/header'
+import { Available, Briefcase, Check, Code, Location } from '@components/icons'
+import Projects from '@components/projects'
+import Title from '@components/title'
+import Top from '@components/top'
 import { useTranslations } from 'next-intl'
+
+export const runtime = 'edge'
 
 export default function Index() {
   const t = useTranslations('Index')

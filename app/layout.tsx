@@ -1,12 +1,18 @@
 import './globals.css'
 
 import type { Metadata } from 'next'
-import type { Props } from 'types/component'
+import type { ReactNode } from 'react'
 
-import Footer from '@/components/footer'
-import Menu from '@/components/menu'
+import Footer from '@components/footer'
+import Menu from '@components/menu'
 import {Analytics} from '@vercel/analytics/react'
-import { ThemeProvider } from '@/components/theme-provider'
+import { ThemeProvider } from '@components/theme-provider'
+
+type Props = {
+  children: ReactNode
+  params: { locale: string }
+}
+
 
 export const metadata: Metadata = {
   title: 'Sebastian Garcia',

@@ -1,3 +1,1 @@
 # Sebastian Garcia
-
-Hi there!! 👋

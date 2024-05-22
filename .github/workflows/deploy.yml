@@ -15,14 +15,14 @@ jobs:
     permissions:
       id-token: write # Needed for auth with Deno Deploy
       contents: read # Needed to clone the repository
-      
+
     steps:
       - uses: actions/checkout@v3
       - name: Deno deploy Solid Start
         uses: fbritoferreira/deno-deploy-solid-start@v1
         with:
           token: ${{ secrets.DENO_DEPLOY_TOKEN }}
-          project: "castrogarciajs"
+          project: "."
           build: true
           deploy: true
           install: true

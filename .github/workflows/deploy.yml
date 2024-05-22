@@ -5,14 +5,17 @@ env:
 
 on:
   push:
-    branches:
-      - master
-    paths-ignore:
-      - '**.md'
+    branches: main
+  pull_request:
+    branches: main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write # Needed for auth with Deno Deploy
+      contents: read # Needed to clone the repository
+      
     steps:
       - uses: actions/checkout@v3
       - name: Deno deploy Solid Start

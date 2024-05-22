@@ -33,7 +33,7 @@ jobs:
           cache: pnpm
 
       - run: corepack enable
-      
+
       - name: Install step
         run: "pnpm install"
 
@@ -44,5 +44,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "castrogarciajs"
-          entrypoint: ""
+          entrypoint: "./output/server/index.mjs"
           root: "."

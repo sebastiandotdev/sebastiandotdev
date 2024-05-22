@@ -39,6 +39,8 @@ jobs:
 
       - name: Build step
         run: pnpm build
+        env:
+          NITRO_PRESET: deno_deploy
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1

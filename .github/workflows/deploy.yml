@@ -1,0 +1,26 @@
+name: Deploy with GitHub Actions on Deno Deploy
+
+env:
+  DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
+
+on:
+  push:
+    branches:
+      - main
+      - releases/*
+    paths-ignore:
+      - '**.md'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deno deploy Solid Start
+        uses: fbritoferreira/deno-deploy-solid-start@v1
+        with:
+          token: ${{ secrets.DENO_DEPLOY_TOKEN }}
+          project: "castrogarciajs"
+          build: true
+          deploy: true
+          install: true

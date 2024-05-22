@@ -35,14 +35,14 @@ jobs:
       - run: corepack enable
 
       - name: Install step
-        run: "pnpm install"
+        run: pnpm install
 
       - name: Build step
-        run: "pnpm build"
+        run: pnpm build
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "castrogarciajs"
-          entrypoint: "./.output/server/index.mjs"
-          root: "."
+          project: castrogarciajs
+          entrypoint: server/index.mjs
+          root: .output

@@ -4,7 +4,7 @@ import { Button } from './ui/button'
 
 export default function Header() {
   return (
-    <header class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header class="sticky top-0 z-50 w-full bg-black/[0.96] antialiased bg-grid-white/[0.02]">
       <div class="container flex h-14 max-w-screen-2xl items-center">
         <div class="flex flex-1 items-center justify-end space-x-2">
 

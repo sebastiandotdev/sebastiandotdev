@@ -6,7 +6,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "dev": "vinxi dev",
+    "dev": "vinxi dev --port 8000",
     "build": "vinxi build",
     "start": "vinxi start",
     "lint": "eslint . --fix",

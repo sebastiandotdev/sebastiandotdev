@@ -1,38 +1,24 @@
-import { A } from '@solidjs/router'
-import ModeToggle from './dark-mode'
-import { Button } from './ui/button'
+import { For } from 'solid-js'
+import { cn } from '@/utils/cn'
+import { linksNavbar } from '@/utils/constants'
 
 export default function Header() {
+  const shouldRenderSocialIcon = 'X'
   return (
-    <header class="sticky top-0 z-50 w-full bg-black/[0.96] antialiased bg-grid-white/[0.02]">
-      <div class="container flex h-14 max-w-screen-2xl items-center">
-        <div class="flex flex-1 items-center justify-end space-x-2">
-
-          <div class="flex items-center">
-            <Button
-              as={A}
-              variant="ghost"
-              size="icon"
-              href="https://github.com/castrogarciajs"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24">
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.6-.6 1.2-.5 2V21"
-                />
+    <header class="flex max-w-fit fixed top-10 inset-x-0 mx-auto border rounded-full bg-background [&:has(a)]:font-medium z-10 pr-2 pl-8 py-2 items-center justify-center space-x-4">
+      <For each={linksNavbar}>
+        {({ name, url, type }) => (
+          <a href={url} class={cn('relative items-center flex space-x-1', type === shouldRenderSocialIcon ? 'border text-sm font-medium relative px-4 py-2 rounded-full flex items-center gap-1' : '')}>
+            {name}
+            {type === shouldRenderSocialIcon && (
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-x inline">
+                <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
               </svg>
-              <span class="sr-only">Github</span>
-            </Button>
-            <ModeToggle />
-          </div>
-        </div>
-      </div>
+            )}
+          </a>
+        )}
+      </For>
     </header>
   )
 }

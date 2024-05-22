@@ -6,7 +6,7 @@ import { Suspense } from 'solid-js'
 import { ColorModeProvider, ColorModeScript } from '@kobalte/core'
 import './app.css'
 
-function Components(props: RouteSectionProps<unknown>) {
+function Component(props: RouteSectionProps<unknown>) {
   return (
     <MetaProvider>
       <Title>Sebastian Garcia</Title>
@@ -20,7 +20,7 @@ function Components(props: RouteSectionProps<unknown>) {
 
 export default function App() {
   return (
-    <Router root={props => <Components {...props} />}>
+    <Router root={props => <Component {...props} />}>
       <FileRoutes />
     </Router>
   )

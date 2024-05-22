@@ -1,11 +1,25 @@
-import { For } from 'solid-js'
+import { For, createEffect, createSignal, onCleanup } from 'solid-js'
 import { cn } from '@/utils/cn'
 import { linksNavbar } from '@/utils/constants'
 
 export default function Header() {
   const shouldRenderSocialIcon = 'X'
+  const [prevScroll, setPrevScroll] = createSignal(0)
+  const [isVisible, setIsVisable] = createSignal(true)
+
+  const handleScroll = () => {
+    const currentScroll = window.scrollY
+    setIsVisable(prevScroll() > currentScroll || currentScroll < 10)
+    setPrevScroll(currentScroll)
+  }
+
+  createEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    onCleanup(() => window.removeEventListener('scroll', handleScroll))
+  })
+
   return (
-    <header class="flex max-w-fit fixed top-10 inset-x-0 mx-auto border rounded-full bg-background [&:has(a)]:font-medium z-10 pr-2 pl-8 py-2 items-center justify-center space-x-4">
+    <header class={cn('flex max-w-fit fixed top-10 inset-x-0 mx-auto border rounded-full [&:has(a)]:font-medium z-10 pr-2 pl-8 py-2 items-center justify-center space-x-4 transition-opacity', isVisible() ? 'bg-background opacity-100' : 'opacity-0 bg-transparent')}>
       <For each={linksNavbar}>
         {({ name, url, type }) => (
           <a href={url} class={cn('relative items-center flex space-x-1', type === shouldRenderSocialIcon ? 'border text-sm font-medium relative px-4 py-2 rounded-full flex items-center gap-1' : '')}>

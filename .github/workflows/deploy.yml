@@ -46,5 +46,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: castrogarciajs
-          entrypoint: server/index.mjs
-          root: .output
+          entrypoint: ./.output/server/index.mjs
+          root: '.'

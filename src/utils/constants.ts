@@ -1,7 +1,7 @@
 export const socialSite = [
     {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/',
+        url: 'https://www.linkedin.com/in/castrogarciajs',
     },
     {
         name: 'Github',
@@ -15,14 +15,14 @@ export const socialSite = [
 
 export const linksNavbar = [
     {
-        name: 'Resume',
-        url: '/',
-        type: 'Resume'
-    },
-    {
         name: 'Github',
         url: 'https://github.com/castrogarciajs',
         type: 'Github'
+    },
+    {
+        name: 'Resume',
+        url: '/curriculum.docx',
+        type: 'Resume'
     },
     {
         name: 'Follow me on',

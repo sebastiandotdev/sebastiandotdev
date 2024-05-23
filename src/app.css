@@ -118,4 +118,46 @@ body {
       fixed 0 0 / 20px 20px radial-gradient(#313131 1px, transparent 0),
       fixed 10px 10px / 20px 20px radial-gradient(#313131 1px, transparent 0);
   }
+
+  .animate-border {
+    --border-angle: 0turn;
+    --main-bg: conic-gradient(
+      from var(--border-angle),
+      #121417,
+      #121417 5%,
+      #121417 60%,
+      #121417 95%
+    );
+    border: solid 1px transparent;
+    border-radius: 2em;
+    --gradient-border: conic-gradient(
+      from var(--border-angle) at 50% 50%,
+      transparent,
+      #fff 14%,
+      transparent 17%
+    );
+
+    background:
+      var(--main-bg) padding-box,
+      var(--gradient-border) border-box,
+      var(--main-bg) border-box;
+    background-position: center center;
+    animation: bg-spin 5s linear infinite;
+
+    &:hover {
+      animation-play-state: running;
+    }
+  }
+
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+
+  @property --border-angle {
+    syntax: '<angle>';
+    inherits: true;
+    initial-value: 0turn;
+  }
 }

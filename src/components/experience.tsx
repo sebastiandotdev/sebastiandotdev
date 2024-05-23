@@ -14,7 +14,7 @@ export default function ExperienceSection() {
         <div class="grid gap-6 grid-cols-2 mt-8">
           <For each={experiences}>
             {({ title, description, time }) => (
-              <div class="group rounded-lg border p-6 shadow-md relative">
+              <div class="group rounded-lg border p-6 shadow-md relative animate-border">
                 <div class="space-y-3">
                   <h3 class="text-xl font-bold text-center dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 dark:bg-opacity-50">{title}</h3>
                   <p>

@@ -32,12 +32,10 @@ export default function Footer() {
             </For>
           </nav>
         </div>
-
         <ModeToggle />
-
       </div>
       <div class="flex flex-col justify-center items-center gap-1 pt-10">
-        <p class="text-sm text-muted-foreground">© 2024 Sebastian Garcia Dev.</p>
+        <p class="text-sm text-muted-foreground">© 2024 Sebastian Garcia, Dev.</p>
         <a class="relative tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium no-underline hover:opacity-80 active:opacity-disabled transition-opacity flex justify-end items-center gap-2 text-muted-foreground" tabindex="0" role="link" href="https://deno.com/deploy" rel="noopener noreferrer" target="_blank">
           <p class="font-normal">Deployed on</p>
           <IconDeno />

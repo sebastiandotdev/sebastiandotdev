@@ -72,12 +72,17 @@ body {
   font-family: 'Onest', sans-serif;
 }
 
+.bg-fixture {
+  background-image: url('/bg-texture.svg');
+}
+
 @layer base {
   * {
     @apply border-border;
   }
 
   html {
+    scroll-behavior: smooth;
     font-feature-settings:
       'rlig' 1,
       'calt' 1,
@@ -119,22 +124,34 @@ body {
       fixed 10px 10px / 20px 20px radial-gradient(#313131 1px, transparent 0);
   }
 
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+
+  @property --border-angle {
+    syntax: '<angle>';
+    inherits: true;
+    initial-value: 0turn;
+  }
+
   .animate-border {
-    --border-angle: 0turn;
-    --main-bg: conic-gradient(
-      from var(--border-angle),
-      #121417,
-      #121417 5%,
-      #121417 60%,
-      #121417 95%
-    );
     border: solid 1px transparent;
-    border-radius: 2em;
+
     --gradient-border: conic-gradient(
       from var(--border-angle) at 50% 50%,
       transparent,
-      #fff 14%,
+      #121417 14%,
       transparent 17%
+    );
+    --border-angle: 0turn;
+    --main-bg: conic-gradient(
+      from var(--border-angle),
+      #fff,
+      #fff 5%,
+      #fff 60%,
+      #fff 95%
     );
 
     background:
@@ -149,15 +166,33 @@ body {
     }
   }
 
-  @keyframes bg-spin {
-    to {
-      --border-angle: 1turn;
-    }
-  }
+  [data-kb-theme='dark'] .animate-border {
+    border: solid 1px transparent;
 
-  @property --border-angle {
-    syntax: '<angle>';
-    inherits: true;
-    initial-value: 0turn;
+    --gradient-border: conic-gradient(
+      from var(--border-angle) at 50% 50%,
+      transparent,
+      #fff 14%,
+      transparent 17%
+    );
+    --border-angle: 0turn;
+    --main-bg: conic-gradient(
+      from var(--border-angle),
+      #0a0a0a,
+      #0a0a0a 5%,
+      #0a0a0a 60%,
+      #0a0a0a 95%
+    );
+
+    background:
+      var(--main-bg) padding-box,
+      var(--gradient-border) border-box,
+      var(--main-bg) border-box;
+    background-position: center center;
+    animation: bg-spin 5s linear infinite;
+
+    &:hover {
+      animation-play-state: running;
+    }
   }
 }

@@ -1,28 +1,35 @@
+import IconGithub from "@/components/icons/github"
+import IconLinkedIn from "@/components/icons/linkedin"
+import IconX from "@/components/icons/x"
+
 export const socialSite = [
     {
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/castrogarciajs',
+        Icon: IconLinkedIn
     },
     {
         name: 'Github',
         url: 'https://github.com/castrogarciajs',
+        Icon: IconGithub
     },
  {
         name: 'X',
         url: 'https://twitter.com/mjs_sebastian',
+        Icon: IconX
     },
 ]
 
 export const linksNavbar = [
-    {
-        name: 'Github',
-        url: 'https://github.com/castrogarciajs',
-        type: 'Github'
+ {
+        name: 'Home',
+        url: '#home',
+        type: 'Home'
     },
     {
-        name: 'Resume',
-        url: '/curriculum.docx',
-        type: 'Resume'
+        name: 'About',
+        url: '#about',
+        type: 'About'
     },
     {
         name: 'Follow me on',

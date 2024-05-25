@@ -1,16 +1,16 @@
 import { For } from 'solid-js'
+import { A } from '@solidjs/router'
 import { socialSite } from '@/utils/constants'
-import { cn } from '@/utils/cn'
 
 export default function FloatSocials() {
   return (
     <div class="w-11 fixed left-6 bottom-4 z-10 hidden md:block">
-      <nav class="flex  flex-col gap-2 items-center justify-center">
+      <nav class="flex  flex-col gap-6 items-center justify-center">
         <For each={socialSite}>
           {({ url, Icon }) => (
-            <a href={url} class={cn('p-2 rounded hover:animate-border transition-all')}>
+            <A href={url} class="hover:text-white/80" target="_blank">
               <Icon />
-            </a>
+            </A>
           )}
         </For>
       </nav>

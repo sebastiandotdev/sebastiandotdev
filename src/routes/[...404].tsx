@@ -1,21 +1,25 @@
-import { Title } from '@solidjs/meta'
+import { A } from '@solidjs/router'
 import { HttpStatusCode } from '@solidjs/start'
+import { buttonVariants } from '@/components/ui/button'
+import { cn } from '@/utils/cn'
+import Container from '@/components/ui/container'
 
 export default function NotFound() {
   return (
-    <main>
-      <Title>Not Found</Title>
-      <HttpStatusCode code={404} />
-      <h1>Page Not Found</h1>
-      <p>
-        Visit
-        {' '}
-        <a href="https://start.solidjs.com" target="_blank">
-          start.solidjs.com
-        </a>
-        {' '}
-        to learn how to build SolidStart apps.
-      </p>
-    </main>
+    <Container class="h-screen">
+      <h1 class="text-4xl md:text-7xl font-bold text-center dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 dark:bg-opacity-50">
+        Page not found
+        <HttpStatusCode code={404} />
+      </h1>
+      <div class="mt-8 gap-4 w-full flex justify-center max-w-lg mx-auto">
+        <A href="/" class={cn(buttonVariants(), 'px-12')}>
+          Go to Home
+        </A>
+
+        <A href="https://github.com/castrogarciajs/castrogarciajs/issues" class={cn(buttonVariants({ variant: 'outline' }), 'px-12')} target="_blank">
+          Report an issue
+        </A>
+      </div>
+    </Container>
   )
 }

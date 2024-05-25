@@ -1,7 +1,6 @@
 import { For } from 'solid-js'
 import { A } from '@solidjs/router'
 import IconDeno from './icons/deno'
-import ModeToggle from './dark-mode'
 import { contacts, socialSite } from '@/utils/constants'
 
 export default function Footer() {
@@ -34,7 +33,7 @@ export default function Footer() {
               </For>
             </nav>
           </div>
-          <ModeToggle />
+
         </div>
         <div class="flex flex-col justify-center items-center gap-1 pt-10">
           <p class="text-sm text-muted-foreground">© 2024 Sebastian Garcia, Dev.</p>

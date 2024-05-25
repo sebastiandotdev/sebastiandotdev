@@ -61,13 +61,10 @@ export function Carousel(props: ComponentProps<'div'> & CarouselProps) {
     'children',
   ])
 
-  const [carouselRef, api] = createEmblaCarousel(
-    () => ({
-      ...local.opts,
-      axis: local.orientation === 'horizontal' ? 'x' : 'y',
-    }),
-    () => (local.plugins === undefined ? [] : local.plugins),
-  )
+  const [carouselRef, api] = createEmblaCarousel(() => ({
+    ...local.opts,
+    axis: local.orientation === 'horizontal' ? 'x' : 'y',
+  }), () => (local.plugins === undefined ? [] : local.plugins))
   const [canScrollPrev, setCanScrollPrev] = createSignal(false)
   const [canScrollNext, setCanScrollNext] = createSignal(false)
 

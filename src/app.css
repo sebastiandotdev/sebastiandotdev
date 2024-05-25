@@ -90,20 +90,30 @@ body {
     @apply bg-background text-foreground;
   }
 
-  .bg-stars {
-    background-image: url('/stars.svg');
-  }
-
+  
   @keyframes bg-spin {
     to {
       --border-angle: 1turn;
     }
   }
 
+  @keyframes moveStars {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 -100%; }
+}
+
   @property --border-angle {
     syntax: '<angle>';
     inherits: true;
     initial-value: 0turn;
+  }
+
+  .bg-stars {
+    background-image: url('/stars.svg');
+    background-repeat: repeat-y;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    animation: moveStars 24s linear infinite;
   }
 
   .animate-border {

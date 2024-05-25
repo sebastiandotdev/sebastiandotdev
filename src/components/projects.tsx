@@ -1,14 +1,16 @@
 import { A } from '@solidjs/router'
+import createAutoplay from 'embla-carousel-autoplay'
 import { For } from 'solid-js'
 import IconGithub from './icons/github'
 import IconArrowUpRight from './icons/arrow-up-right'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import { projects } from '@/utils/constants'
 
 export default function ProjectsSection() {
+  const autoplay = createAutoplay({ delay: 3000, stopOnInteraction: true })
   return (
-    <section id="#opensources" class="w-full py-12 md:py-24 lg:py-32">
+    <section id="#projects" class="w-full py-12 md:py-24 lg:py-32">
       <div class="container px-4 md:px-6">
         <div class="flex flex-col items-center justify-center space-y-4 text-center">
           <div class="space-y-2">
@@ -18,7 +20,13 @@ export default function ProjectsSection() {
             </p>
           </div>
         </div>
-        <Carousel class="w-full max-w-6xl mx-auto mt-12">
+        <Carousel
+          plugins={[autoplay]}
+          opts={{ loop: true }}
+          class="w-full max-w-6xl mx-auto mt-12 cursor-grab"
+          onMouseEnter={autoplay.stop}
+          onMouseLeave={() => autoplay.play(false)}
+        >
           <CarouselContent>
             <For each={projects}>
               {project => (
@@ -53,8 +61,6 @@ export default function ProjectsSection() {
               )}
             </For>
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
         </Carousel>
       </div>
     </section>

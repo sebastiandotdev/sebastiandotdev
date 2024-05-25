@@ -22,5 +22,11 @@
 
   "files.associations": {
     "*.css": "tailwindcss"
-  }
+  },
+  "cSpell.language": "en,es-ES",
+  "cSpell.words": [
+    "openui",
+    "Shadcn",
+    "Valledupar"
+  ]
 }

@@ -23,13 +23,18 @@ export const socialSite = [
 export const linksNavbar = [
  {
         name: 'Home',
-        url: '#home',
+        url: '/',
         type: 'Home'
     },
     {
-        name: 'About',
-        url: '#about',
-        type: 'About'
+        name: 'Blog',
+        url: '/blog',
+        type: 'Blog'
+    },
+ {
+        name: 'Projects',
+        url: '/projects',
+        type: 'Projects'
     },
     {
         name: 'Follow me on',

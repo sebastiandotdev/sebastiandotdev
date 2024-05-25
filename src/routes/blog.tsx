@@ -1,11 +1,12 @@
 import Footer from '@/components/footer'
+import Container from '@/components/ui/container'
 
 export default function Blog() {
   return (
     <>
-      <main class="relative">
+      <Container>
         <h1>blog page</h1>
-      </main>
+      </Container>
       <Footer />
     </>
   )

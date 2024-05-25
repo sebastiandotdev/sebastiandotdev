@@ -12,7 +12,7 @@ export default function ContactSection() {
         </p>
       </div>
       <div class="px-5">
-        <A class="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-gray-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-gray-400 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50 w-full hover:animate-border" href="mailto:castrogarcia.mjs@gmail.com">
+        <A class="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border px-6 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50 w-full hover:animate-border" href="mailto:castrogarcia.mjs@gmail.com">
           <div class="flex items-center gap-3">
             <p class="text-lg">Say Hello</p>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">

@@ -26,14 +26,9 @@ export const linksNavbar = [
         url: '/',
         type: 'Home'
     },
-    {
-        name: 'Blog',
-        url: '/blog',
-        type: 'Blog'
-    },
  {
         name: 'Projects',
-        url: '/projects',
+        url: '#opensources',
         type: 'Projects'
     },
     {
@@ -45,8 +40,12 @@ export const linksNavbar = [
 
 export const contacts = [
     {
-        name: 'Gmail',
-        url: 'mailto:castrogarcia.mjs@gmail.com'
+        name: 'certificates',
+        url: '#'
+    },
+    {
+        name: 'Blog',
+        url: '#'
     },
 ]
 
@@ -61,4 +60,11 @@ export const experiences = [
         description: 'I played the role of teacher at the Syntactic academy in Valledupar, teaching React classes in person. In this teaching role, I provide the necessary foundations in React to train students in the effective development and management of web applications.',
         time: '2022 - 2024'
     },
+]
+
+export const projects = [
+
+    {title: 'OpenLab-dev/openui', description: 'A design system built with TailwindCSS and Shadcn.', github: 'https://github.com/OpenLab-dev/openui', demo: 'https://openui-org.vercel.app/', tags: ['React', 'TailwindCSS', 'Shadcn']},
+
+    {title: 'OpenLab-dev/shopped', description: 'Shopped. A store built with design system Open UI.', github: 'https://github.com/OpenLab-dev/shopped', demo: 'https://shopped.pages.dev/', tags: ['React', 'TailwindCSS', 'Shadcn']},
 ]

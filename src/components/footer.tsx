@@ -25,7 +25,7 @@ export default function Footer() {
             </nav>
           </div>
           <div>
-            <h3 class="dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 dark:bg-opacity-50 text-xl font-bold">Contacts</h3>
+            <h3 class="dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 dark:bg-opacity-50 text-xl font-bold">Achievements</h3>
             <nav class="mt-3 flex flex-col gap-1">
               <For each={contacts}>
                 {({ name, url }) => (

@@ -15,7 +15,7 @@ function ModeToggle() {
     <DropdownMenu placement="bottom-end">
       <DropdownMenuTrigger
         as={(props: DropdownMenuTriggerProps) => (
-          <Button variant="ghost" size="icon" class="w-9 px-0" {...props}>
+          <Button variant="outline" size="icon" class="rounded-full" {...props}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

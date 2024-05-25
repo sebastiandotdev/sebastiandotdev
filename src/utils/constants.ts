@@ -20,27 +20,11 @@ export const socialSite = [
     },
 ]
 
-export const linksNavbar = [
- {
-        name: 'Home',
-        url: '/',
-        type: 'Home'
-    },
- {
-        name: 'Projects',
-        url: '#opensources',
-        type: 'Projects'
-    },
-    {
-        name: 'Follow me on',
-        url: 'https://x.com/mjs_sebastian',
-        type: 'X'
-    },
-]
+
 
 export const contacts = [
     {
-        name: 'certificates',
+        name: 'Certificates',
         url: '#'
     },
     {

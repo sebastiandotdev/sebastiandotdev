@@ -5,13 +5,11 @@ import { FileRoutes } from '@solidjs/start/router'
 import { Suspense } from 'solid-js'
 import { ColorModeProvider, ColorModeScript } from '@kobalte/core'
 import './app.css'
-import Header from './components/header'
 
 function Component(props: RouteSectionProps<unknown>) {
   return (
     <MetaProvider>
       <Title>Sebastian Garcia</Title>
-      <Header />
       <Suspense>
         <ColorModeScript />
         <ColorModeProvider>{props.children}</ColorModeProvider>

@@ -2,13 +2,13 @@
   "$schema": "https://shadcn-solid.com/schema.json",
   "tailwind": {
     "config": "tailwind.config.mjs",
-    "css": "src/app.css",
-    "baseColor": "neutral",
+    "css": { "path": "src/app.css" },
+    "color": "neutral",
     "cssVariables": true,
     "prefix": ""
   },
-  "aliases": {
-    "components": "@/components",
-    "utils": "@/utils/cn"
+  "alias": {
+    "component": "@/components",
+    "cn": "@/utils/cn"
   }
 }

@@ -1,12 +1,12 @@
 import Footer from '@/components/footer'
+import Container from '@/components/ui/container'
 
 export default function Projects() {
   return (
     <>
-
-      <main class="relative">
+      <Container>
         <h1>Projects page</h1>
-      </main>
+      </Container>
       <Footer />
     </>
   )

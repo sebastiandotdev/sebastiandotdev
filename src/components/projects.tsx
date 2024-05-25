@@ -23,7 +23,7 @@ export default function ProjectsSection() {
         <Carousel
           plugins={[autoplay]}
           opts={{ loop: true }}
-          class="w-full max-w-6xl mx-auto mt-12 cursor-grab"
+          class="w-full max-w-6xl mx-auto mt-12"
           onMouseEnter={autoplay.stop}
           onMouseLeave={() => autoplay.play(false)}
         >

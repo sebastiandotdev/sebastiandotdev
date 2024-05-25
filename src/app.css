@@ -89,8 +89,6 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-
-  
   @keyframes bg-spin {
     to {
       --border-angle: 1turn;
@@ -98,9 +96,13 @@ body {
   }
 
   @keyframes moveStars {
-  0% { background-position: 0 0; }
-  100% { background-position: 0 -100%; }
-}
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 -100%;
+    }
+  }
 
   @property --border-angle {
     syntax: '<angle>';

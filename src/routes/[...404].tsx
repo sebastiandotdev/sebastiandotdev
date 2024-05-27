@@ -14,11 +14,11 @@ export default function NotFound() {
           <HttpStatusCode code={404} />
         </h1>
         <div class="mt-8 gap-4 w-full flex justify-center max-w-lg mx-auto">
-          <A href="/" class={cn(buttonVariants(), 'px-12')}>
+          <A href="/" class={cn(buttonVariants(), 'px-10')}>
             Go to Home
           </A>
 
-          <A href="https://github.com/castrogarciajs/castrogarciajs/issues" class={cn(buttonVariants({ variant: 'outline' }), 'px-12')} target="_blank">
+          <A href="https://github.com/castrogarciajs/castrogarciajs/issues" class={cn(buttonVariants({ variant: 'outline' }), 'px-10')} target="_blank">
             Report an issue
           </A>
         </div>

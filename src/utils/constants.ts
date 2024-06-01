@@ -48,7 +48,7 @@ export const experiences = [
 
 export const projects = [
 
-    {title: 'OpenLabs-dev/openui', description: 'A design system built with TailwindCSS and Shadcn.', github: 'https://github.com/OpenLabs-dev/openui', demo: 'https://openui-org.vercel.app/', tags: ['React', 'TailwindCSS', 'Shadcn']},
+    {title: 'OpenLabs-dev/openui', description: 'A design system built with TailwindCSS and Shadcn.', github: 'https://github.com/OpenLabs-dev/openui', demo: 'https://openlabs.online', tags: ['React', 'TailwindCSS', 'Shadcn']},
 
     {title: 'OpenLabs-dev/shopped', description: 'Shopped. A store built with design system Open UI.', github: 'https://github.com/OpenLabs-dev/shopped', demo: 'https://shopped.pages.dev/', tags: ['React', 'TailwindCSS', 'Shadcn']},
 ]

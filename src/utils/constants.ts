@@ -25,7 +25,7 @@ export const socialSite = [
 export const contacts = [
     {
         name: 'Certificates',
-        url: '#'
+        url: '/certificates'
     },
     {
         name: 'Blog',

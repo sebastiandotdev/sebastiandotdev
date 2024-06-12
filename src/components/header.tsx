@@ -1,6 +1,7 @@
 import { createEffect, createSignal, onCleanup } from 'solid-js'
 import IconX from './icons/x'
 import ModeToggle from './dark-mode'
+import { Button } from './ui/button'
 import { cn } from '@/utils/cn'
 
 export default function Header() {
@@ -19,14 +20,17 @@ export default function Header() {
   })
 
   return (
-    <header class={cn('flex max-w-fit fixed top-10 inset-x-0 mx-auto border rounded-full hover:animate-border [&:has(a)]:font-medium z-10 px-2 py-2 items-center justify-center gap-2 transition-opacity', isVisible() ? 'bg-background opacity-100' : 'opacity-0 bg-transparent')}>
-
-      <ModeToggle />
-      <a href="https://x.com/castrogarciajs" class={cn('relative items-center border text-sm font-medium px-4 py-1.5 rounded-full flex gap-1 hover:opacity-90 transition-opacity')}>
-        Follow me on
-        <IconX />
-
+    <header class={cn('flex max-w-fit fixed top-10 inset-x-0 mx-auto border rounded-full hover:animate-border [&:has(a)]:font-medium z-10 px-6 py-2 items-center justify-center gap-3 transition-opacity', isVisible() ? 'bg-background opacity-100' : 'opacity-0 bg-transparent')}>
+      <a href="/">
+        Home
       </a>
+      <a href="/">
+        About
+      </a>
+      <ModeToggle />
+      <Button variant="outline" size="icon" class="rounded-full" as="a" href="https://x.com/castrogarciajs">
+        <IconX />
+      </Button>
 
     </header>
   )

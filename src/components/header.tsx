@@ -28,7 +28,7 @@ export default function Header() {
         About
       </a>
       <ModeToggle />
-      <Button variant="outline" size="icon" class="rounded-full" as="a" href="https://x.com/castrogarciajs">
+      <Button variant="outline" size="icon" class="rounded-full" as="a" href="https://x.com/sebastiandottop">
         <IconX />
       </Button>
 

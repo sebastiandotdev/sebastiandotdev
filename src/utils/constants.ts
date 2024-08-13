@@ -5,7 +5,7 @@ import IconX from "@/components/icons/x"
 export const socialSite = [
     {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/castrogarciajs',
+        url: 'https://www.linkedin.com/in/sebatiandottop',
         Icon: IconLinkedIn
     },
     {
@@ -15,7 +15,7 @@ export const socialSite = [
     },
  {
         name: 'X',
-        url: 'https://twitter.com/mjs_sebastian',
+        url: 'https://twitter.com/sebastiandottop',
         Icon: IconX
     },
 ]

@@ -1,15 +1,14 @@
 {
   "name": "castrogarciajs",
   "type": "module",
-  "packageManager": "pnpm@9.1.1",
-  "engines": {
-    "node": ">=18"
-  },
+  "packageManager": "pnpm@9.6.0",
+  "description": "My potfolio personal, written with Solid.js",
   "scripts": {
     "dev": "vinxi dev --port 8000",
     "build": "vinxi build",
     "start": "vinxi start",
     "lint": "eslint . --fix",
+    "clean": "rm -rf pnpm-lock.yaml node_modules",
     "version": "vinxi version"
   },
   "dependencies": {
@@ -25,7 +24,7 @@
     "solid-js": "^1.8.17",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
-    "vinxi": "^0.3.11"
+    "vinxi": "^0.4.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.18.1",
@@ -35,12 +34,5 @@
     "eslint-plugin-solid": "^0.13.0",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3"
-  },
-  "pnpm": {
-    "allowedDeprecatedVersions": {
-      "are-we-there-yet": "2.0.0",
-      "gauge": "3.0.2",
-      "npmlog": "5.0.1"
-    }
   }
 }

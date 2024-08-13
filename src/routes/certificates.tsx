@@ -8,7 +8,6 @@ export default function Certificates() {
       <Header />
       <Container>
         <h2 class="text-4xl md:text-7xl font-bold text-center dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 dark:bg-opacity-50">Certifacates</h2>
-
         <article class="w-full py-12 md:py-24 lg:py-32">
           <div class="container grid gap-12 px-4 md:px-6">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">

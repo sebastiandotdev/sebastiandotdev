@@ -24,7 +24,7 @@ export default function Header() {
       <a href="/">
         Home
       </a>
-      <a href="/">
+      <a href="#about-me">
         About
       </a>
       <ModeToggle />

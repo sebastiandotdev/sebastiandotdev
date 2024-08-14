@@ -8,7 +8,7 @@ export default function AboutPage() {
           class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
         >
           <p style={{ width: '65ch' }}>
-            Más de 2 años de experiencia como Desarrollador de Software
+            Más de 2 años de experiencia como Desarrollador de Software.
             {' '}
             {' '}
             <strong>Enseñé programación a muchas personas de múltiples edades,</strong>

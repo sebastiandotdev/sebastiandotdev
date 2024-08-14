@@ -121,20 +121,9 @@ body {
   .animate-border {
     border: solid 1px transparent;
 
-    --gradient-border: conic-gradient(
-      from var(--border-angle) at 50% 50%,
-      transparent,
-      #121417 14%,
-      transparent 17%
-    );
+    --gradient-border: conic-gradient(from var(--border-angle) at 50% 50%, transparent, #121417 14%, transparent 17%);
     --border-angle: 0turn;
-    --main-bg: conic-gradient(
-      from var(--border-angle),
-      #fff,
-      #fff 5%,
-      #fff 60%,
-      #fff 95%
-    );
+    --main-bg: conic-gradient(from var(--border-angle), #fff, #fff 5%, #fff 60%, #fff 95%);
 
     background:
       var(--main-bg) padding-box,
@@ -151,20 +140,9 @@ body {
   [data-kb-theme='dark'] .animate-border {
     border: solid 1px transparent;
 
-    --gradient-border: conic-gradient(
-      from var(--border-angle) at 50% 50%,
-      transparent,
-      #fff 14%,
-      transparent 17%
-    );
+    --gradient-border: conic-gradient(from var(--border-angle) at 50% 50%, transparent, #fff 14%, transparent 17%);
     --border-angle: 0turn;
-    --main-bg: conic-gradient(
-      from var(--border-angle),
-      #0a0a0a,
-      #0a0a0a 5%,
-      #0a0a0a 60%,
-      #0a0a0a 95%
-    );
+    --main-bg: conic-gradient(from var(--border-angle), #0a0a0a, #0a0a0a 5%, #0a0a0a 60%, #0a0a0a 95%);
 
     background:
       var(--main-bg) padding-box,

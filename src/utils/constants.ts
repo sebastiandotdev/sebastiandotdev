@@ -15,7 +15,7 @@ export const socialSite = [
     },
  {
         name: 'X',
-        url: 'https://twitter.com/sebastiandottop',
+        url: 'https://twitter.com/sebastiandotdev',
         Icon: IconX
     },
 ]

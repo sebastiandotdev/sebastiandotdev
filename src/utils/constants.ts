@@ -10,7 +10,7 @@ export const socialSite = [
     },
     {
         name: 'Github',
-        url: 'https://github.com/sebastiandottop',
+        url: 'https://github.com/sebastiandotdev',
         Icon: IconGithub
     },
  {

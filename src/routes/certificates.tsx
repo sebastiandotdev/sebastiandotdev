@@ -1,6 +1,6 @@
-import Container from '@/components/ui/container'
-import Header from '@/components/header'
 import Footer from '@/components/footer'
+import Header from '@/components/header'
+import Container from '@/components/ui/container'
 
 export default function Certificates() {
   return (

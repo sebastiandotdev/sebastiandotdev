@@ -1,7 +1,8 @@
 import type { CreateEmblaCarouselType } from 'embla-carousel-solid'
-import createEmblaCarousel from 'embla-carousel-solid'
-
 import type { Accessor, ComponentProps, ParentProps, VoidProps } from 'solid-js'
+
+import { cn } from '@/utils/cn'
+import createEmblaCarousel from 'embla-carousel-solid'
 import {
   createContext,
   createEffect,
@@ -12,14 +13,13 @@ import {
   useContext,
 } from 'solid-js'
 import { Button } from './button'
-import { cn } from '@/utils/cn'
 
 export type CarouselApi = CreateEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof createEmblaCarousel>
 type CarouselOptions = NonNullable<UseCarouselParameters[0]>
 type CarouselPlugin = NonNullable<UseCarouselParameters[1]>
 
-type CarouselProps = {
+interface CarouselProps {
   opts?: ReturnType<CarouselOptions>
   plugins?: ReturnType<CarouselPlugin>
   orientation?: 'horizontal' | 'vertical'

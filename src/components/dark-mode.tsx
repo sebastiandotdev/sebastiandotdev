@@ -1,4 +1,3 @@
-import { useColorMode } from '@kobalte/core'
 import type { DropdownMenuTriggerProps } from '@kobalte/core/dropdown-menu'
 import { Button } from '@/components/ui/button'
 import {
@@ -7,6 +6,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+import { useColorMode } from '@kobalte/core'
 
 function ModeToggle() {
   const { setColorMode } = useColorMode()

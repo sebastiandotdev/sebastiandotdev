@@ -1,11 +1,11 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
+import { projects } from '@/utils/constants'
 import { A } from '@solidjs/router'
 import createAutoplay from 'embla-carousel-autoplay'
 import { For } from 'solid-js'
-import IconGithub from './icons/github'
 import IconArrowUpRight from './icons/arrow-up-right'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
-import { projects } from '@/utils/constants'
+import IconGithub from './icons/github'
 
 export default function ProjectsSection() {
   const autoplay = createAutoplay({ delay: 3000, stopOnInteraction: true })
@@ -61,6 +61,8 @@ export default function ProjectsSection() {
               )}
             </For>
           </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
         </Carousel>
       </div>
     </section>

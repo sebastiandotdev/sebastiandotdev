@@ -1,8 +1,8 @@
-import { createEffect, createSignal, onCleanup } from 'solid-js'
-import IconX from './icons/x'
-import ModeToggle from './dark-mode'
-import { Button } from './ui/button'
 import { cn } from '@/utils/cn'
+import { createEffect, createSignal, onCleanup } from 'solid-js'
+import ModeToggle from './dark-mode'
+import IconX from './icons/x'
+import { Button } from './ui/button'
 
 export default function Header() {
   const [prevScroll, setPrevScroll] = createSignal(0)

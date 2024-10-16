@@ -1,5 +1,5 @@
-import { For } from 'solid-js'
 import { experiences } from '@/utils/constants'
+import { For } from 'solid-js'
 
 export default function ExperienceSection() {
   return (

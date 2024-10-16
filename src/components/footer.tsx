@@ -1,7 +1,5 @@
-import { For } from 'solid-js'
 import { A } from '@solidjs/router'
 import IconDeno from './icons/deno'
-import { contacts, socialSite } from '@/utils/constants'
 
 export default function Footer() {
   return (
@@ -13,26 +11,6 @@ export default function Footer() {
               <h3 class="dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 dark:bg-opacity-50 text-2xl font-bold">Sebastian García</h3>
             </A>
           </nav>
-          <div>
-            <h3 class="dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 dark:bg-opacity-50 text-xl font-bold">Socials</h3>
-            <nav class="mt-3 flex flex-col gap-1">
-              <For each={socialSite}>
-                {({ name, url }) => (
-                  <A class="hover:underline" href={url}>{name}</A>
-                )}
-              </For>
-            </nav>
-          </div>
-          <div>
-            <h3 class="dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 dark:bg-opacity-50 text-xl font-bold">Achievements</h3>
-            <nav class="mt-3 flex flex-col gap-1">
-              <For each={contacts}>
-                {({ name, url }) => (
-                  <A class="hover:underline" href={url}>{name}</A>
-                )}
-              </For>
-            </nav>
-          </div>
 
         </div>
         <div class="flex flex-col justify-center items-center gap-1 pt-10">

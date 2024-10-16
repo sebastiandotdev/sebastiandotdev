@@ -1,9 +1,9 @@
-import * as DropdownMenuPrimitive from '@kobalte/core/dropdown-menu'
 import type { PolymorphicProps } from '@kobalte/core/polymorphic'
-import { mergeDefaultProps } from '@kobalte/utils'
 import type { ComponentProps, ParentProps, ValidComponent } from 'solid-js'
-import { splitProps } from 'solid-js'
 import { cn } from '@/utils/cn'
+import * as DropdownMenuPrimitive from '@kobalte/core/dropdown-menu'
+import { mergeDefaultProps } from '@kobalte/utils'
+import { splitProps } from 'solid-js'
 
 export const DropdownMenuTrigger = DropdownMenuPrimitive.Trigger
 export const DropdownMenuGroup = DropdownMenuPrimitive.Group

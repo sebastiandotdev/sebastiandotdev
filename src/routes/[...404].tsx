@@ -1,9 +1,9 @@
+import Footer from '@/components/footer'
+import { buttonVariants } from '@/components/ui/button'
+import Container from '@/components/ui/container'
+import { cn } from '@/utils/cn'
 import { A } from '@solidjs/router'
 import { HttpStatusCode } from '@solidjs/start'
-import { buttonVariants } from '@/components/ui/button'
-import { cn } from '@/utils/cn'
-import Container from '@/components/ui/container'
-import Footer from '@/components/footer'
 
 export default function NotFound() {
   return (

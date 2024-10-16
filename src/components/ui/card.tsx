@@ -1,5 +1,5 @@
-import { type ComponentProps, type ParentComponent, splitProps } from 'solid-js'
 import { cn } from '@/utils/cn'
+import { type ComponentProps, type ParentComponent, splitProps } from 'solid-js'
 
 export function Card(props: ComponentProps<'div'>) {
   const [local, rest] = splitProps(props, ['class'])

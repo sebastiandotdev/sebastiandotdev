@@ -1,9 +1,9 @@
 import type { RouteSectionProps } from '@solidjs/router'
+import { ColorModeProvider, ColorModeScript } from '@kobalte/core'
 import { MetaProvider, Title } from '@solidjs/meta'
 import { Router } from '@solidjs/router'
 import { FileRoutes } from '@solidjs/start/router'
 import { Suspense } from 'solid-js'
-import { ColorModeProvider, ColorModeScript } from '@kobalte/core'
 import './app.css'
 
 function Component(props: RouteSectionProps<unknown>) {

@@ -1,6 +1,6 @@
-import { For } from 'solid-js'
-import { A } from '@solidjs/router'
 import { socialSite } from '@/utils/constants'
+import { A } from '@solidjs/router'
+import { For } from 'solid-js'
 
 export default function FloatSocials() {
   return (

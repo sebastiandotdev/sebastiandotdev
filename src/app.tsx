@@ -9,7 +9,7 @@ import './app.css'
 function Component(props: RouteSectionProps<unknown>) {
   return (
     <MetaProvider>
-      <Title>Sebastian Garcia</Title>
+      <Title>Sebastian Garcia | Portfolio</Title>
       <Suspense>
         <ColorModeScript />
         <ColorModeProvider>{props.children}</ColorModeProvider>

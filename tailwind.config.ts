@@ -1,7 +1,7 @@
+import type { Config } from 'tailwindcss'
 import animate from 'tailwindcss-animate'
 
-/** @type {import('tailwindcss').Config} */
-export default {
+const config: Config = {
   darkMode: ['class', '[data-kb-theme="dark"]'],
   content: [
     'src/routes/**/*.{ts,tsx}',
@@ -59,20 +59,20 @@ export default {
       },
       keyframes: {
         'accordion-down': {
-          from: { height: 0 },
+          from: { height: '0' },
           to: { height: 'var(--kb-accordion-content-height)' },
         },
         'accordion-up': {
           from: { height: 'var(--kb-accordion-content-height)' },
-          to: { height: 0 },
+          to: { height: '0' },
         },
         'collapsible-down': {
-          from: { height: 0 },
+          from: { height: '0' },
           to: { height: 'var(--kb-collapsible-content-height)' },
         },
         'collapsible-up': {
           from: { height: 'var(--kb-collapsible-content-height)' },
-          to: { height: 0 },
+          to: { height: '0' },
         },
         'spotlight': {
           '0%': {
@@ -97,3 +97,5 @@ export default {
   },
   plugins: [animate],
 }
+
+export default config

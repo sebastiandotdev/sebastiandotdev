@@ -1,0 +1,12 @@
+{
+  "nodeModulesDir": "auto",
+  "tasks": {
+    "dev": "vinxi dev --port 8000",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "lint": "eslint . --fix",
+    "clean": "rm -rf pnpm-lock.yaml node_modules",
+    "version": "vinxi version"
+  },
+  "lock": false
+}

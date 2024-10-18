@@ -3,14 +3,6 @@
   "type": "module",
   "packageManager": "pnpm@9.12.1",
   "description": "My potfolio personal, written with Solid.js",
-  "scripts": {
-    "dev": "vinxi dev --port 8000",
-    "build": "vinxi build",
-    "start": "vinxi start",
-    "lint": "eslint . --fix",
-    "clean": "rm -rf pnpm-lock.yaml node_modules",
-    "version": "vinxi version"
-  },
   "dependencies": {
     "@kobalte/core": "^0.13.7",
     "@kobalte/utils": "^0.9.1",

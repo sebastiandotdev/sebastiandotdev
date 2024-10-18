@@ -8,10 +8,8 @@ on:
 
 jobs:
   ci:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+    name: Deploy
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3

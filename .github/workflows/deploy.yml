@@ -23,28 +23,20 @@ jobs:
         with:
           deno-version: v1.x
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
-
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          cache: pnpm
-
-      - run: corepack enable
 
       - name: Install step
-        run: pnpm install
+        run: "deno install"
 
       - name: Build step
-        run: pnpm build
-        env:
-          NITRO_PRESET: deno_deploy
+        run: "deno task build"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: castrogarciajs
-          entrypoint: server/index.ts
-          root: .output
+          project: "castrogarciajs"
+          entrypoint: "server/index.ts"
+          root: ".output"

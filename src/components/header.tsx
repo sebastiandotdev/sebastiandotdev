@@ -24,14 +24,10 @@ export default function Header() {
       <a href="/">
         Home
       </a>
-      <a href="#about-me">
-        About
-      </a>
       <ModeToggle />
       <Button variant="outline" size="icon" class="rounded-full" as="a" href="https://x.com/sebastiandotdev">
         <IconX />
       </Button>
-
     </header>
   )
 }

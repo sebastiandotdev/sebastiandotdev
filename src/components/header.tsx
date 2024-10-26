@@ -20,10 +20,8 @@ export default function Header() {
   })
 
   return (
-    <header class={cn('flex max-w-fit fixed top-10 inset-x-0 mx-auto border rounded-full hover:animate-border [&:has(a)]:font-medium z-10 px-6 py-2 items-center justify-center gap-3 transition-opacity', isVisible() ? 'bg-background opacity-100' : 'opacity-0 bg-transparent')}>
-      <a href="/">
-        Home
-      </a>
+    <header class={cn('flex max-w-fit fixed top-10 inset-x-0 mx-auto border rounded-full hover:animate-border [&:has(a)]:font-medium z-10 px-4 py-2 items-center justify-center gap-3 transition-opacity', isVisible() ? 'bg-background opacity-100' : 'opacity-0 bg-transparent')}>
+
       <ModeToggle />
       <Button variant="outline" size="icon" class="rounded-full" as="a" href="https://x.com/sebastiandotdev">
         <IconX />

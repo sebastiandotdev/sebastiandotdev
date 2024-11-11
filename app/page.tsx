@@ -1,3 +1,4 @@
+import { css } from '@/styled-system/css';
 import Image from "next/image";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol>
+        <ol className={css({color: 'red.400'})}>
           <li>
             Get started by editing <code>app/page.tsx</code>.
           </li>

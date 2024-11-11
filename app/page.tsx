@@ -2,10 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div >
-      <main >
+    <div>
+      <main>
         <Image
-          
           src="/next.svg"
           alt="Next.js logo"
           width={180}
@@ -19,15 +18,13 @@ export default function Home() {
           <li>Save and see your changes instantly.</li>
         </ol>
 
-        <div >
+        <div>
           <a
-            
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image
-              
               src="/vercel.svg"
               alt="Vercel logomark"
               width={20}
@@ -38,13 +35,13 @@ export default function Home() {
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
-            rel="noopener noreferrer"            
+            rel="noopener noreferrer"
           >
             Read our docs
           </a>
         </div>
       </main>
-      <footer >
+      <footer>
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           target="_blank"

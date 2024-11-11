@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "prepare": "panda codegen",
+    "fmt": "biome format --write .",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
@@ -15,10 +16,13 @@
     "react-dom": "19.0.0-rc-66855b96-20241106"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@pandacss/dev": "^0.47.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^9",
+    "eslint-config-next": "15.0.3",
     "typescript": "^5"
   }
 }

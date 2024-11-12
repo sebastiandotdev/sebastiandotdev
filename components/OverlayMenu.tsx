@@ -1,13 +1,8 @@
 import { css } from '@/styled-system/css'
 import { Center, Flex } from '@/styled-system/jsx'
 import Link from 'next/link'
-import {
-  MdHome,
-  MdPerson,
-  MdTerminal,
-  MdLocalMall,
-  MdLightMode,
-} from 'react-icons/md'
+import { MdHome, MdPerson, MdTerminal, MdLocalMall } from 'react-icons/md'
+import ThemeSwitch from './ThemeSwitch'
 
 const menus = [
   { id: 1, path: '/', Icon: MdHome },
@@ -44,7 +39,7 @@ export default function OverlayMenu() {
         </Flex>
 
         <Flex align="center" gap={4}>
-          <MdLightMode size={30} />
+          <ThemeSwitch />
         </Flex>
       </div>
     </Center>

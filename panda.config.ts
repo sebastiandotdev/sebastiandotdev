@@ -1,4 +1,5 @@
 import { defineConfig } from '@pandacss/dev'
+import { tokens } from './themes/tokens'
 
 export default defineConfig({
   preflight: true,
@@ -6,7 +7,7 @@ export default defineConfig({
   include: ['./app/**/*.{js,jsx,ts,tsx}'],
   jsxFramework: 'react',
   theme: {
-    extend: {},
+    extend: { tokens },
   },
   exclude: [],
 })

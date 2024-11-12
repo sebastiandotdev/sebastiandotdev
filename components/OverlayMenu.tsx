@@ -1,5 +1,20 @@
 import { css } from '@/styled-system/css'
-import { Center } from '@/styled-system/jsx'
+import { Center, Flex } from '@/styled-system/jsx'
+import Link from 'next/link'
+import {
+  MdHome,
+  MdPerson,
+  MdTerminal,
+  MdLocalMall,
+  MdLightMode,
+} from 'react-icons/md'
+
+const menus = [
+  { id: 1, path: '/', Icon: MdHome },
+  { id: 2, path: '/', Icon: MdPerson },
+  { id: 3, path: '/', Icon: MdTerminal },
+  { id: 4, path: '/', Icon: MdLocalMall },
+]
 
 export default function OverlayMenu() {
   return (
@@ -12,7 +27,7 @@ export default function OverlayMenu() {
           width: '50%',
           maxWidth: 1024,
           minWidth: 300,
-          padding: '10px 20px',
+          padding: '12px 20px',
           backgroundColor: 'neutral.950',
           backdropFilter: 'blur(8px)',
           borderRadius: '30px',
@@ -20,7 +35,17 @@ export default function OverlayMenu() {
           border: '1px solid rgba(255, 255, 255, 0.1)',
         })}
       >
-        <h1>Sebastian Garcia</h1>
+        <Flex align="center" gap={4}>
+          {menus.map((menu) => (
+            <Link key={menu.id} href={menu.path}>
+              <menu.Icon size={30} />
+            </Link>
+          ))}
+        </Flex>
+
+        <Flex align="center" gap={4}>
+          <MdLightMode size={30} />
+        </Flex>
       </div>
     </Center>
   )

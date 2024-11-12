@@ -29,18 +29,7 @@ export default function ThemeSwitch() {
   if (!mounted) return null
 
   return (
-    <button
-      onClick={toggleTheme}
-      className={css({
-        px: '2',
-        py: '1',
-        textStyle: 'xl',
-        fontWeight: 'semibold',
-        letterSpacing: 'tight',
-        rounded: 'md',
-        cursor: 'pointer',       
-      })}
-    >
+    <button onClick={toggleTheme} className={css({ cursor: 'pointer' })}>
       {isDark ? <MdDarkMode size={30} /> : <MdLightMode size={30} />}
     </button>
   )

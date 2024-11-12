@@ -1,6 +1,7 @@
+import './globals.css'
+
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import './globals.css'
 import OverlayMenu from '@/components/OverlayMenu'
 import { Providers } from '@/components/Providers'
 import { Container } from '@/styled-system/jsx'
@@ -21,7 +22,7 @@ const onest = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Sebastian Garcia',
+  title: 'Sebastian Garci',
   description: 'Website oficial of Sebastian Garcia',
 }
 

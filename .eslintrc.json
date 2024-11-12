@@ -1,3 +1,10 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "$schema": "https://json.schemastore.org/eslintrc",  
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "plugins": ["@stylistic", "@stylistic/jsx"],
+  "rules": {
+    "@stylistic/semi": ["error", "never"],
+    "@stylistic/jsx/jsx-indent": ["error", 2],
+    "@stylistic/quotes": ["error", "single"]
+  }
 }

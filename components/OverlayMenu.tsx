@@ -3,7 +3,7 @@ import { Center } from '@/styled-system/jsx'
 
 export default function OverlayMenu() {
   return (
-    <Center padding="4">
+    <Center padding="4" position="fixed" top="0" left="0" right="0">
       <div
         className={css({
           display: 'flex',
@@ -13,6 +13,7 @@ export default function OverlayMenu() {
           maxWidth: 1024,
           minWidth: 300,
           padding: '10px 20px',
+          backgroundColor: 'neutral.950',
           backdropFilter: 'blur(8px)',
           borderRadius: '30px',
           boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
 import OverlayMenu from '@/components/OverlayMenu'
+import { Container } from '@/styled-system/jsx'
 
 const onest = localFont({
   src: [
@@ -30,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={onest.className}>
         <OverlayMenu />
-        {children}
+        <Container marginTop="24">{children}</Container>
       </body>
     </html>
   )

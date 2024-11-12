@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
+import OverlayMenu from '@/components/OverlayMenu'
 
 const onest = localFont({
   src: [
@@ -27,7 +28,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={onest.className}>{children}</body>
+      <body className={onest.className}>
+        <OverlayMenu />
+        {children}
+      </body>
     </html>
   )
 }

@@ -38,7 +38,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "castrogarciajs"
-          entrypoint: "jsr:@deno/nextjs-start"
+          entrypoint: "jsr:@deno/nextjs-start/v15"
           root: "."
-          include: .next, public
+          
           

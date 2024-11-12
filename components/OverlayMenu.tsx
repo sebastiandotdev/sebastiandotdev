@@ -1,7 +1,13 @@
 import { css } from '@/styled-system/css'
 import { Center, Flex } from '@/styled-system/jsx'
 import Link from 'next/link'
-import { MdHome, MdPerson, MdTerminal, MdLocalMall } from 'react-icons/md'
+import {
+  MdHome,
+  MdPerson,
+  MdTerminal,
+  MdLocalMall,
+  MdCall,
+} from 'react-icons/md'
 import ThemeSwitch from './ThemeSwitch'
 
 const menus = [
@@ -23,11 +29,13 @@ export default function OverlayMenu() {
           maxWidth: 1024,
           minWidth: 300,
           padding: '12px 20px',
-          backgroundColor: 'neutral.950',
           backdropFilter: 'blur(8px)',
           borderRadius: '30px',
           boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
           border: '1px solid rgba(255, 255, 255, 0.1)',
+          _dark: {
+            backgroundColor: 'neutral.950',
+          },
         })}
       >
         <Flex align="center" gap={4}>
@@ -39,6 +47,9 @@ export default function OverlayMenu() {
         </Flex>
 
         <Flex align="center" gap={4}>
+          <Link href="/">
+            <MdCall size={30} />
+          </Link>
           <ThemeSwitch />
         </Flex>
       </div>

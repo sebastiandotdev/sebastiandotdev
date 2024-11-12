@@ -1,7 +1,6 @@
 'use client'
 
 import { css } from '@/styled-system/css'
-import { HStack } from '@/styled-system/jsx'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 import { MdDarkMode, MdLightMode } from 'react-icons/md'
@@ -46,9 +45,7 @@ export default function ThemeSwitch() {
         },
       })}
     >
-      <HStack gap="2">
-        {isDark ? <MdDarkMode size={30} /> : <MdLightMode size={30} />}
-      </HStack>
+      {isDark ? <MdDarkMode size={30} /> : <MdLightMode size={30} />}
     </button>
   )
 }

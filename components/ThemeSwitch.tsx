@@ -38,11 +38,7 @@ export default function ThemeSwitch() {
         fontWeight: 'semibold',
         letterSpacing: 'tight',
         rounded: 'md',
-        cursor: 'pointer',
-        _hover: {
-          transition: 'colors',
-          bg: 'neutral.600',
-        },
+        cursor: 'pointer',       
       })}
     >
       {isDark ? <MdDarkMode size={30} /> : <MdLightMode size={30} />}

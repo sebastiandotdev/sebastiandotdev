@@ -1,0 +1,22 @@
+import { defineTokens } from '@pandacss/dev'
+
+export const colors = defineTokens.colors({
+  current: { value: 'currentColor' },
+  background: { value: '#161616' },
+  black: { value: '#000' },
+  white: { value: '#fff' },
+
+  neutral: {
+    50: { value: '#f6f6f6' },
+    100: { value: '#e7e7e7' },
+    200: { value: '#d1d1d1' },
+    300: { value: '#b0b0b0' },
+    400: { value: '#888888' },
+    500: { value: '#6d6d6d' },
+    600: { value: '#5d5d5d' },
+    700: { value: '#4f4f4f' },
+    800: { value: '#454545' },
+    900: { value: '#3d3d3d' },
+    950: { value: '#212121' },
+  },
+})

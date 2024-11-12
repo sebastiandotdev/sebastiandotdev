@@ -40,5 +40,5 @@ jobs:
           project: "castrogarciajs"
           entrypoint: "jsr:@deno/nextjs-start/v15"
           root: "."
-          
+          include: .next, public
           

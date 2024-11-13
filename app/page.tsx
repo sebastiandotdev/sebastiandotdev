@@ -4,7 +4,9 @@ export default function Home() {
   return (
     <>
       <Center>
-        <h1>Sebastian Garcia</h1>
+        <h1>
+          Sebastian Garcia
+        </h1>
       </Center>
     </>
   )

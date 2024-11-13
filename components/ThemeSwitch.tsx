@@ -3,7 +3,7 @@
 import { css } from '@/styled-system/css'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
-import { MdDarkMode, MdLightMode } from 'react-icons/md'
+import { TbSun, TbMoon } from 'react-icons/tb'
 
 function useThemeSwitch() {
   const [mounted, setMounted] = useState(false)
@@ -39,7 +39,7 @@ export default function ThemeSwitch() {
         cursor: 'pointer', 
       })}
     >
-      {isDark ? <MdDarkMode size={30} /> : <MdLightMode size={30} />}
+      {isDark ? <TbSun size={30} /> : <TbMoon size={30} />}
     </button>
   )
 }

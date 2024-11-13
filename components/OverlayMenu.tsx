@@ -1,33 +1,29 @@
 import { css } from '@/styled-system/css'
 import { Center, Flex } from '@/styled-system/jsx'
 import Link from 'next/link'
-import { MdHome,
-  MdPerson,
-  MdTerminal,
-  MdLocalMall,
-  MdCall } from 'react-icons/md'
+import { TbHome, TbUser, TbTerminal, TbShoppingBag, TbPhone } from 'react-icons/tb';
 import ThemeSwitch from './ThemeSwitch'
 
 const menus = [
   {
     id: 1,
     path: '/',
-    Icon: MdHome, 
+    Icon: TbHome, 
   },
   {
     id: 2,
     path: '/',
-    Icon: MdPerson, 
+    Icon: TbUser,
   },
   {
     id: 3,
     path: '/',
-    Icon: MdTerminal, 
+    Icon: TbTerminal,
   },
   {
     id: 4,
     path: '/',
-    Icon: MdLocalMall, 
+    Icon: TbShoppingBag, 
   },
 ]
 
@@ -69,7 +65,7 @@ export default function OverlayMenu() {
 
         <Flex align="center" gap={4}>
           <Link href="/">
-            <MdCall size={30} />
+            <TbPhone size={30} />
           </Link>
           <ThemeSwitch />
         </Flex>

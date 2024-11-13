@@ -1,13 +1,25 @@
-import { Center } from '@/styled-system/jsx'
+import { css } from '@/styled-system/css'
+import { HStack } from '@/styled-system/jsx'
 
 export default function Home() {
   return (
     <>
-      <Center>
-        <h1>
-          Sebastian Garcia
-        </h1>
-      </Center>
+      <HStack>
+        <article>
+          <h2
+            className={css({
+              fontSize: '4xl',
+              fontWeight: 'bold',
+            })}
+          >
+            Sebastián Garcia
+          </h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque,
+            dolore?
+          </p>
+        </article>
+      </HStack>
     </>
   )
 }

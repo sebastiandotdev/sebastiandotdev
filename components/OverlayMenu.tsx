@@ -1,14 +1,20 @@
 import { css } from '@/styled-system/css'
 import { Center, Flex } from '@/styled-system/jsx'
 import Link from 'next/link'
-import { TbHome, TbUser, TbTerminal, TbShoppingBag, TbPhone } from 'react-icons/tb';
+import {
+  TbHome,
+  TbUser,
+  TbTerminal,
+  TbShoppingBag,
+  TbPhone,
+} from 'react-icons/tb'
 import ThemeSwitch from './ThemeSwitch'
 
 const menus = [
   {
     id: 1,
     path: '/',
-    Icon: TbHome, 
+    Icon: TbHome,
   },
   {
     id: 2,
@@ -23,20 +29,13 @@ const menus = [
   {
     id: 4,
     path: '/',
-    Icon: TbShoppingBag, 
+    Icon: TbShoppingBag,
   },
 ]
 
 export default function OverlayMenu() {
   return (
-    <Center
-      padding="4"
-      position="fixed"
-      top="0"
-      left="0"
-      right="0"
-      zIndex={10}
-    >
+    <Center padding="4" position="fixed" top="0" left="0" right="0" zIndex={10}>
       <div
         className={css({
           display: 'flex',

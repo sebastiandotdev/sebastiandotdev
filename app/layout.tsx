@@ -5,6 +5,7 @@ import localFont from 'next/font/local'
 import OverlayMenu from '@/components/OverlayMenu'
 import { Providers } from '@/components/Providers'
 import { Container } from '@/styled-system/jsx'
+import { css } from '@/styled-system/css'
 
 const onest = localFont({
   src: [
@@ -22,7 +23,7 @@ const onest = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Sebastian Garci',
+  title: 'Sebastian Garcia',
   description: 'Website oficial of Sebastian Garcia',
 }
 
@@ -39,7 +40,22 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <OverlayMenu />
-          <Container marginTop="24">{children}</Container>
+          <Container
+            marginTop="24"            
+            borderRadius="30px"
+            border="1px solid rgba(255, 255, 255, 0.1)"
+            height="100vh"
+            className={css({
+              _dark: {
+                backgroundColor: 'neutral.950',
+                boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                backdropFilter: 'blur(8px)',
+                border: '1px solid rgba(255, 255, 255, 0.1)',
+              }, 
+            })}
+          >
+            {children}
+          </Container>
         </Providers>
       </body>
     </html>

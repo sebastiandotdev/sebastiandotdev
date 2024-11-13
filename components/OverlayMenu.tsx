@@ -1,25 +1,46 @@
 import { css } from '@/styled-system/css'
 import { Center, Flex } from '@/styled-system/jsx'
 import Link from 'next/link'
-import {
-  MdHome,
+import { MdHome,
   MdPerson,
   MdTerminal,
   MdLocalMall,
-  MdCall,
-} from 'react-icons/md'
+  MdCall } from 'react-icons/md'
 import ThemeSwitch from './ThemeSwitch'
 
 const menus = [
-  { id: 1, path: '/', Icon: MdHome },
-  { id: 2, path: '/', Icon: MdPerson },
-  { id: 3, path: '/', Icon: MdTerminal },
-  { id: 4, path: '/', Icon: MdLocalMall },
+  {
+    id: 1,
+    path: '/',
+    Icon: MdHome, 
+  },
+  {
+    id: 2,
+    path: '/',
+    Icon: MdPerson, 
+  },
+  {
+    id: 3,
+    path: '/',
+    Icon: MdTerminal, 
+  },
+  {
+    id: 4,
+    path: '/',
+    Icon: MdLocalMall, 
+  },
 ]
 
 export default function OverlayMenu() {
   return (
-    <Center padding="4" position="fixed" top="0" left="0" right="0">
+    <Center
+      padding="4"
+      position="fixed"
+      top="0"
+      left="0"
+      right="0"
+      zIndex={10}
+    >
       <div
         className={css({
           display: 'flex',

@@ -7,9 +7,7 @@ import { TbSun, TbMoon } from 'react-icons/tb'
 
 function useThemeSwitch() {
   const [mounted, setMounted] = useState(false)
-  const {
-    setTheme, resolvedTheme, 
-  } = useTheme()
+  const { setTheme, resolvedTheme } = useTheme()
 
   useEffect(() => {
     setMounted(true)
@@ -26,9 +24,7 @@ function useThemeSwitch() {
 }
 
 export default function ThemeSwitch() {
-  const {
-    isDark, toggleTheme, mounted, 
-  } = useThemeSwitch()
+  const { isDark, toggleTheme, mounted } = useThemeSwitch()
 
   if (!mounted) return null
 
@@ -36,7 +32,7 @@ export default function ThemeSwitch() {
     <button
       onClick={toggleTheme}
       className={css({
-        cursor: 'pointer', 
+        cursor: 'pointer',
       })}
     >
       {isDark ? <TbSun size={30} /> : <TbMoon size={30} />}

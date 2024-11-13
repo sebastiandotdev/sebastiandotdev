@@ -41,7 +41,7 @@ export default function RootLayout({
         >
           <OverlayMenu />
           <Container
-            marginTop="24"            
+            marginTop="24"
             borderRadius="30px"
             border="1px solid rgba(255, 255, 255, 0.1)"
             height="100vh"
@@ -51,7 +51,7 @@ export default function RootLayout({
                 boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
                 backdropFilter: 'blur(8px)',
                 border: '1px solid rgba(255, 255, 255, 0.1)',
-              }, 
+              },
             })}
           >
             {children}

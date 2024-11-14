@@ -75,9 +75,9 @@ interface Awards {
 }
 
 interface Certificates {
-  name: string,
-  date: DateStr,
-  issuer: string,
+  name: string
+  date: DateStr
+  issuer: string
   url: string
 }
 
@@ -106,21 +106,21 @@ interface Languages {
 }
 
 type Language =
-  "Spanish"
-  | "English"
-  | "German"
-  | "France"
-  | "Italian"
-  | "Korean"
-  | "Portuguese"
-  | "Chinese"
-  | "Arabic"
-  | "Dutch"
-  | "Finnish"
-  | "Russian"
-  | "Turkish"
-  | "Hindi"
-  | "Bengali"
+  | 'Spanish'
+  | 'English'
+  | 'German'
+  | 'France'
+  | 'Italian'
+  | 'Korean'
+  | 'Portuguese'
+  | 'Chinese'
+  | 'Arabic'
+  | 'Dutch'
+  | 'Finnish'
+  | 'Russian'
+  | 'Turkish'
+  | 'Hindi'
+  | 'Bengali'
   | string
 
 interface Projects {

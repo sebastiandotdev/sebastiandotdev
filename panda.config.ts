@@ -5,6 +5,7 @@ export default defineConfig({
   outdir: 'styled-system',
   include: ['./app/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
   jsxFramework: 'react',
+  jsxFactory: 'panda',
   exclude: [],
   theme: {
     extend: {

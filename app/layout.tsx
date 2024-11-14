@@ -40,22 +40,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <OverlayMenu />
-          <Container
-            marginTop="24"
-            borderRadius="30px"
-            border="1px solid rgba(255, 255, 255, 0.1)"
-            height="100vh"
-            className={css({
-              _dark: {
-                backgroundColor: 'neutral.950',
-                boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                backdropFilter: 'blur(8px)',
-                border: '1px solid rgba(255, 255, 255, 0.1)',
-              },
-            })}
-          >
-            {children}
-          </Container>
+          <Container marginTop="44">{children}</Container>
         </Providers>
       </body>
     </html>

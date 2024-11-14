@@ -5,7 +5,6 @@ import localFont from 'next/font/local'
 import OverlayMenu from '@/components/OverlayMenu'
 import { Providers } from '@/components/Providers'
 import { Container } from '@/styled-system/jsx'
-import { css } from '@/styled-system/css'
 
 const onest = localFont({
   src: [

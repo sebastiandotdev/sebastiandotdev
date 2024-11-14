@@ -1,9 +1,10 @@
 import { Box, HStack, panda } from '@/styled-system/jsx'
-import { basics } from '@/curriculum.json' with { type: 'json' }
+import curriculumJSON from '@/curriculum.json' with { type: 'json' }
 import { paragraph } from './recipes/paragraph'
+import Image from 'next/image'
 
 export default function Hero() {
-  const { name, label, summary, image } = basics
+  const { name, label, summary, image } = curriculumJSON.basics
   return (
     <HStack>
       <Box>
@@ -14,7 +15,7 @@ export default function Hero() {
         <p className={paragraph()}>{summary}</p>
       </Box>
       <Box>
-        <img src={image} alt="Sebastian" />
+        <Image src={image} alt="Sebastian" width={800} height={800} />
       </Box>
     </HStack>
   )

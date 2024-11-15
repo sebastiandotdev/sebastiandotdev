@@ -2,8 +2,8 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import OverlayMenu from '@/components/OverlayMenu'
-import { Providers } from '@/components/Providers'
+import OverlayMenu from '@/src/components/OverlayMenu'
+import { Providers } from '@/src/components/Providers'
 import { Container } from '@/styled-system/jsx'
 
 const onest = localFont({

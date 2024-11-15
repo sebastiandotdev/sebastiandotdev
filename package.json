@@ -26,5 +26,19 @@
     "eslint-config-next": "15.0.3",
     "prettier": "^3.3.3",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=v20.17.0"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 80,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "extends": [
+      "next/core-web-vitals",
+      "next/typescript"
+    ]
   }
 }

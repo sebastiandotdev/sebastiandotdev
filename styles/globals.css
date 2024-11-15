@@ -1,10 +1,1 @@
 @layer reset, base, tokens, recipes, utilities;
-
-@layer base {
-  .dark {
-    body {
-      background-color: #161616;
-    }
-  }
-  /* ... */
-}

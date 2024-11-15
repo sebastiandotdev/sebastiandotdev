@@ -4,6 +4,8 @@
     "label": "Programador",
     "image": "/me.webp",
     "email": "sebastiandotdev@gmail.com",
+    "online": "Disponible para trabajar",
+    "cv": "/Curriculum-Sebastian.pdf",
     "phone": "+57 3044176141",
     "url": "https://castrogarciajs.dev",
     "summary": "Programador con +2 años de experiencia en desarrollo de aplicaciones. Especializado en Frontend, apasionado por el Open Source. Me integro en equipos de trabajo diversos y busco construir relaciones sólidas con mis compañeros.",
@@ -17,17 +19,17 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "midudev",
+        "username": "sebastiantdotdev",
         "url": "https://linkedin.com/in/sebastiandotdev"
       },
       {
         "network": "X",
-        "username": "midudev",
+        "username": "sebastiantdotdev",
         "url": "https://x.com/sebastiandotdev"
       },
       {
         "network": "GitHub",
-        "username": "midudev",
+        "username": "sebastiantdotdev",
         "url": "https://github.com/sebastiandotdev"
       }
     ]

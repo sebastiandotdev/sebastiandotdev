@@ -14,6 +14,11 @@ const onest = localFont({
       style: 'normal',
     },
     {
+      path: './fonts/Onest-Medium.woff2',
+      weight: '600',
+      style: 'medium',
+    },
+    {
       path: './fonts/Onest-Bold.woff2',
       weight: '800',
       style: 'bold',

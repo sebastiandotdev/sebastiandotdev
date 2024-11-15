@@ -1,5 +1,5 @@
 import { Box, Flex, panda } from '@/styled-system/jsx'
-import curriculumJSON from '@/curriculum.json' with { type: 'json' }
+import curriculumJSON from '@/src/static/curriculum.json' with { type: 'json' }
 import Image from 'next/image'
 import { TbSend, TbFileCv } from 'react-icons/tb'
 import { css } from '@/styled-system/css'

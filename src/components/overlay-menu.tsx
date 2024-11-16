@@ -9,6 +9,7 @@ import {
   ShoppingBangIcon,
   PhoneIcon,
 } from '@/src/icons'
+import { Suspense } from 'react'
 
 const menus = [
   {
@@ -68,6 +69,7 @@ export default function OverlayMenu() {
           <Link href="/">
             <PhoneIcon className={iconStyles} />
           </Link>
+
           <ThemeSwitch />
         </Flex>
       </div>

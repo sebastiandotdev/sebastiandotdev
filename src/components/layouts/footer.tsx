@@ -16,7 +16,7 @@ import { iconStyles } from './overlay-menu'
 export default function Footer() {
   const { name, label, email } = curriculumJSON.basics
   return (
-    <Container mt="4">
+    <Container mt="8">
       <panda.footer>
         <Stack py="8" mx="auto">
           <Flex

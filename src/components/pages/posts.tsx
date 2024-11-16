@@ -11,11 +11,10 @@ export default function Posts() {
           fontWeight="bold"
           textWrap="balance"
           margin="0"
-          mb="2"
         >
           Posts
         </panda.h2>
-        <Badge bordered="warn" py="0.5">
+        <Badge bordered="warn" py="1">
           Beta
         </Badge>
       </HStack>

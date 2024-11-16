@@ -1,6 +1,6 @@
 import { css } from '@/styled-system/css'
 import { Center, Flex } from '@/styled-system/jsx'
-import Link from 'next/link'
+import { Link } from 'next-view-transitions'
 import ThemeSwitch from '@/src/components/theme-switch'
 
 import {
@@ -37,7 +37,7 @@ export default function OverlayMenu() {
       >
         <Flex align="center" gap={4}>
           {menus.map((menu) => (
-            <TooltipProvider key={menu.id}>
+            <TooltipProvider key={menu.id} delayDuration={100}>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link href={menu.path}>

@@ -9,7 +9,7 @@ export const menus = [
   },
   {
     id: 2,
-    path: '/',
+    path: '/about',
     name: 'Perfil',
     Icon: ProfileIcon,
   },

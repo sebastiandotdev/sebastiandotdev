@@ -13,8 +13,11 @@ export const button = cva({
     paddingX: '3',
     paddingY: '1.5',
     gap: '3',
+    transition: 'transform 0.3s ease',
+    _hover: {
+      scale: '1.1',
+    },
     _active: {
-      transition: 'transform',
       scale: '0.9',
     },
   },

@@ -29,7 +29,9 @@ export default function Hero() {
         <Paragraph weight="md" size="lg">
           {label}
         </Paragraph>
-        <Paragraph marginTop="10">{summary}</Paragraph>
+        <Paragraph marginTop="10" color="neutral.500">
+          {summary}
+        </Paragraph>
         <Box marginTop="10">
           <Flex
             gap="4"

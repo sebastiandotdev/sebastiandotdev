@@ -1,12 +1,12 @@
 import { Box, Flex, panda } from '@/styled-system/jsx'
 import curriculumJSON from '@/src/static/curriculum.json' with { type: 'json' }
 import Image from 'next/image'
-import { TbSend, TbFileCv } from 'react-icons/tb'
 import { css } from '@/styled-system/css'
 import { Paragraph } from './ui/paragraph'
 import { button } from './ui/button'
 import Link from 'next/link'
 import { Badge } from './ui/badge'
+import { FileIcon, SendIcon } from '../icons'
 
 export default function Hero() {
   const { name, online, label, summary, image, email, cv } =
@@ -36,7 +36,7 @@ export default function Hero() {
             md={{ gap: '8', flexDirection: 'row' }}
           >
             <Link href={`mailto:${email}`} className={button({ radius: 'md' })}>
-              <TbSend size={25} />
+              <SendIcon />
               Correo electrónico
             </Link>
             <Link
@@ -45,7 +45,7 @@ export default function Hero() {
               target="_blank"
               download
             >
-              <TbFileCv size={25} />
+              <FileIcon />
               CV
             </Link>
           </Flex>

@@ -3,7 +3,7 @@
 import { css } from '@/styled-system/css'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
-import { TbSun, TbMoon } from 'react-icons/tb'
+import { MoonIcon, SunIcon } from '../icons'
 
 function useThemeSwitch() {
   const [mounted, setMounted] = useState(false)
@@ -35,7 +35,7 @@ export default function ThemeSwitch() {
         cursor: 'pointer',
       })}
     >
-      {isDark ? <TbSun size={30} /> : <TbMoon size={30} />}
+      {isDark ? <SunIcon /> : <MoonIcon />}
     </button>
   )
 }

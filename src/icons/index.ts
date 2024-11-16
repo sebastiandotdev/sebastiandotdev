@@ -1,1 +1,9 @@
-// Icons
+export { default as HomeIcon } from './home'
+export { default as ProfileIcon } from './profile'
+export { default as TerminalIcon } from './terminal'
+export { default as ShoppingBangIcon } from './shopping-bang'
+export { default as PhoneIcon } from './phone'
+export { default as SunIcon } from './sun'
+export { default as MoonIcon } from './moon'
+export { default as FileIcon } from './file'
+export { default as SendIcon } from './send'

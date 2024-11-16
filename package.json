@@ -12,8 +12,10 @@
   },
   "dependencies": {
     "@radix-ui/react-tooltip": "1.1.4",
+    "first": "^0.0.3",
     "next": "15.0.3",
     "next-themes": "0.4.3",
+    "next-view-transitions": "^0.3.2",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106"
   },
@@ -40,5 +42,10 @@
       "next/core-web-vitals",
       "next/typescript"
     ]
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "next-view-transitions@0.3.2": "patches/next-view-transitions@0.3.2.patch"
+    }
   }
 }

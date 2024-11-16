@@ -3,7 +3,7 @@
 import { css } from '@/styled-system/css'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
-import { MoonIcon, SunIcon } from '../icons'
+import { HomeIcon, MoonIcon, SunIcon } from '../icons'
 
 function useThemeSwitch() {
   const [mounted, setMounted] = useState(false)
@@ -26,7 +26,24 @@ function useThemeSwitch() {
 export default function ThemeSwitch() {
   const { isDark, toggleTheme, mounted } = useThemeSwitch()
 
-  if (!mounted) return null
+  if (!mounted)
+    return (
+      <div
+        className={css({
+          rounded: 'full',
+          bg: 'neutral.200',
+          animationName: 'pulse',
+          animationDuration: '2500ms',
+          animationDirection: 'alternate',
+          animationIterationCount: 'infinite',
+          animationTimingFunction: 'ease-in-out',
+          h: '1.9em',
+          w: '1.9em',
+        })}
+        role="status"
+        aria-label="Loading"
+      />
+    )
 
   return (
     <button

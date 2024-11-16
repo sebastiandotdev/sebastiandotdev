@@ -9,28 +9,43 @@ import {
   ShoppingBangIcon,
   PhoneIcon,
 } from '@/src/icons'
-import { Suspense } from 'react'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/src/components/ui/tooltip'
 
 const menus = [
   {
     id: 1,
+    name: 'Inicio',
     path: '/',
     Icon: HomeIcon,
   },
   {
     id: 2,
     path: '/',
+    name: 'Perfil',
     Icon: ProfileIcon,
   },
   {
     id: 3,
+    name: 'Proyectos',
     path: '/',
     Icon: TerminalIcon,
   },
   {
     id: 4,
+    name: 'Productos',
     path: '/',
     Icon: ShoppingBangIcon,
+  },
+  {
+    id: 5,
+    name: 'Contacto',
+    path: '/',
+    Icon: PhoneIcon,
   },
 ]
 
@@ -59,17 +74,22 @@ export default function OverlayMenu() {
       >
         <Flex align="center" gap={4}>
           {menus.map((menu) => (
-            <Link key={menu.id} href={menu.path}>
-              <menu.Icon className={iconStyles} />
-            </Link>
+            <TooltipProvider key={menu.id}>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link href={menu.path}>
+                    <menu.Icon className={iconStyles} />
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{menu.name}</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           ))}
         </Flex>
 
         <Flex align="center" gap={4}>
-          <Link href="/">
-            <PhoneIcon className={iconStyles} />
-          </Link>
-
           <ThemeSwitch />
         </Flex>
       </div>

@@ -45,7 +45,7 @@ interface Work {
   url: string
   startDate: DateStr
   endDate: DateStr | null
-  summary: string
+  summary: string[]
   highlights: Highlight
 }
 

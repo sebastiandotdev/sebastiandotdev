@@ -33,6 +33,8 @@ const menus = [
   },
 ]
 
+export const iconStyles = css({ fontSize: '2xl' })
+
 export default function OverlayMenu() {
   return (
     <Center padding="4" position="fixed" top="0" left="0" right="0" zIndex={10}>
@@ -57,14 +59,14 @@ export default function OverlayMenu() {
         <Flex align="center" gap={4}>
           {menus.map((menu) => (
             <Link key={menu.id} href={menu.path}>
-              <menu.Icon />
+              <menu.Icon className={iconStyles} />
             </Link>
           ))}
         </Flex>
 
         <Flex align="center" gap={4}>
           <Link href="/">
-            <PhoneIcon />
+            <PhoneIcon className={iconStyles} />
           </Link>
           <ThemeSwitch />
         </Flex>

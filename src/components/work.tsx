@@ -37,7 +37,13 @@ export default function Work(props: { work: WorkType }) {
         </Badge>
       </Flex>
       <Box>
-        <panda.ul listStyle="outside" pl="3" spaceY="1" textWrap="pretty">
+        <panda.ul
+          listStyle="outside"
+          pl="3"
+          spaceY="1"
+          textWrap="pretty"
+          color="neutral.500"
+        >
           {props.work.summary.map((item, i) => (
             <panda.li key={i} fontSize="sm">
               {item}

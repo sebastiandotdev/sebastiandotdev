@@ -1,11 +1,11 @@
 import { Box, Flex, panda } from '@/styled-system/jsx'
 import curriculumJSON from '@/src/static/curriculum.json' with { type: 'json' }
 import Image from 'next/image'
-import { css } from '@/styled-system/css'
-import { Paragraph } from './ui/paragraph'
-import { button } from './ui/button'
+import { css, cx } from '@/styled-system/css'
+import { Paragraph } from './recipes/paragraph'
+import { button } from './recipes/button'
 import Link from 'next/link'
-import { Badge } from './ui/badge'
+import { Badge } from './recipes/badge'
 import { FileIcon, SendIcon } from '../icons'
 import { iconStyles } from './overlay-menu'
 
@@ -36,13 +36,22 @@ export default function Hero() {
             flexDirection="column"
             md={{ gap: '8', flexDirection: 'row' }}
           >
-            <Link href={`mailto:${email}`} className={button({ radius: 'md' })}>
+            <Link
+              href={`mailto:${email}`}
+              className={cx(
+                button({ radius: 'md' }),
+                css({ fontWeight: 'semibold' }),
+              )}
+            >
               <SendIcon className={iconStyles} />
               Correo electrónico
             </Link>
             <Link
               href={cv}
-              className={button({ radius: 'md' })}
+              className={cx(
+                button({ radius: 'md' }),
+                css({ fontWeight: 'semibold' }),
+              )}
               target="_blank"
               download
             >

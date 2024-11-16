@@ -35,7 +35,11 @@ export default function ThemeSwitch() {
         cursor: 'pointer',
       })}
     >
-      {isDark ? <SunIcon /> : <MoonIcon />}
+      {isDark ? (
+        <SunIcon className={css({ fontSize: '3xl' })} />
+      ) : (
+        <MoonIcon className={css({ fontSize: '3xl' })} />
+      )}
     </button>
   )
 }

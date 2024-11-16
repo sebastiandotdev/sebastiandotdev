@@ -4,7 +4,6 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import OverlayMenu from '@/src/components/overlay-menu'
 import { Providers } from '@/src/components/layouts'
-import { Container } from '@/styled-system/jsx'
 
 const onest = localFont({
   src: [
@@ -35,16 +34,11 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
       <body className={onest.className}>
-        <Providers
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <Providers attribute="class" defaultTheme="system" enableSystem>
           <OverlayMenu />
-          <Container marginTop="44">{children}</Container>
+          {children}
         </Providers>
       </body>
     </html>

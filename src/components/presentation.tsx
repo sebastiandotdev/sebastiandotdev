@@ -7,6 +7,7 @@ import { button } from './ui/button'
 import Link from 'next/link'
 import { Badge } from './ui/badge'
 import { FileIcon, SendIcon } from '../icons'
+import { iconStyles } from './overlay-menu'
 
 export default function Hero() {
   const { name, online, label, summary, image, email, cv } =
@@ -36,7 +37,7 @@ export default function Hero() {
             md={{ gap: '8', flexDirection: 'row' }}
           >
             <Link href={`mailto:${email}`} className={button({ radius: 'md' })}>
-              <SendIcon />
+              <SendIcon className={iconStyles} />
               Correo electrónico
             </Link>
             <Link
@@ -45,7 +46,7 @@ export default function Hero() {
               target="_blank"
               download
             >
-              <FileIcon />
+              <FileIcon className={iconStyles} />
               CV
             </Link>
           </Flex>

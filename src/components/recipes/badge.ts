@@ -40,6 +40,12 @@ export const badge = cva({
         borderWidth: '1px',
         borderColor: 'green.600',
       },
+      warn: {
+        color: 'yellow',
+        border: 'solid',
+        borderWidth: '1px',
+        borderColor: 'yellow',
+      },
     },
     radius: {
       none: {

@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  next-view-transitions@0.3.2:
+    hash: rh4wdp366xwdc5pm77jcb7gpee
+    path: patches/next-view-transitions@0.3.2.patch
+
 importers:
 
   .:
@@ -11,12 +16,18 @@ importers:
       '@radix-ui/react-tooltip':
         specifier: 1.1.4
         version: 1.1.4(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106)
+      first:
+        specifier: ^0.0.3
+        version: 0.0.3
       next:
         specifier: 15.0.3
         version: 15.0.3(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106)
       next-themes:
         specifier: 0.4.3
         version: 0.4.3(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106)
+      next-view-transitions:
+        specifier: ^0.3.2
+        version: 0.3.2(patch_hash=rh4wdp366xwdc5pm77jcb7gpee)(next@15.0.3(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106))(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106)
       react:
         specifier: 19.0.0-rc-66855b96-20241106
         version: 19.0.0-rc-66855b96-20241106
@@ -1300,6 +1311,9 @@ packages:
     resolution: {integrity: sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==}
     engines: {node: '>=10'}
 
+  first@0.0.3:
+    resolution: {integrity: sha512-+gnkZYWoE2n8e1rfO8fB6lsUxQtAARG/k3cy4U7qjpkvNZgxQwwgZJ+ltS3ppPhUaOKrgp+mdT8Ly4H5nyIiTw==}
+
   flat-cache@4.0.1:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
     engines: {node: '>=16'}
@@ -1712,6 +1726,13 @@ packages:
     peerDependencies:
       react: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
       react-dom: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
+
+  next-view-transitions@0.3.2:
+    resolution: {integrity: sha512-77QRvHjKDQHBDbe/qTVh/p9zbx2AWUFvlmLpHZQtc+q0/a+QWn5fejU9TqrJdrHvwuc9rzqL6K5xpkRtyjQajw==}
+    peerDependencies:
+      next: ^14.0.0
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   next@15.0.3:
     resolution: {integrity: sha512-ontCbCRKJUIoivAdGB34yCaOcPgYXr9AAkV/IwqFfWWTXEPUgLYkSkqBhIk9KK7gGmgjc64B+RdoeIDM13Irnw==}
@@ -3642,6 +3663,8 @@ snapshots:
       locate-path: 6.0.0
       path-exists: 4.0.0
 
+  first@0.0.3: {}
+
   flat-cache@4.0.1:
     dependencies:
       flatted: 3.3.1
@@ -4017,6 +4040,12 @@ snapshots:
 
   next-themes@0.4.3(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106):
     dependencies:
+      react: 19.0.0-rc-66855b96-20241106
+      react-dom: 19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106)
+
+  next-view-transitions@0.3.2(patch_hash=rh4wdp366xwdc5pm77jcb7gpee)(next@15.0.3(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106))(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106):
+    dependencies:
+      next: 15.0.3(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106)
       react: 19.0.0-rc-66855b96-20241106
       react-dom: 19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106)
 

@@ -2,8 +2,9 @@ import '../styles/globals.css'
 
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import OverlayMenu from '@/src/components/overlay-menu'
-import { Providers } from '@/src/components/layouts'
+import OverlayMenu from '@/src/components/layouts/overlay-menu'
+import NexThemes from '@/src/components/layouts/next-themes'
+import Footer from '@/src/components/layouts/footer'
 
 const onest = localFont({
   src: [
@@ -36,10 +37,11 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <body className={onest.className}>
-        <Providers attribute="class" defaultTheme="system" enableSystem>
+        <NexThemes attribute="class" defaultTheme="system" enableSystem>
           <OverlayMenu />
           {children}
-        </Providers>
+          <Footer />
+        </NexThemes>
       </body>
     </html>
   )

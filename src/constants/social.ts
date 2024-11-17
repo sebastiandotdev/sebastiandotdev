@@ -4,19 +4,19 @@ export const social = [
   {
     id: 1,
     name: 'X',
-    path: '/',
+    path: 'https://x.com/sebastiandotdev',
     Icon: XIcon,
   },
   {
     id: 2,
-    path: '/',
+    path: 'https://linkedin.com/in/sebastiandotdev',
     name: 'LinkedIn',
     Icon: LinkedInIcon,
   },
   {
     id: 3,
     name: 'Github',
-    path: '/',
+    path: 'https://github.com/sebastiandotdev',
     Icon: GithubIcon,
   },
 ]

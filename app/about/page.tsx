@@ -20,7 +20,11 @@ export default function Home() {
           bg: 'neutral.950',
         }}
       >
-        <Flex gap="6">
+        <Flex
+          gap="6"
+          flexDirection="column-reverse"
+          md={{ flexDirection: 'row' }}
+        >
           <Box flex="1">
             <Box textWrap="pretty" spaceY="6">
               <panda.h2

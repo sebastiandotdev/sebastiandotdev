@@ -36,7 +36,7 @@ export default function Footer() {
                 <TooltipProvider key={menu.id}>
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <Link href={menu.path}>
+                      <Link href={menu.path} target="_blank">
                         <menu.Icon className={iconStyles} />
                       </Link>
                     </TooltipTrigger>

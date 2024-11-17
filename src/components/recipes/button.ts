@@ -13,7 +13,9 @@ export const button = cva({
     paddingX: '3',
     paddingY: '1.5',
     gap: '3',
-    transition: 'transform 0.3s ease',
+    transition: 'all',
+    transitionDuration: '100ms',
+    transitionTimingFunction: 'ease-in',
     _hover: {
       scale: '1.1',
     },

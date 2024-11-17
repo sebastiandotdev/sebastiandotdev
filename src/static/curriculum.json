@@ -49,7 +49,12 @@
       "highlights": ["Started the company"]
     }
   ],
-
+  "services": [
+    "Puedo ayudarte con asesorias y mentorias",
+    "Puedes contactarme para un servicio temporal",
+    "Puedo ayudarte a impulsar tu negocio con una pagina Web",
+    "Estoy abierto a oportunidades laborales"
+  ],
   "education": [
     {
       "institution": "Universitat Oberta de Catalunya",

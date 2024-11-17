@@ -53,10 +53,10 @@ export default function OverlayMenu() {
         </Flex>
 
         <Flex align="center" gap={4}>
-          <ThemeSwitch />
           <Link href="/">
             <GithubIcon className={iconStyles} />
           </Link>
+          <ThemeSwitch />
         </Flex>
       </div>
     </Center>

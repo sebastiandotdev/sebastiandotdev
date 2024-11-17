@@ -1,3 +1,4 @@
+import Contact from '@/src/components/pages/contact'
 import Posts from '@/src/components/pages/posts'
 import Hero from '@/src/components/pages/presentation'
 import WorkExperience from '@/src/components/pages/work-experience'
@@ -10,6 +11,7 @@ export default function Home() {
         <Hero />
         <WorkExperience />
         <Posts />
+        <Contact />
       </Container>
     </>
   )

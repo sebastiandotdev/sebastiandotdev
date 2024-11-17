@@ -41,10 +41,14 @@ export const badge = cva({
         borderColor: 'green.600',
       },
       warn: {
-        color: 'yellow',
+        color: 'yellow.500',
         border: 'solid',
         borderWidth: '1px',
-        borderColor: 'yellow',
+        borderColor: 'yellow.500',
+        _dark: {
+          color: 'yellow',
+          borderColor: 'yellow',
+        },
       },
     },
     radius: {

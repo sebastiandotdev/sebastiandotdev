@@ -64,7 +64,15 @@ export default function BlogPosts() {
             ))}
           </Box>
           <Link href="/">
-            <HStack gap="2">
+            <HStack
+              gap="2"
+              _hover={{
+                fontWeight: 'bold',
+                transition: 'all',
+                transitionDuration: '200ms',
+                transitionTimingFunction: 'ease-in-out',
+              }}
+            >
               <panda.small>Read more</panda.small>
               <ChevronRight />
             </HStack>

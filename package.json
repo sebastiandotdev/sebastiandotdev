@@ -43,10 +43,5 @@
       "next/core-web-vitals",
       "next/typescript"
     ]
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "next-view-transitions@0.3.2": "patches/next-view-transitions@0.3.2.patch"
-    }
   }
 }

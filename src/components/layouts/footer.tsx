@@ -73,7 +73,7 @@ export default function Footer() {
                   Gmail
                 </Link>
                 <Link
-                  href="https://github.com/sbeastiandotdev/sebastiandotdev"
+                  href="https://github.com/sebastiandotdev/sebastiandotdev"
                   target="_blank"
                   className={css({ _hover: { textDecoration: 'underline' } })}
                 >

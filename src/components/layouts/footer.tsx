@@ -48,12 +48,23 @@ export default function Footer() {
               ))}
             </Flex>
           </Flex>
-          <Box mt="8" borderTop="1px solid rgba(255, 255, 255, 0.1)">
-            <Flex justifyContent="space-between" mt="4" gap="4">
+          <Box
+            mt="8"
+            borderTopWidth="1px"
+            borderColor="neutral.200"
+            _dark={{ borderColor: 'neutral.950' }}
+          >
+            <Flex
+              flexDirection="column"
+              justifyContent="space-between"
+              mt="4"
+              gap="4"
+              md={{ flexDirection: 'row', alignItems: 'flex-start' }}
+            >
               <Paragraph>
                 © {new Date().getFullYear()} {name}. All rights reserved.
               </Paragraph>
-              <HStack>
+              <Flex gap="6" alignItems="center">
                 <Link
                   href={`mailto:${email}`}
                   target="_blank"
@@ -68,7 +79,7 @@ export default function Footer() {
                 >
                   Open source
                 </Link>
-              </HStack>
+              </Flex>
             </Flex>
           </Box>
         </Stack>

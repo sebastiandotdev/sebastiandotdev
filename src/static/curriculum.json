@@ -9,13 +9,6 @@
     "phone": "+57 3044176141",
     "url": "https://castrogarciajs.dev",
     "summary": "Programador con +2 años de experiencia en desarrollo de aplicaciones. Especializado en Frontend, apasionado por el Open Source. Me integro en equipos de trabajo diversos y busco construir relaciones sólidas con mis compañeros.",
-    "location": {
-      "address": "",
-      "postalCode": "20005",
-      "city": "Valledupar",
-      "countryCode": "CO",
-      "region": "Colombia"
-    },
     "profiles": [
       {
         "network": "LinkedIn",
@@ -55,35 +48,9 @@
     "Puedo ayudarte a impulsar tu negocio con una pagina Web",
     "Estoy abierto a oportunidades laborales"
   ],
-  "education": [
-    {
-      "institution": "Universitat Oberta de Catalunya",
-      "url": "https://www.uoc.edu/portal/es/index.html",
-      "area": "Ingeniero de Software",
-      "studyType": "Bachelor",
-      "startDate": "2003-01-01",
-      "endDate": "2009-01-01",
-      "score": "4.0",
-      "courses": ["DB1101 - Basic SQL"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Award",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
-    }
-  ],
-
+  "education": [],
+  "awards": [],
+  "certificates": [],
   "languages": [
     {
       "language": "Spanish",
@@ -94,14 +61,12 @@
       "fluency": "A1"
     }
   ],
-
   "projects": [
     {
-      "name": "mars.codes",
-      "isActive": true,
-      "description": "Historia interactiva con retos de programación para viajar a Marte",
-      "highlights": ["Elige tu propia aventura", "En desarrollo"],
-      "url": "https://mars.codes"
+      "name": "Open UI",
+      "isActive": false,
+      "description": "A design system built with Tailwindcss and Radix UI.",
+      "url": "https://ui.openlabs.online"
     }
   ]
 }

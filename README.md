@@ -1,5 +1,7 @@
 **Sebastián García**
 
-<a href="https://x.com/sebastiandotdev">
-  <img alt="X (formerly X) URL" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2Fmjs_sebastian&label=Follow%20me%20on%20X">
-</a>
+<p>  
+  <a href="https://x.com/sebastiandotdev"><strong>X</strong></a> ·
+  <a href="https://linkedin.com/in/sebastiandotdev"><strong>Linkedin</strong></a> ·
+  <a href="https://castrogarciajs.dev"><strong>Website</strong></a>
+</p>

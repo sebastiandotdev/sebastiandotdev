@@ -4,11 +4,11 @@ import { css } from '@/styled-system/css'
 import Image from 'next/image'
 
 export default function Home() {
-  const { image } = curriculumJSON.basics
+  const { image, about } = curriculumJSON.basics
   return (
     <>
       <Container
-        marginTop="44"
+        marginTop="32"
         maxWidth="1024"
         minWidth="300"
         p="8"
@@ -35,14 +35,7 @@ export default function Home() {
               >
                 It's Me Sebastián García
               </panda.h2>
-              <panda.p>
-                Consectetur earum ipsa exercitationem dignissimos sapiente
-                tempora rerum dolor cumque, labore iste enim quaerat saepe
-                tenetur explicabo. Quam quae aut harum est maiores sequi porro
-                debitis illo, tempore eos atque quia id. Nobis aspernatur odio
-                expedita, architecto facilis, placeat obcaecati saepe fugiat
-                commodi alias ullam!
-              </panda.p>
+              <panda.p>{about[0]}</panda.p>
             </Box>
             <Box mt="16" spaceY="6">
               <panda.h2
@@ -53,24 +46,8 @@ export default function Home() {
               >
                 More About Me
               </panda.h2>
-              <panda.p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consectetur laudantium itaque earum ea pariatur tenetur autem.
-                Autem et eos iusto dignissimos distinctio soluta laborum,
-                tempore esse cumque obcaecati aliquid mollitia. Error obcaecati
-                officia perspiciatis odit quia temporibus sequi, excepturi quae
-                aspernatur modi dolorem similique asperiores, velit molestias
-                facilis blanditiis! Odit quam debitis quis rem blanditiis.
-              </panda.p>
-              <panda.p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consectetur laudantium itaque earum ea pariatur tenetur autem.
-                Autem et eos iusto dignissimos distinctio soluta laborum,
-                tempore esse cumque obcaecati aliquid mollitia. Error obcaecati
-                officia perspiciatis odit quia temporibus sequi, excepturi quae
-                aspernatur modi dolorem similique asperiores, velit molestias
-                facilis blanditiis! Odit quam debitis quis rem blanditiis.
-              </panda.p>
+              <panda.p>{about[1]}</panda.p>
+              <panda.p>{about[2]}</panda.p>
             </Box>
           </Box>
           <Center flex="1" alignItems="start">

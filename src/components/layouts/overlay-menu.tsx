@@ -1,6 +1,5 @@
 import { css } from '@/styled-system/css'
 import { Center, Flex } from '@/styled-system/jsx'
-import { Link } from 'next-view-transitions'
 import ThemeSwitch from '@/src/components/common/theme-switch'
 
 import {
@@ -11,6 +10,8 @@ import {
 } from '@/src/components/ui/tooltip'
 import { menus } from '@/src/constants/menu'
 import { GithubIcon } from '@/src/icons'
+import Link from 'next/link'
+import { social } from '@/src/constants/social'
 
 export const iconStyles = css({ fontSize: '2xl' })
 
@@ -53,7 +54,7 @@ export default function OverlayMenu() {
         </Flex>
 
         <Flex align="center" gap={4}>
-          <Link href="/">
+          <Link href={social.at(2)?.path as string} target="_blank">
             <GithubIcon className={iconStyles} />
           </Link>
           <ThemeSwitch />

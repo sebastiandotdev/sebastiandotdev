@@ -16,7 +16,7 @@ export const menus = [
   {
     id: 3,
     name: 'Proyectos',
-    path: '/',
+    path: '#projects',
     Icon: TerminalIcon,
   },
   {

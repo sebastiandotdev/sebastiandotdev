@@ -4,7 +4,6 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import OverlayMenu from '@/src/components/layouts/overlay-menu'
 import NexThemes from '@/src/components/layouts/next-themes'
-import { ViewTransitions } from 'next-view-transitions'
 
 import Footer from '@/src/components/layouts/footer'
 
@@ -37,16 +36,14 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <ViewTransitions>
-      <html lang="es" suppressHydrationWarning>
-        <body className={onest.className}>
-          <NexThemes attribute="class" defaultTheme="system" enableSystem>
-            <OverlayMenu />
-            {children}
-            <Footer />
-          </NexThemes>
-        </body>
-      </html>
-    </ViewTransitions>
+    <html lang="es" suppressHydrationWarning>
+      <body className={onest.className}>
+        <NexThemes attribute="class" defaultTheme="system" enableSystem>
+          <OverlayMenu />
+          {children}
+          <Footer />
+        </NexThemes>
+      </body>
+    </html>
   )
 }

@@ -33,7 +33,7 @@ export default function Home() {
                 textWrap="balance"
                 margin="0"
               >
-                It's Me Sebastián García
+                It&apos;s Me Sebastián García
               </panda.h2>
               <panda.p>{about[0]}</panda.p>
             </Box>

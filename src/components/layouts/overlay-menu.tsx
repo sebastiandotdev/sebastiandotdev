@@ -1,7 +1,7 @@
 import { css } from '@/styled-system/css'
 import { Center, Flex } from '@/styled-system/jsx'
 import { Link } from 'next-view-transitions'
-import ThemeSwitch from '@/src/components/theme-switch'
+import ThemeSwitch from '@/src/components/common/theme-switch'
 
 import {
   Tooltip,

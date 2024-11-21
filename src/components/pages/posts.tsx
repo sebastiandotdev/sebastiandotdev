@@ -1,6 +1,6 @@
 import { Box, Grid, HStack, panda } from '@/styled-system/jsx'
-import BlogPosts from '@/src/components/posts-list'
-import { Badge } from '../recipes/badge'
+import BlogPosts from '@/src/components/common/posts-list'
+import { Badge } from '@/src/components/recipes/badge'
 
 export default function Posts() {
   return (

@@ -1,7 +1,7 @@
 import { Box, Grid, panda } from '@/styled-system/jsx'
 import type { Work as WorkType } from '@/src/static/cv'
 import curriculumJSON from '@/src/static/curriculum.json' with { type: 'json' }
-import Work from '@/src/components/work'
+import Work from '@/src/components/common/work'
 
 export default function WorkExperience() {
   const works = curriculumJSON.work as unknown as WorkType[]

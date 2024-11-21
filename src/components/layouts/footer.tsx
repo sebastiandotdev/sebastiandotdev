@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Box, Container, Flex, HStack, panda, Stack } from '@/styled-system/jsx'
+import { Box, Container, Flex, panda, Stack } from '@/styled-system/jsx'
 import curriculumJSON from '@/src/static/curriculum.json' with { type: 'json' }
 import { Paragraph } from '@/src/components/recipes/paragraph'
 import { css } from '@/styled-system/css'

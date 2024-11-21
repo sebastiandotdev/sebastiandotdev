@@ -6,7 +6,7 @@ import { Textarea } from '@/src/components/ui/textarea'
 import { Label } from '../recipes/label'
 import { Button } from '../recipes/button'
 
-export default function () {
+export default function Contact() {
   const services = curriculumJSON.services as unknown as string[]
   return (
     <Box id="contact" marginTop="20">

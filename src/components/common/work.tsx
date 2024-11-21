@@ -1,6 +1,6 @@
 import type { Work as WorkType } from '@/src/static/cv'
 import { Box, Flex, HStack, Stack, panda } from '@/styled-system/jsx'
-import { Badge } from './recipes/badge'
+import { Badge } from '@/src/components/recipes/badge'
 
 export default function Work(props: { work: WorkType }) {
   return (

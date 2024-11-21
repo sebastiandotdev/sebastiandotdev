@@ -1,7 +1,7 @@
 import { Box, Flex, HStack, Stack, panda } from '@/styled-system/jsx'
-import { Tag } from './recipes/tag'
+import { Tag } from '@/src/components/recipes/tag'
 import Link from 'next/link'
-import ChevronRight from '../icons/chevron-right'
+import { ChevronRightIcon } from '@/src/icons'
 
 export default function BlogPosts() {
   return (
@@ -74,7 +74,7 @@ export default function BlogPosts() {
               }}
             >
               <panda.small>Read more</panda.small>
-              <ChevronRight />
+              <ChevronRightIcon />
             </HStack>
           </Link>
         </Flex>

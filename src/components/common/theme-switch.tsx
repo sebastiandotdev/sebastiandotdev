@@ -3,7 +3,7 @@
 import { css } from '@/styled-system/css'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
-import { MoonIcon, SunIcon } from '../icons'
+import { MoonIcon, SunIcon } from '@/src/icons'
 
 function useThemeSwitch() {
   const [mounted, setMounted] = useState(false)

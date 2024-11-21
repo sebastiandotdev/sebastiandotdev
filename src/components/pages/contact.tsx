@@ -9,7 +9,7 @@ import { Button } from '../recipes/button'
 export default function () {
   const services = curriculumJSON.services as unknown as string[]
   return (
-    <Box marginTop="20">
+    <Box id="contact" marginTop="20">
       <Flex flexDirection="column-reverse" md={{ flexDirection: 'row' }}>
         <Stack flex="1">
           <HStack>

@@ -11,7 +11,7 @@ type Theme = 'light' | 'dark' | 'system'
 
 function useThemeSwitch() {
   const [mounted, setMounted] = useState(false)
-  const { setTheme, resolvedTheme, theme: currentTheme } = useTheme()
+  const { setTheme, resolvedTheme } = useTheme()
 
   useEffect(() => {
     setMounted(true)

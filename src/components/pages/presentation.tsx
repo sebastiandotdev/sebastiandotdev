@@ -13,7 +13,12 @@ export default function Hero() {
   const { name, online, label, summary, image, email, cv } =
     curriculumJSON.basics
   return (
-    <Flex flexDirection="column" md={{ flexDirection: 'row' }} gap="4">
+    <Flex
+      id="home"
+      flexDirection="column"
+      md={{ flexDirection: 'row' }}
+      gap="4"
+    >
       <Box flex="1">
         <Badge bordered="green" animation="pulse" radius="md">
           {online}

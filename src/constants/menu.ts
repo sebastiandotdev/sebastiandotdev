@@ -4,13 +4,13 @@ export const menus = [
   {
     id: 1,
     name: 'Inicio',
-    path: '/',
+    path: '/#home',
     Icon: HomeIcon,
   },
   {
     id: 2,
     path: '/about',
-    name: 'Perfil',
+    name: 'Sobre mi',
     Icon: ProfileIcon,
   },
   {
@@ -22,7 +22,7 @@ export const menus = [
   {
     id: 5,
     name: 'Contacto',
-    path: '#contact',
+    path: '/#contact',
     Icon: PhoneIcon,
   },
 ]

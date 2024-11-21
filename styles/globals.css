@@ -15,3 +15,7 @@
 .dark::view-transition-old(root) {
   z-index: 9999;
 }
+
+html {
+  scroll-behavior: smooth;
+}

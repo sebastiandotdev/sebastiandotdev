@@ -22,7 +22,7 @@ export const menus = [
   {
     id: 5,
     name: 'Contacto',
-    path: '/',
+    path: '#contact',
     Icon: PhoneIcon,
   },
 ]

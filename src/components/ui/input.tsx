@@ -13,7 +13,10 @@ const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<'input'>>(
             w: 'full',
             rounded: 'md',
             borderWidth: '1px',
-            borderColor: 'neutral.950',
+            borderColor: 'neutral.300',
+            _dark: {
+              borderColor: 'neutral.950',
+            },
             px: '3',
             py: '2',
             ringOffset: '1',

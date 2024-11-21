@@ -14,7 +14,10 @@ const Textarea = React.forwardRef<
           w: 'full',
           rounded: 'md',
           borderWidth: '1px',
-          borderColor: 'neutral.950',
+          _dark: {
+            borderColor: 'neutral.950',
+          },
+          borderColor: 'neutral.300',
           px: '3',
           py: '2',
           _disabled: {

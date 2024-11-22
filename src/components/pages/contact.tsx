@@ -10,7 +10,7 @@ export default function Contact() {
   const services = curriculumJSON.services as unknown as string[]
   return (
     <Box id="contact" marginTop="20">
-      <Flex flexDirection="column-reverse" md={{ flexDirection: 'row' }}>
+      <Flex flexDirection="column" md={{ flexDirection: 'row' }}>
         <Stack flex="1">
           <HStack>
             <panda.h2

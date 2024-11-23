@@ -5,6 +5,8 @@ import { Input } from '@/src/components/ui/input'
 import { Textarea } from '@/src/components/ui/textarea'
 import { Label } from '../recipes/label'
 import { Button } from '../recipes/button'
+import Form from 'next/form'
+import { sendEmail } from '@/app/_actions/email'
 
 export default function Contact() {
   const services = curriculumJSON.services as unknown as string[]
@@ -50,23 +52,32 @@ export default function Contact() {
           </Box>
         </Stack>
         <Box flex="1">
-          <panda.form spaceY="4">
+          <Form action={sendEmail}>
             <Box>
               <Label>Nombre</Label>
-              <Input placeholder="Jhon Doe" />
+              <Input placeholder="Jhon Doe" name="username" />
             </Box>
             <Box>
               <Label>Correo Electronico</Label>
-              <Input placeholder="jhondoe@gmail.com" />
+              <Input placeholder="jhondoe@gmail.com" name="email" />
             </Box>
             <Box>
               <Label>Asunto</Label>
-              <Textarea placeholder="Escribe tu mensaje aqui" />
+              <Textarea
+                placeholder="Escribe tu mensaje aqui"
+                name="description"
+              />
             </Box>
-            <Button ml="auto" rounded="md" fontWeight="semibold">
+            <Button
+              type="submit"
+              ml="auto"
+              rounded="md"
+              fontWeight="semibold"
+              mt="4"
+            >
               Enviar mensaje
             </Button>
-          </panda.form>
+          </Form>
         </Box>
       </Flex>
     </Box>

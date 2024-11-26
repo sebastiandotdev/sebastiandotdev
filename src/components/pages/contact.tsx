@@ -6,7 +6,6 @@ import { Textarea } from '@/src/components/ui/textarea'
 import { Label } from '../recipes/label'
 import { Button } from '../recipes/button'
 import Form from 'next/form'
-import { sendEmail } from '@/app/_actions/email'
 
 export default function Contact() {
   const services = curriculumJSON.services as unknown as string[]
@@ -52,21 +51,22 @@ export default function Contact() {
           </Box>
         </Stack>
         <Box flex="1">
-          <Form action={sendEmail}>
+          <Form formMethod="post" action="/">
             <Box>
               <Label>Nombre</Label>
-              <Input placeholder="Jhon Doe" name="username" />
+              <Input type="text" placeholder="Jhon Doe" name="username" />
             </Box>
             <Box>
               <Label>Correo Electronico</Label>
-              <Input placeholder="jhondoe@gmail.com" name="email" />
+              <Input
+                type="email"
+                placeholder="jhondoe@gmail.com"
+                name="email"
+              />
             </Box>
             <Box>
               <Label>Asunto</Label>
-              <Textarea
-                placeholder="Escribe tu mensaje aqui"
-                name="description"
-              />
+              <Textarea placeholder="Escribe tu mensaje aqui" name="message" />
             </Box>
             <Button
               type="submit"

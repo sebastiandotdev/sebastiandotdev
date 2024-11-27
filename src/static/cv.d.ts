@@ -127,7 +127,7 @@ interface Projects {
   name: string
   isActive: boolean
   description: string
-  highlights: Highlight
+  techs: Tech
   url: string
   github?: string
 }
@@ -142,4 +142,4 @@ interface References {
   reference: string
 }
 
-type Highlight = Array<string>
+type Tech = Array<string>

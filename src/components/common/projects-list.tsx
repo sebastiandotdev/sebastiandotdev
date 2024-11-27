@@ -1,9 +1,11 @@
 import { Box, Flex, HStack, Stack, panda } from '@/styled-system/jsx'
 import { Tag } from '@/src/components/recipes/tag'
+import { GithubIcon, TagIcon } from '@/src/icons'
+import { Projects } from '@/src/static/cv'
 import Link from 'next/link'
-import { ChevronRightIcon, TagIcon } from '@/src/icons'
+import { css } from '@/styled-system/css'
 
-export default function BlogPosts() {
+export default function ProjectsList(props: { project: Projects }) {
   return (
     <Stack
       px="6"
@@ -18,13 +20,22 @@ export default function BlogPosts() {
       }}
     >
       <Box>
-        <panda.h3
-          fontSize="lg"
-          fontWeight="bold"
-          _hover={{ textDecoration: 'underline', cursor: 'pointer' }}
-        >
-          How to create a cli with clack
-        </panda.h3>
+        <Stack gap="3" direction="row" justify="space-between">
+          <Link
+            href={props.project.url}
+            target="_blank"
+            className={css({
+              fontSize: 'lg',
+              fontWeight: 'bold',
+              _hover: { textDecoration: 'underline', cursor: 'pointer' },
+            })}
+          >
+            {props.project.name}
+          </Link>
+          <Link href={props.project.github || '/'} target="_blank">
+            <GithubIcon />
+          </Link>
+        </Stack>
         <panda.small
           display="flex"
           alignItems="center"
@@ -32,11 +43,11 @@ export default function BlogPosts() {
           color="neutral.500"
           textWrap="pretty"
         >
-          Learn how to create a beautiful CLI to generate projects.
+          {props.project.description}
         </panda.small>
         <Flex alignItems="center" gap="2" justifyContent="space-between" mt="4">
           <Box spaceX="3">
-            {['Tutorial', 'May 31, 2024'].map((content, index) => (
+            {props.project.techs.map((content, index) => (
               <Tag key={index}>
                 <HStack gap="1">
                   <TagIcon />
@@ -45,20 +56,6 @@ export default function BlogPosts() {
               </Tag>
             ))}
           </Box>
-          <Link href="/">
-            <HStack
-              gap="2"
-              _hover={{
-                fontWeight: 'bold',
-                transition: 'all',
-                transitionDuration: '200ms',
-                transitionTimingFunction: 'ease-in-out',
-              }}
-            >
-              <panda.small>Read more</panda.small>
-              <ChevronRightIcon />
-            </HStack>
-          </Link>
         </Flex>
       </Box>
     </Stack>

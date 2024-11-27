@@ -72,8 +72,18 @@
     {
       "name": "Open UI",
       "isActive": false,
+      "github": "https://github.com/openlabs-dev/ui",
       "description": "A design system built with Tailwindcss and Radix UI.",
-      "url": "https://ui.openlabs.online"
+      "url": "https://ui.openlabs.online",
+      "techs": ["TypeScript", "React", "TailwindCSS"]
+    },
+    {
+      "name": "Shooped",
+      "github": "https://github.com/openlabs-dev/shopped",
+      "isActive": false,
+      "description": "A landing page powered by Open UI.",
+      "url": "https://store.openlabs.online",
+      "techs": ["TypeScript", "React", "TailwindCSS", "Next.js"]
     }
   ]
 }

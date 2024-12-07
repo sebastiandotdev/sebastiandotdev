@@ -16,7 +16,7 @@ async function getBlogPostFromParams({ params }: BlogPostProps) {
   const post = allPosts.find((post) => post._raw.flattenedPath === slug)
 
   if (!post) {
-    null
+    return null
   }
 
   const currentRoute = {
@@ -31,11 +31,14 @@ async function getBlogPostFromParams({ params }: BlogPostProps) {
 export async function generateMetadata({
   params,
 }: BlogPostProps): Promise<Metadata> {
-  const { post } = await getBlogPostFromParams({ params })
+  const postFromParams = await getBlogPostFromParams({ params })
 
-  if (!post) {
+  if (!postFromParams) {
     return {}
   }
+
+  const { post } = postFromParams
+
   return {
     title: post.title,
     description: post.title,
@@ -52,17 +55,17 @@ const PostLayout = async ({
 }: {
   params: Promise<{ slug: string }>
 }) => {
-  const { post } = await getBlogPostFromParams({ params })
+  const postFromParams = await getBlogPostFromParams({ params })
 
-  if (!post) {
+  if (!postFromParams) {
     notFound()
   }
 
+  const { post } = postFromParams
+
   return (
     <Container marginTop="44">
-      <time dateTime={post.date} className="mb-1 text-xs text-gray-600">
-        {post.date}
-      </time>
+      <time dateTime={post.date}>{post.date}</time>
       <h1>{post.title}</h1>
       <MDXContent code={post.body.code} />
     </Container>

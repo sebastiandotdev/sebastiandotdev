@@ -6,14 +6,16 @@
   "scripts": {
     "prepare": "panda codegen",
     "fmt": "prettier --write .",
-    "dev": "next dev --turbopack",
+    "dev": "rimraf .contentlayer && concurrently \"contentlayer2 dev\" \"next dev\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@radix-ui/react-tooltip": "1.1.4",
+    "contentlayer2": "^0.5.3",
     "next": "15.0.3",
+    "next-contentlayer2": "^0.5.3",
     "next-themes": "0.4.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106"
@@ -23,9 +25,11 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "concurrently": "^9.1.0",
     "eslint": "^9",
     "eslint-config-next": "15.0.3",
     "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
     "typescript": "^5"
   },
   "engines": {

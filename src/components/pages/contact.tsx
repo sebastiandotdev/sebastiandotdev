@@ -1,16 +1,40 @@
+'use client'
+
 import { Box, Flex, HStack, panda, Stack } from '@/styled-system/jsx'
-import { Badge } from '@/src/components/recipes/badge'
 import curriculumJSON from '@/src/static/curriculum.json' with { type: 'json' }
 import { Input } from '@/src/components/ui/input'
 import { Textarea } from '@/src/components/ui/textarea'
+import { Toaster, toast } from 'sonner'
 import { Label } from '../recipes/label'
 import { Button } from '../recipes/button'
-import Form from 'next/form'
+import type { FormEvent } from 'react'
 
 export default function Contact() {
   const services = curriculumJSON.services as unknown as string[]
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+
+    const formData = new FormData(event.target as HTMLFormElement)
+
+    formData.append('_next', 'https://castrogarciajs.dev')
+    formData.append('_captcha', 'false')
+
+    try {
+      await fetch('https://formsubmit.co/247ddc0c8da214807457902aadbc87b1', {
+        method: 'POST',
+        body: formData,
+      })
+
+      toast.success('Correo enviado correctamente')
+      ;(event.target as HTMLFormElement).reset()
+    } catch (error) {
+      return error
+    }
+  }
   return (
     <Box id="contact" marginTop="20">
+      <Toaster />
       <Flex flexDirection="column" md={{ flexDirection: 'row' }}>
         <Stack flex="1">
           <HStack>
@@ -22,9 +46,6 @@ export default function Contact() {
             >
               Contáctame
             </panda.h2>
-            <Badge bordered="warn" py="1">
-              Beta
-            </Badge>
           </HStack>
           <Box textWrap="balance">
             <panda.p>
@@ -51,7 +72,7 @@ export default function Contact() {
           </Box>
         </Stack>
         <Box flex="1">
-          <Form formMethod="post" action="/">
+          <form onSubmit={handleSubmit}>
             <Box>
               <Label>Nombre</Label>
               <Input type="text" placeholder="Jhon Doe" name="username" />
@@ -77,7 +98,7 @@ export default function Contact() {
             >
               Enviar mensaje
             </Button>
-          </Form>
+          </form>
         </Box>
       </Flex>
     </Box>

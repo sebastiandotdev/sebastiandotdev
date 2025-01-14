@@ -2,7 +2,7 @@
   "name": "sebastiandotdev",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@9.12.3",
+  "packageManager": "pnpm@9.15.4",
   "scripts": {
     "prepare": "panda codegen",
     "fmt": "prettier --write .",
@@ -12,6 +12,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formkit/tempo": "^0.1.2",
     "@radix-ui/react-tooltip": "1.1.4",
     "contentlayer2": "^0.5.3",
     "next": "15.0.3",

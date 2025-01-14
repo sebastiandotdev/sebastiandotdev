@@ -2,8 +2,9 @@ import { allPosts } from 'contentlayer/generated'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { MDXContent } from '@/src/components/common/mdx-component'
-
+import { panda } from '@/styled-system/jsx'
 import { Container } from '@/styled-system/jsx'
+import { format } from '@formkit/tempo'
 
 interface BlogPostProps {
   params: Promise<{
@@ -65,8 +66,10 @@ const PostLayout = async ({
 
   return (
     <Container marginTop="44">
-      <time dateTime={post.date}>{post.date}</time>
-      <h1>{post.title}</h1>
+      <time dateTime={post.date}>{format(post.date)}</time>
+      <panda.h1 fontSize="5xl" fontWeight="bold">
+        {post.title}
+      </panda.h1>
       <MDXContent code={post.body.code} />
     </Container>
   )

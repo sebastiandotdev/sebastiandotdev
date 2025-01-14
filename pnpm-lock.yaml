@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@formkit/tempo':
+        specifier: ^0.1.2
+        version: 0.1.2
       '@radix-ui/react-tooltip':
         specifier: 1.1.4
         version: 1.1.4(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106)
@@ -358,6 +361,9 @@ packages:
 
   '@floating-ui/utils@0.2.8':
     resolution: {integrity: sha512-kym7SodPp8/wloecOpcmSnWJsK7M0E5Wg8UcFA+uO4B9s5d0ywXOEro/8HM9x0rW+TljRzul/14UYz3TleT3ig==}
+
+  '@formkit/tempo@0.1.2':
+    resolution: {integrity: sha512-jNPPbjL8oj7hK3eHX++CwbR6X4GKQt+x00/q4yeXkwynXHGKL27dylYhpEgwrmediPP4y7s0XtN1if/M/JYujg==}
 
   '@grpc/grpc-js@1.12.4':
     resolution: {integrity: sha512-NBhrxEWnFh0FxeA0d//YP95lRFsSx2TNLEUQg4/W+5f/BMxcCjgOOIT24iD+ZB/tZw057j44DaIxja7w4XMrhg==}
@@ -3465,6 +3471,8 @@ snapshots:
       react-dom: 19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106)
 
   '@floating-ui/utils@0.2.8': {}
+
+  '@formkit/tempo@0.1.2': {}
 
   '@grpc/grpc-js@1.12.4':
     dependencies:

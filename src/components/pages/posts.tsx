@@ -1,6 +1,6 @@
 import { Box, Grid, HStack, panda } from '@/styled-system/jsx'
 import BlogPosts from '@/src/components/common/posts-list'
-import { Badge } from '@/src/components/recipes/badge'
+import { allPosts } from 'contentlayer/generated'
 
 export default function Posts() {
   return (
@@ -14,13 +14,10 @@ export default function Posts() {
         >
           Posts
         </panda.h2>
-        <Badge bordered="warn" py="1">
-          Beta
-        </Badge>
       </HStack>
       <Grid columns={{ base: 1, lg: 2 }} gap="6" mt="14">
-        {[1, 2, 3, 4].map((_, index) => (
-          <BlogPosts key={index} />
+        {allPosts.map((_, index) => (
+          <BlogPosts post={_} key={index} />
         ))}
       </Grid>
     </Box>

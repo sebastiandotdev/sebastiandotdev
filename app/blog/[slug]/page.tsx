@@ -2,12 +2,13 @@ import { allPosts } from 'contentlayer/generated'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { MDXContent } from '@/src/components/common/mdx-component'
-import { Box, Flex, panda } from '@/styled-system/jsx'
+import { Box, Flex, HStack, panda } from '@/styled-system/jsx'
 import { Container } from '@/styled-system/jsx'
 import { format } from '@formkit/tempo'
 import Link from 'next/link'
-import { ChevronLeftIcon } from '@/src/icons'
+import { ChevronLeftIcon, TagIcon } from '@/src/icons'
 import { css } from '@/styled-system/css'
+import { Tag } from '@/src/components/recipes/tag'
 
 interface BlogPostProps {
   params: Promise<{
@@ -44,7 +45,7 @@ export async function generateMetadata({
   const { post } = postFromParams
 
   return {
-    title: post.title,
+    title: `Sebastián García | ${post.title}`,
     description: post.title,
   }
 }
@@ -82,6 +83,18 @@ const PostLayout = async ({
           {post.author}
         </panda.h2>
         <time dateTime={post.date}>{format(post.date)}</time>
+        <Flex alignItems="center" gap="2" justifyContent="space-between" mt="4">
+          <Box spaceX="3">
+            {post.tags.map((content, index) => (
+              <Tag key={index}>
+                <HStack gap="1">
+                  <TagIcon />
+                  <panda.span>{content}</panda.span>
+                </HStack>
+              </Tag>
+            ))}
+          </Box>
+        </Flex>
       </header>
       <Box mt="8">
         <panda.h1 fontSize="4xl" fontWeight="bold">

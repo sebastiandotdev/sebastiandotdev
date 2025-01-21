@@ -42,13 +42,13 @@ const Post = defineDocumentType(() => ({
   computedFields: {
     url: {
       type: 'string',
-      resolve: (doc) => `/posts/${doc._raw.flattenedPath}`,
+      resolve: (doc) => `/blog/${doc._raw.flattenedPath}`,
     },
   },
 }))
 
 export default makeSource({
-  contentDirPath: 'posts',
+  contentDirPath: './blog',
   documentTypes: [Post],
   mdx: {
     remarkPlugins: [remarkGfm],

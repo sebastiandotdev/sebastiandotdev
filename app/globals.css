@@ -19,3 +19,57 @@
 html {
   scroll-behavior: smooth;
 }
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+code {
+  font-family: monospace;
+}
+
+[data-rehype-pretty-code-fragment] {
+  position: relative;
+  background-color: rgb(15 23 42);
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+[data-rehype-pretty-code-fragment] pre {
+  overflow-x: auto;
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+[data-rehype-pretty-code-title] {
+  position: relative;
+  padding: 0.75rem 1rem;
+  font-family: ui-monospace, monospace;
+  font-size: 0.875rem;
+  color: rgb(226 232 240);
+  background-color: rgb(30 41 59);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+[data-rehype-pretty-code-fragment] code {
+  display: grid;
+  min-width: 100%;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+[data-rehype-pretty-code-fragment] .highlighted {
+  background-color: rgb(30 41 59);
+  border-left: 2px solid #60a5fa;
+}
+
+[data-rehype-pretty-code-fragment] .word {
+  background-color: rgb(51 65 85);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}

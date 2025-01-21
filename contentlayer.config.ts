@@ -1,4 +1,11 @@
 import { defineDocumentType, makeSource } from 'contentlayer2/source-files'
+import remarkGfm from 'remark-gfm'
+import rehypePrettyCode from 'rehype-pretty-code'
+
+const prettyCodeOptions = {
+  theme: 'one-dark-pro',
+  keepBackground: true,
+}
 
 const Post = defineDocumentType(() => ({
   name: 'Post',
@@ -8,6 +15,17 @@ const Post = defineDocumentType(() => ({
     title: {
       type: 'string',
       description: 'The title of the post',
+      required: true,
+    },
+    author: {
+      type: 'string',
+      description: 'The author of the post',
+      required: true,
+    },
+    tags: {
+      type: 'list',
+      of: { type: 'string' },
+      description: 'Tags for the post',
       required: true,
     },
     date: {
@@ -32,4 +50,8 @@ const Post = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: 'posts',
   documentTypes: [Post],
+  mdx: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [[rehypePrettyCode, prettyCodeOptions]],
+  },
 })

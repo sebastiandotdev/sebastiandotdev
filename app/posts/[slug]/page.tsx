@@ -2,9 +2,12 @@ import { allPosts } from 'contentlayer/generated'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { MDXContent } from '@/src/components/common/mdx-component'
-import { panda } from '@/styled-system/jsx'
+import { Box, Flex, panda } from '@/styled-system/jsx'
 import { Container } from '@/styled-system/jsx'
 import { format } from '@formkit/tempo'
+import Link from 'next/link'
+import { ChevronLeftIcon } from '@/src/icons'
+import { css } from '@/styled-system/css'
 
 interface BlogPostProps {
   params: Promise<{
@@ -66,11 +69,26 @@ const PostLayout = async ({
 
   return (
     <Container marginTop="44">
-      <time dateTime={post.date}>{format(post.date)}</time>
-      <panda.h1 fontSize="5xl" fontWeight="bold">
-        {post.title}
-      </panda.h1>
-      <MDXContent code={post.body.code} />
+      <nav className={css({ marginBottom: '2rem' })}>
+        <Link href="/">
+          <Flex alignItems="center" gap={2}>
+            <ChevronLeftIcon />
+            Regresar al inicio
+          </Flex>
+        </Link>
+      </nav>
+      <header>
+        <panda.h2 fontSize="lg" fontWeight="semibold">
+          {post.author}
+        </panda.h2>
+        <time dateTime={post.date}>{format(post.date)}</time>
+      </header>
+      <Box mt="8">
+        <panda.h1 fontSize="4xl" fontWeight="bold">
+          {post.title}
+        </panda.h1>
+        <MDXContent code={post.body.code} />
+      </Box>
     </Container>
   )
 }

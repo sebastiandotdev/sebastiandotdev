@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ChevronRightIcon, TagIcon } from '@/src/icons'
 import type { Post } from '@/.contentlayer/generated'
 import { format } from '@formkit/tempo'
+import { css } from '@/styled-system/css'
 
 export default function BlogPosts({ post }: { post: Post }) {
   return (
@@ -20,13 +21,19 @@ export default function BlogPosts({ post }: { post: Post }) {
       }}
     >
       <Box>
-        <panda.h3
-          fontSize="lg"
-          fontWeight="bold"
-          _hover={{ textDecoration: 'underline', cursor: 'pointer' }}
+        <Link
+          href={post.url}
+          className={css({
+            fontSize: 'lg',
+            fontWeight: 'bold',
+            _hover: {
+              textDecoration: 'underline',
+              cursor: 'pointer',
+            },
+          })}
         >
           {post.title}
-        </panda.h3>
+        </Link>
         <panda.small
           display="flex"
           alignItems="center"

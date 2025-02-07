@@ -44,17 +44,17 @@ export default function Contact() {
               textWrap="balance"
               margin="0"
             >
-              Contáctame
+              Contact me
             </panda.h2>
           </HStack>
           <Box textWrap="balance">
             <panda.p>
-              No dudes en ponerte en contacto conmigo a través de este
-              formulario o directamente a mi correo electrónico.
+              Please feel free to contact me using this form or directly by
+              email.
             </panda.p>
             <Box mt="5">
               <panda.h2 fontSize="lg" fontWeight="semibold" mb="3">
-                Servicios
+                Services
               </panda.h2>
               <panda.ul
                 listStyle="outside"
@@ -74,11 +74,11 @@ export default function Contact() {
         <Box flex="1">
           <form onSubmit={handleSubmit}>
             <Box>
-              <Label>Nombre</Label>
+              <Label>Full name</Label>
               <Input type="text" placeholder="Jhon Doe" name="username" />
             </Box>
             <Box>
-              <Label>Correo Electronico</Label>
+              <Label>Email</Label>
               <Input
                 type="email"
                 placeholder="jhondoe@gmail.com"
@@ -86,7 +86,7 @@ export default function Contact() {
               />
             </Box>
             <Box>
-              <Label>Asunto</Label>
+              <Label>Subject</Label>
               <Textarea placeholder="Escribe tu mensaje aqui" name="message" />
             </Box>
             <Button
@@ -96,7 +96,7 @@ export default function Contact() {
               fontWeight="semibold"
               mt="4"
             >
-              Enviar mensaje
+              Send message
             </Button>
           </form>
         </Box>

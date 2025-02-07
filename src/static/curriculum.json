@@ -4,17 +4,17 @@
     "label": "Software Developer",
     "image": "/me.webp",
     "email": "sebastiandotdev@gmail.com",
-    "online": "Disponible para trabajar",
+    "online": "Available to work",
     "cv": "/Curriculum-Sebastian.pdf",
     "phone": "+57 3044176141",
     "url": "https://castrogarciajs.dev",
-    "summary": "Programador con +2 años de experiencia en desarrollo de aplicaciones. Especializado en Frontend, apasionado por el Open Source. Me integro en equipos de trabajo diversos y busco construir relaciones sólidas con mis compañeros.",
+    "summary": "Programmer with +2 years of experience in application development. Specialized in Frontend, passionate about Open Source. I integrate into diverse work teams and seek to build strong relationships with my colleagues.",
     "about": [
-      "Mi nombre completo es Johan Sebastián Castro García. Tengo 20 años, de Colombia, Cesar. Conocí la programación a los 17 años. Gracias a Dios en la ciudad en donde me mudé, abrió una Academia de programación. Gracias al esfuerzo de mi Madre y mis amigos. Tuve la oportunidad de entrar y comencé a aprender lo básico comenzando desde HTML. Parecía que ya había estudiado esto antes, pero no fue así. Se me dio bien, recién salía de la escuela no sabía qué hacer, así que me comencé a encariñar con el paso del tiempo. Aunque el computador con el que había empezado era un Dell Inspiron mini muy viejo le costaba incluso abrir el navegador. Sin embargo, después de un arduo trabajo pude comprar mi primera Lapto.",
+      "My full name is Johan Sebastian Castro Garcia. I am 20 years old, from Colombia, Cesar. I discovered programming when I was 17. Thank God, in the city where I moved, a programming academy opened. Thanks to the efforts of my mother and my friends. I had the opportunity to enter and began to learn the basics starting with HTML. It seemed like I had already studied this before, but it was not like that. I was good at it, I had just left school and did not know what to do, so I began to grow fond of it over time. Although the computer I had started with was a very old Dell Inspiron mini, it was difficult to even open the browser. However, after hard work I was able to buy my first laptop.",
 
-      "Conseguí mi primer trabajo hace un año y medio en una startup. Tuve que adaptarme a tecnologías que no conocía y aprendí a crecer en conjunto a ellos ampliando mis conocimientos en el área de desarrollo de software. Teniendo la oportunidad de conocer a compañeros de todo el mundo y aprender a trabajar en equipo y a escuchar a mis compañeros.",
+      "I got my first job a year and a half ago at a startup. I had to adapt to technologies I didn't know and I learned to grow alongside them by expanding my knowledge in the area of ​​software development. I had the opportunity to meet colleagues from all over the world and learn to work as a team and listen to my colleagues.",
 
-      "Como pasatiempos suelo investigar de geografía y astronomía, dos áreas que disfruto de investigar. También soy muy amante de la música. En el área de deportes suelo disfrutar todos los deportes, pero actualmente veo más el fútbol. Como no puede faltar un programador en su tiempo libre, también le gusta programar. Suelo trabajar mucho en el código abierto con mis compañeros innovando ideas y soluciones, tambien aportando en proyectos existente."
+      "As hobbies, I usually research geography and astronomy, two areas that I enjoy researching. I am also a big music lover. In the sports area, I usually enjoy all sports, but currently I watch football more. As a programmer can't be without in his free time, he also likes to program. I usually work a lot on open source with my colleagues, innovating ideas and solutions, also contributing to existing projects."
     ],
     "profiles": [
       {
@@ -38,22 +38,21 @@
     {
       "name": "DiensCO",
       "position": "Desarrollador Frontend",
-      "url": "https://twitch.tv/midudev",
       "startDate": "1 Jun 2023",
       "endDate": null,
       "summary": [
-        "Manteiner actual de domiplace.com y admin.efici.co",
-        "Se ha migrado con el admin.efici.co existente de Vue 2 a Nuxt.js y el rendimiento aumentó en un 100% a diferencia de su versión anterior.",
-        "Anteriormente domiplace.com solo contaba con una aplicación móvil, entonces mi equipo y mi persona comenzamos a construir la aplicación web."
+        "Current maintainer of domiplace.com and admin.efici.co",
+        "It has been migrated with the existing admin.efici.co from Vue 2 to Nuxt.js and the performance has increased by 100% compared to its previous version.",
+        "Previously domiplace.com only had a mobile app, so my team and I started building the web app."
       ],
       "highlights": ["Started the company"]
     }
   ],
   "services": [
-    "Puedo ayudarte con asesorias y mentorias",
-    "Puedes contactarme para un servicio temporal",
-    "Puedo ayudarte a impulsar tu negocio con una pagina Web",
-    "Estoy abierto a oportunidades laborales"
+    "I can help you with advice and mentoring.",
+    "You can contact me for a temporary service",
+    "I can help you boost your business with a website",
+    "I am open to job opportunities"
   ],
   "education": [],
   "awards": [],

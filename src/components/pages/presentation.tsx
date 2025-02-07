@@ -51,7 +51,7 @@ export default function Hero() {
               )}
             >
               <SendIcon className={iconStyles} />
-              Correo electrónico
+              Email
             </Link>
             <Link
               href={cv}

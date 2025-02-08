@@ -1,4 +1,4 @@
-import { HomeIcon, ProfileIcon, TerminalIcon, PhoneIcon } from '@/src/icons'
+import { HomeIcon, TerminalIcon, PhoneIcon } from '@/src/icons'
 
 export const menus = [
   {

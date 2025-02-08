@@ -47,7 +47,7 @@ Para retroalimentar, permite la comunicación entre clientes (navegadores) y ser
 
 Ahora que ya tenemos una idea clara de qué es HTTP y cuál es su función principal, es hora de sumergirnos en los conceptos clave que lo componen. Estos conceptos son como las piezas de un rompecabezas que encajan para hacer posible la comunicación entre clientes y servidores.
 
-**Métodos de solicitud HTTP**
+**Métodos de solicitud HTTP (Methods HTTP)**
 
 Supongamos que quieres pedir algo en un restaurante. No le dices al mesero "quiero algo", sino que `especificas` qué quieres: "Señor mesero quiero un café". En HTTP, los métodos de solicitud son como esas `especificaciones`. Le dicen al servidor qué tipo de acción quieres realizar. Podemos conocer algunos métodos son los más comunes al crear software.
 
@@ -63,7 +63,7 @@ Supongamos que quieres pedir algo en un restaurante. No le dices al mesero "quie
 - _DELETE_
   Se utiliza para eliminar información en el servidor. Siguiendo con la idea del restaurante es como cancelar el pedido del restaurante. Por ejemplo, si desea eliminar una publicación en un sitio web de redes sociales, su navegador podría enviar una solicitud DELETE al servidor.
 
-**Códigos de respuesta HTTP**
+**Códigos de respuesta HTTP (Status Code)**
 
 Después de enviar tu solicitud, el servidor te da una respuesta. Esta respuesta incluye un código de estado que te indica si la solicitud fue exitosa o si hubo algún problema. Vamos a conocer algunos códigos de estados más comunes.
 
@@ -75,3 +75,36 @@ Después de enviar tu solicitud, el servidor te da una respuesta. Esta respuesta
 
 - _5xx_
   Códigos de error del servidor, como `500` Error interno del servidor, que significa que hubo un error en el servidor que le impidió cumplir con la solicitud.
+
+**Encabezados (Headers)**
+
+Cuando viajas por un sitio web, sabemos que, al solo entrar a la página como clientes, hacemos una solicitud `GET` explicada anteriormente. Esta solicitud, además de pedir la página en sí, lleva consigo unas etiquetas con información adicional a eso es lo que llamamos `Encabezados` HTTP. Seguramente ustedes se preguntarán: `¿Qué tipo de información adicional?`. Cuando usted está en un navegador, no solo es capaz de abrir páginas web, sino que puede visualizar PDF, imágenes e incluso contenido JSON o, por ejemplo, el navegador necesita saber qué sistema operativo o idioma usted usa en su computadora. Todo eso, aunque usted no lo ve, los encabezados se encargan de recolectar toda esa información.
+
+A continuación les presantaré algunos ejemplos de encabezados:
+
+- _Content-Type_
+  Los encabezados de tipo de contenido se pueden usar para indicar el tipo de datos que se envían en la solicitud o respuesta, como JSON o XML.
+
+- _Authorization_
+  Los encabezados de autorización se pueden utilizar para incluir credenciales de autenticación con una solicitud de acceso a recursos protegidos.
+
+- _Cache-Control_
+  Los encabezados de control de caché se pueden usar para especificar durante cuánto tiempo un cliente debe almacenar en caché una respuesta para evitar solicitudes innecesarias al servidor.
+
+<figure>
+  <img
+    src="/sample-headers.png"
+    alt="Ejemplo de encabezados HTTP"
+    width="900"
+  />
+</figure>
+
+Recuerde que estos encabezados normalmente no son visibles para el usuario común, pero cruciales para los Programadores. Los programadores los utilizan para optimizar el rendimiento, la seguridad y la funcionalidad de las aplicaciones web.
+
+## Conclusión
+
+Hemos llegado al final de este recorrido por el mundo de HTTP, un protocolo que, aunque muchas veces invisible para el usuario común, es el corazón de la comunicación en la web. Hemos desentrañado conceptos como protocolos, servidores, métodos de solicitud, códigos de respuesta y encabezados, que nos permiten comprender cómo funciona el intercambio de información entre navegadores y servidores.
+
+Espero que este artículo haya sido una introducción clara y útil a HTTP. Hemos visto cómo este protocolo facilita la comunicación entre diferentes dispositivos, permitiéndonos acceder a información, interactuar con sitios web y realizar transacciones en línea.
+
+Agradezco que hayas llegado hasta aquí. Espero que este artículo te haya brindado una nueva perspectiva sobre la importancia de HTTP y cómo funciona la web. ¡Te invito a seguir explorando y aprendiendo!

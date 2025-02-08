@@ -8,12 +8,6 @@ export const menus = [
     Icon: HomeIcon,
   },
   {
-    id: 2,
-    path: '/about',
-    name: 'About me',
-    Icon: ProfileIcon,
-  },
-  {
     id: 3,
     name: 'Projects',
     path: '#projects',

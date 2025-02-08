@@ -1,6 +1,6 @@
 import { Box, Flex, HStack, Stack, panda } from '@/styled-system/jsx'
 import { Tag } from '@/src/components/recipes/tag'
-import { GithubIcon, TagIcon } from '@/src/icons'
+import { GithubIcon, LinkSquareIcon, TagIcon } from '@/src/icons'
 import { Projects } from '@/src/static/cv'
 import Link from 'next/link'
 import { css } from '@/styled-system/css'
@@ -32,9 +32,14 @@ export default function ProjectsList(props: { project: Projects }) {
           >
             {props.project.name}
           </Link>
-          <Link href={props.project.github || '/'} target="_blank">
-            <GithubIcon />
-          </Link>
+          <Flex alignItems="center" gap="3">
+            <Link href={props.project.github || '/'} target="_blank">
+              <GithubIcon />
+            </Link>
+            <Link href={props.project.url} target="_blank">
+              <LinkSquareIcon />
+            </Link>
+          </Flex>
         </Stack>
         <panda.small
           display="flex"

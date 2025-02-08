@@ -96,8 +96,8 @@ const PostLayout = async ({
           </Box>
         </Flex>
       </header>
-      <Box mt="8">
-        <panda.h1 fontSize="4xl" fontWeight="bold">
+      <Box mt="8" className="wrapper-blog">
+        <panda.h1 fontSize="4xl" fontWeight="bold" mb="6">
           {post.title}
         </panda.h1>
         <MDXContent code={post.body.code} />

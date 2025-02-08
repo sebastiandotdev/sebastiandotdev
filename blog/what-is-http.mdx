@@ -1,0 +1,77 @@
+---
+title: Introducción a HTTP protocolo Web
+date: 2025-02-8
+author: Sebastián García
+description: Aprenda como funciona HTTP y sus diferentes conceptos y por qué es importante en el mundo de la informática, en la comunicación global.
+tags: ['Web', 'HTTP', 'Protocolo', 'Estandar']
+---
+
+## Preambulo
+
+En este blog vamos a intentar desmenuzar que es HTTP para personas que inician en el mundo de la informática y quieren saber lo importante que es uno de los protocolo más usado al nivel mundial por todos los navegadores y como aporta una comunicación entre varios lugares del mundo.
+
+Vamos a empezar explicando conceptos que a menudo solemos escuchar. Esta bien comenzar a desmenuzar conceptos que vas a escuchar durante el desarrollo de un software, más si eres Programador.
+
+**¿Que es un protocolo?**
+
+Supongamos que quieres comunicarte con un amigo que vive en otro país. Para que ambos se entiendan, necesitan hablar el mismo `idioma`. Una de las cosas que solemos hacer humanamente es saludarnos al principio y despedirnos al final, eso lo hacemos sinérgicamente, puede ser una `regla` en la comunicación verbal. Si ese concepto lo llevamos al mundo de la informática, el protocolo sería el `idioma` siguiendo las mismas reglas verbales, permiten que diferentes dispositivos (computadoras, teléfonos, servidores, etc.) se comuniquen entre sí y compartan información de manera efectiva. Ahora ustedes se preguntarán `¿Cuales son esas reglas?`. Podemos llevarlos a dos simples palabras
+`Enviar`/`Recibir`, para poder entender los datos sin importar que compañía fabrico el dispositivo o qué sistema operativo utilizan. Además de `HTTP`, existen muchos otros protocolos que se utilizan en Internet para diferentes propósitos.
+
+**¿Dónde se guardan los datos?**
+
+Es natural preguntarnos: ¿dónde se guardan todos esos datos que intercambiamos con los sitios web? ¿Cómo es posible que podamos acceder a información de cualquier parte del mundo con solo hacer clic en un enlace? La respuesta está en los servidores. Ahora explicaremos que es un servidor y como mantiene la seguridad a nivel global en el mundo de la informática.
+
+**¿Qué es un servidor?**
+
+Imagina que un servidor es como un almacén gigante se guardan todos los archivos, imágenes, videos y demás información que conforman un sitio web. Cuando visitas un sitio web, tu navegador se conecta al servidor que este usando el sitio web que visitas y le pide la información que necesitas. Muy importante saber que asi como existen muchos protocolo tambien existen varios tipos de servidores el servidor que yo te acabo de describir es un `Servidor Web`.
+
+## Introducción a HTTP
+
+Luego de haber desmenuzado la palabra `protocolo", continuemos nuestro camino para el aprendizaje y entendimiento de HTTP. Aparte de HTTP, vamos a incluir otros conceptos que son claves para el uso del protocolo y nos va a ayudar a visualizar el panorama arquitectónico mucho mejor que antes. Comenzaremos explicando HTTP y su evolución a lo largo de la historia y yo intentaré escribir las cosas lo más simple posible. Si has llegado hasta aqui debo agradecerte; ahora continuemos.
+
+**¿Que es HTTP?**
+
+Esta es una de las preguntas más importantes que debemos responder. Ahora HTTP es un protocolo y ustedes ya están relacionados con ese concepto, quiere decir que HTTP es un tipo de comunicación en el mundo de la informática. Lo que significa que proporciona una forma estandarizada para que las aplicaciones se comuniquen entre sí a través de Internet. HTTP define un conjunto de conceptos llamados: métodos de solicitud, códigos de respuesta, encabezados y formatos de mensajes que se utilizan para intercambiar datos entre clientes y servidores. Luego hablaremos más en profundidad de esos conceptos.
+
+Cuando haces una solicitud HTTP, tu navegador le está diciendo al servidor: "Quiero ver esta página web" o "Quiero enviar este formulario". El servidor recibe la solicitud, la procesa y envía una respuesta HTTP con la información solicitada.
+
+<figure>
+  <img src="/sample-http.png" alt="Ejemplo de HTTP" width="900" />
+</figure>
+
+**¿Cuál es la función principal de HTTP?**
+
+Para retroalimentar, permite la comunicación entre clientes (navegadores) y servidores web. HTTP es la base de la web y permite acceder a información, interactuar con sitios web y realizar transacciones en línea.
+
+## Conjunto de conceptos de HTTP
+
+Ahora que ya tenemos una idea clara de qué es HTTP y cuál es su función principal, es hora de sumergirnos en los conceptos clave que lo componen. Estos conceptos son como las piezas de un rompecabezas que encajan para hacer posible la comunicación entre clientes y servidores.
+
+**Métodos de solicitud HTTP**
+
+Supongamos que quieres pedir algo en un restaurante. No le dices al mesero "quiero algo", sino que `especificas` qué quieres: "Señor mesero quiero un café". En HTTP, los métodos de solicitud son como esas `especificaciones`. Le dicen al servidor qué tipo de acción quieres realizar. Podemos conocer algunos métodos son los más comunes al crear software.
+
+- _GET_
+  Se utiliza para solicitar información al servidor. Siguiendo con la idea del restaurante es como preguntar "¿qué hay en el menú?". Por Ejemplo cuando escribe una URL en su navegador y pulsa Enter, su navegador envía una solicitud GET al servidor solicitando el contenido de esa página web.
+
+- _POST_
+  Se utiliza para enviar información al servidor. Siguiendo con la idea del restaurante es como enviar un pedido al restaurante. Por ejemplo cuando envías un formulario de inicio de sesión en un sitio web, tu navegador envía una solicitud POST al servidor con tu nombre de usuario y contraseña.
+
+- _PUT_
+  Se utiliza para actualizar información en el servidor. Siguiendo con la idea del restaurante es como modificar una orden que ya has hecho. "Quiero mi almuerzo sin ensalada". Por ejemplo, si editas la información de tu perfil en un sitio web, tu navegador podría enviar una solicitud PUT al servidor con la información actualizada.
+
+- _DELETE_
+  Se utiliza para eliminar información en el servidor. Siguiendo con la idea del restaurante es como cancelar el pedido del restaurante. Por ejemplo, si desea eliminar una publicación en un sitio web de redes sociales, su navegador podría enviar una solicitud DELETE al servidor.
+
+**Códigos de respuesta HTTP**
+
+Después de enviar tu solicitud, el servidor te da una respuesta. Esta respuesta incluye un código de estado que te indica si la solicitud fue exitosa o si hubo algún problema. Vamos a conocer algunos códigos de estados más comunes.
+
+- _2xx_
+  Códigos de éxito, como `200`, que significa que la solicitud fue exitosa y el servidor está enviando los datos solicitados.
+
+- _4xx_
+  Códigos de error del cliente, como `404` No encontrado, que significa que el recurso solicitado no se pudo encontrar en el servidor.
+
+- _5xx_
+  Códigos de error del servidor, como `500` Error interno del servidor, que significa que hubo un error en el servidor que le impidió cumplir con la solicitud.

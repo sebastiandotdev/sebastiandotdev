@@ -26,8 +26,9 @@ pre {
   border-radius: 0.5rem;
 }
 
-code {
-  font-family: monospace;
+strong {
+  display: block;
+  font-size: 1.1rem;
 }
 
 [data-rehype-pretty-code-fragment] {
@@ -72,4 +73,37 @@ code {
   background-color: rgb(51 65 85);
   padding: 0.25rem;
   border-radius: 0.25rem;
+}
+
+@layer base {
+  .wrapper-blog h2 {
+    font-size: 1.703rem;
+    font-weight: bolder;
+    margin-bottom: 0.75rem;
+  }
+
+  .wrapper-blog figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper-blog figure img {
+    object-fit: contain;
+  }
+  .wrapper-blog ul {
+    list-style: circle;
+    padding-left: 1rem;
+  }
+
+  .wrapper-blog p,
+  strong,
+  li {
+    text-wrap: balance;
+    margin: 0.703rem 0;
+  }
+
+  .wrapper-blog em {
+    font-weight: bold;
+  }
 }

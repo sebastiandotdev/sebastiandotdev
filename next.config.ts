@@ -5,6 +5,4 @@ export default withContentlayer({
     unoptimized: true,
     remotePatterns: [{ protocol: 'https', hostname: 'res.cloudinary.com' }],
   },
-
-  assetPrefix: '',
 })

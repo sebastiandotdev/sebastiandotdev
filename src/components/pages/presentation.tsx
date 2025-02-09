@@ -69,7 +69,7 @@ export default function Hero({ dictionary }: { dictionary: Record<any, any> }) {
       </Box>
       <Box flex="1" display="flex" justifyContent="center" alignItems="center">
         <Image
-          src="https://res.cloudinary.com/defi3rbgt/image/upload/v1739131181/bbf3soetmbcmtilgnapj.jpg"
+          src="/me.webp"
           alt="Sebastian"
           width={350}
           height={350}

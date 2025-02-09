@@ -12,6 +12,7 @@ import { menus } from '@/src/constants/menu'
 import { GithubIcon } from '@/src/icons'
 import Link from 'next/link'
 import { social } from '@/src/constants/social'
+import LanguageSwitcher from '../common/language-switcher'
 
 export const iconStyles = css({ fontSize: '2xl' })
 
@@ -58,6 +59,7 @@ export default function OverlayMenu() {
             <GithubIcon className={iconStyles} />
           </Link>
           <ThemeSwitch />
+          <LanguageSwitcher />
         </Flex>
       </div>
     </Center>

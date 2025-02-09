@@ -1,12 +1,9 @@
 import nodemailer from 'nodemailer'
 import { NextResponse } from 'next/server'
+import process from 'node:process'
 
 export async function POST(req: Request) {
-  // @ts-expect-error Only on Deno Deploy
-  const user = Deno.env.get('EMAIL_USER')
-
-  // @ts-expect-error Only on Deno Deploy
-  const pass = Deno.env.get('EMAIL_PASS')
+  const { EMAIL_USER: user, EMAIL_PASS: pass } = process.env
 
   const { name, email, message } = await req.json()
 

@@ -8,7 +8,7 @@ import { Badge } from '../recipes/badge'
 import { FileIcon, SendIcon } from '../../icons'
 import { iconStyles } from '@/src/components/layouts/overlay-menu'
 
-export default function Hero({ dictionary }: { dictionary: any }) {
+export default function Hero({ dictionary }: { dictionary: Record<any, any> }) {
   const { name, online, label, summary, email, cv } = dictionary.basics
 
   return (

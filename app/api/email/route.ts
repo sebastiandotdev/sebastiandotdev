@@ -2,26 +2,16 @@ import nodemailer from 'nodemailer'
 import process from 'node:process'
 import { NextResponse } from 'next/server'
 
-const getEnvVariable = (key: string): string => {
-  const processValue = process.env[key]
-  if (processValue) return processValue
-
-  try {
-    // @ts-expect-error Target: Node.js
-    const denoValue = Deno.env.get(key)
-    if (denoValue) return denoValue
-  } catch {
-    // Si Deno.env no está disponible, no hacer nada
-  }
-
-  throw new Error(`Variable de entorno ${key} no encontrada`)
-}
-
 export async function POST(req: Request) {
-  const { name, email, message } = await req.json()
-  const user = getEnvVariable('EMAIL_USER')
-  const pass = getEnvVariable('EMAIL_PASS')
+  // @ts-expect-error Only on Deno Deploy
+  const user = Deno.env.get('EMAIL_USER')
 
+  // @ts-expect-error Only on Deno Deploy
+  const pass = Deno.env.get('EMAIL_PASS')
+
+  const { name, email, message } = await req.json()
+
+  console.log({ user, pass })
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
@@ -78,7 +68,6 @@ export async function POST(req: Request) {
       {
         error: 'Error al enviar el email',
         message: isErr.message,
-        platform: 'process' in globalThis ? 'Node.js' : 'Deno',
       },
       { status: 500 },
     )

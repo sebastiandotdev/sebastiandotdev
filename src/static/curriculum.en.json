@@ -2,18 +2,12 @@
   "basics": {
     "name": "Sebastián García",
     "label": "Software Developer",
-
     "email": "sebastiandotdev@gmail.com",
     "online": "Available to work",
     "cv": "/Curriculum-Sebastian.pdf",
     "phone": "+57 3044176141",
     "url": "https://castrogarciajs.dev",
     "summary": "Programmer with +2 years of experience in application development. Specialized in Frontend, passionate about Open Source. I integrate into diverse work teams and seek to build strong relationships with my colleagues.",
-    "about": [
-      "My full name is Johan Sebastian Castro Garcia. I am 20 years old, from Colombia, Cesar. I discovered programming when I was 17. Thank God, in the city where I moved, a programming academy opened. Thanks to the efforts of my mother and my friends, I had the opportunity to enter and began to learn the basics starting with HTML. It seemed like I had already studied this before, but it was not like that. I was good at it, I had just left school and did not know what to do, so I began to grow fond of it over time. Although the computer I had started with was a very old Dell Inspiron mini, it was difficult to even open the browser. However, after hard work I was able to buy my first laptop.",
-      "I got my first job a year and a half ago at a startup. I had to adapt to technologies I didn't know and I learned to grow alongside them by expanding my knowledge in the software development area. I had the opportunity to meet colleagues from all over the world and learn to work as a team and listen to my colleagues.",
-      "As hobbies, I usually research geography and astronomy, two areas that I enjoy researching. I am also a big music lover. In the sports area, I usually enjoy all sports, but currently I watch football more. As a programmer can't be without in his free time, he also likes to program. I usually work a lot on open source with my colleagues, innovating ideas and solutions, also contributing to existing projects."
-    ],
     "profiles": [
       {
         "network": "LinkedIn",
@@ -37,7 +31,7 @@
       "name": "DiensCO",
       "position": "Frontend Developer",
       "startDate": "1 Jun 2023",
-      "endDate": "5 Feb 2025",
+      "endDate": null,
       "summary": [
         "Current maintainer of domiplace.com and admin.efici.co",
         "Migrated admin.efici.co from Vue 2 to Nuxt.js, improving performance by 100%",

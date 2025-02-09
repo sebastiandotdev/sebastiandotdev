@@ -1,9 +1,7 @@
 import Link from 'next/link'
 import { Box, Container, Flex, panda, Stack } from '@/styled-system/jsx'
-import curriculumJSON from '@/src/static/curriculum.json' with { type: 'json' }
 import { Paragraph } from '@/src/components/recipes/paragraph'
 import { css } from '@/styled-system/css'
-
 import {
   Tooltip,
   TooltipContent,
@@ -14,7 +12,6 @@ import { social } from '@/src/constants/social'
 import { iconStyles } from './overlay-menu'
 
 export default function Footer() {
-  const { name, label, email } = curriculumJSON.basics
   return (
     <Container mt="8">
       <panda.footer>
@@ -27,9 +24,9 @@ export default function Footer() {
           >
             <Box mb="4" md={{ mb: '0' }}>
               <panda.h2 fontSize="xl" fontWeight="semibold">
-                {name}
+                Sebastián García
               </panda.h2>
-              <panda.p fontSize="xs">{label}</panda.p>
+              <panda.p fontSize="xs">Software Developer</panda.p>
             </Box>
             <Flex spaceX="4" alignItems="center">
               {social.map((menu) => (
@@ -62,11 +59,12 @@ export default function Footer() {
               md={{ flexDirection: 'row', alignItems: 'flex-start' }}
             >
               <Paragraph>
-                © {new Date().getFullYear()} {name}. All rights reserved.
+                © {new Date().getFullYear()} Sebastián García. All rights
+                reserved.
               </Paragraph>
               <Flex gap="6" alignItems="center">
                 <Link
-                  href={`mailto:${email}`}
+                  href={`mailto:sebastiandotdev@gmail.com`}
                   target="_blank"
                   className={css({ _hover: { textDecoration: 'underline' } })}
                 >

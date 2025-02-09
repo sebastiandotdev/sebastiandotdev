@@ -20,9 +20,7 @@ export function middleware(request: NextRequest) {
   )
 
   if (pathnameIsMissingLocale) {
-    const locale =
-      request.headers.get('accept-language')?.split(',')?.[0].split('-')?.[0] ||
-      i18n.defaultLocale
+    const locale = i18n.defaultLocale
 
     return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url))
   }

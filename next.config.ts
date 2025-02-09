@@ -1,3 +1,5 @@
 import { withContentlayer } from 'next-contentlayer2'
 
-export default withContentlayer({})
+export default withContentlayer({
+  images: { unoptimized: true },
+})

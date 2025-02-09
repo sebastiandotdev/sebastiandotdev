@@ -1,5 +1,4 @@
 import { Box, Flex, panda } from '@/styled-system/jsx'
-import curriculumJSON from '@/src/static/curriculum.json' with { type: 'json' }
 import Image from 'next/image'
 import { css, cx } from '@/styled-system/css'
 import { Paragraph } from '../recipes/paragraph'
@@ -9,9 +8,9 @@ import { Badge } from '../recipes/badge'
 import { FileIcon, SendIcon } from '../../icons'
 import { iconStyles } from '@/src/components/layouts/overlay-menu'
 
-export default function Hero() {
-  const { name, online, label, summary, image, email, cv } =
-    curriculumJSON.basics
+export default function Hero({ dictionary }: { dictionary: any }) {
+  const { name, online, label, summary, email, cv } = dictionary.basics
+
   return (
     <Flex
       id="home"
@@ -70,7 +69,7 @@ export default function Hero() {
       </Box>
       <Box flex="1" display="flex" justifyContent="center" alignItems="center">
         <Image
-          src={image}
+          src="https://res.cloudinary.com/defi3rbgt/image/upload/v1739131181/bbf3soetmbcmtilgnapj.jpg"
           alt="Sebastian"
           width={350}
           height={350}

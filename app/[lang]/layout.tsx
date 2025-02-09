@@ -1,4 +1,4 @@
-import './globals.css'
+import '../globals.css'
 
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
@@ -10,17 +10,17 @@ import Footer from '@/src/components/layouts/footer'
 const onest = localFont({
   src: [
     {
-      path: './fonts/Onest-Normal.woff2',
+      path: '../fonts/Onest-Normal.woff2',
       weight: '400',
       style: 'normal',
     },
     {
-      path: './fonts/Onest-Medium.woff2',
+      path: '../fonts/Onest-Medium.woff2',
       weight: '600',
       style: 'medium',
     },
     {
-      path: './fonts/Onest-Bold.woff2',
+      path: '../fonts/Onest-Bold.woff2',
       weight: '800',
       style: 'bold',
     },

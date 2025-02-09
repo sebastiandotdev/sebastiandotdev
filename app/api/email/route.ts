@@ -22,7 +22,7 @@ export async function POST(req: Request) {
   const HTMLTemplate = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
       <h2 style="color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px;">
-        Nuevo Mensaje de Contacto
+        Hola, un placer conocerte
       </h2>
       
       <div style="background: #f9f9f9; padding: 20px; border-radius: 5px; margin: 20px 0;">

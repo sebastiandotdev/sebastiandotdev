@@ -3,6 +3,10 @@ import { panda } from '@/styled-system/jsx'
 
 export const button = cva({
   base: {
+    '&:disabled': {
+      opacity: 0.7,
+      cursor: 'not-allowed',
+    },
     display: 'flex',
     cursor: 'pointer',
     justifyContent: 'center',

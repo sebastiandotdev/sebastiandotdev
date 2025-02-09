@@ -7,29 +7,51 @@ import { Textarea } from '@/src/components/ui/textarea'
 import { Toaster, toast } from 'sonner'
 import { Label } from '../recipes/label'
 import { Button } from '../recipes/button'
-import type { FormEvent } from 'react'
+import { useState, type FormEvent } from 'react'
+import { LoaderIcon } from '@/src/icons'
+import { css } from '@/styled-system/css'
 
 export default function Contact() {
   const services = curriculumJSON.services as unknown as string[]
+  const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
+    setIsLoading(true)
 
     const formData = new FormData(event.target as HTMLFormElement)
+    const formJson = {
+      name: formData.get('username'),
+      email: formData.get('email'),
+      message: formData.get('message'),
+    }
 
-    formData.append('_next', 'https://castrogarciajs.dev')
-    formData.append('_captcha', 'false')
+    if (!formJson.name || !formJson.email || !formJson.message) {
+      toast.error('Por favor completa todos los campos')
+      setIsLoading(false)
+      return
+    }
 
     try {
-      await fetch('https://formsubmit.co/247ddc0c8da214807457902aadbc87b1', {
+      const response = await fetch('/api/email', {
         method: 'POST',
-        body: formData,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formJson),
       })
 
-      toast.success('Correo enviado correctamente')
-      ;(event.target as HTMLFormElement).reset()
-    } catch (error) {
-      return error
+      if (response.ok) {
+        toast.success('Correo enviado correctamente')
+        ;(event.target as HTMLFormElement).reset()
+      } else {
+        const data = await response.json()
+        toast.error(data.message || 'Error al enviar el correo')
+      }
+    } catch {
+      toast.error('Error al enviar el correo')
+    } finally {
+      setIsLoading(false)
     }
   }
   return (
@@ -75,7 +97,12 @@ export default function Contact() {
           <form onSubmit={handleSubmit}>
             <Box>
               <Label>Full name</Label>
-              <Input type="text" placeholder="Jhon Doe" name="username" />
+              <Input
+                type="text"
+                placeholder="Jhon Doe"
+                name="username"
+                disabled={isLoading}
+              />
             </Box>
             <Box>
               <Label>Email</Label>
@@ -83,11 +110,16 @@ export default function Contact() {
                 type="email"
                 placeholder="jhondoe@gmail.com"
                 name="email"
+                disabled={isLoading}
               />
             </Box>
             <Box>
               <Label>Subject</Label>
-              <Textarea placeholder="Escribe tu mensaje aqui" name="message" />
+              <Textarea
+                placeholder="Escribe tu mensaje aqui"
+                name="message"
+                disabled={isLoading}
+              />
             </Box>
             <Button
               type="submit"
@@ -95,8 +127,17 @@ export default function Contact() {
               rounded="md"
               fontWeight="semibold"
               mt="4"
+              disabled={isLoading}
+              opacity={isLoading ? 0.7 : 1}
+              cursor={isLoading ? 'not-allowed' : 'pointer'}
+              display="flex"
+              gap="2"
+              alignItems="center"
             >
-              Send message
+              {isLoading && (
+                <LoaderIcon className={css({ animation: 'spin' })} />
+              )}
+              {isLoading ? 'Sending...' : 'Send message'}
             </Button>
           </form>
         </Box>

@@ -7,7 +7,7 @@ const getEnvVariable = (key: string): string => {
   if (processValue) return processValue
 
   try {
-    // @ts-expect-error
+    // @ts-expect-error Target: Node.js
     const denoValue = Deno.env.get(key)
     if (denoValue) return denoValue
   } catch {

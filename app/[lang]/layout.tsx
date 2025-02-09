@@ -36,8 +36,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="es" suppressHydrationWarning>
-      <body className={onest.className} lang="es">
+    <html lang="en" suppressHydrationWarning>
+      <body className={onest.className}>
         <NexThemes attribute="class" defaultTheme="system" enableSystem>
           <OverlayMenu />
           {children}

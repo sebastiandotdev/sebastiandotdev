@@ -1,4 +1,4 @@
-import { getDictionary } from '@/dictionary'
+import { getDictionary } from '@/src/constants/dictionary'
 import { Locale } from '@/i18n.config'
 import Contact from '@/src/components/pages/contact'
 import Posts from '@/src/components/pages/posts'
@@ -12,7 +12,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'es' }]
+  return [{ lang: 'es' }, { lang: 'en' }]
 }
 
 export default async function Home({ params }: PageProps) {
@@ -23,9 +23,9 @@ export default async function Home({ params }: PageProps) {
     <>
       <Container marginTop="44">
         <Hero dictionary={dictionary} />
-        <WorkExperience />
-        <Projects />
-        <Contact />
+        <WorkExperience dictionary={dictionary} />
+        <Projects dictionary={dictionary} />
+        <Contact dictionary={dictionary} />
         <Posts />
       </Container>
     </>

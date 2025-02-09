@@ -7,14 +7,7 @@
     "cv": "/Curriculum-Sebastian.pdf",
     "phone": "+57 3044176141",
     "url": "https://castrogarciajs.dev",
-    "summary": "Programador con +2 años de experiencia en desarrollo de aplicaciones. Especializado en Frontend, apasionado por el Open Source. Me integro en equipos de trabajo diversos y busco construir relaciones sólidas con mis colegas.",
-    "about": [
-      "Mi nombre completo es Johan Sebastian Castro Garcia. Tengo 20 años, soy de Colombia, Cesar. Descubrí la programación cuando tenía 17 años. Gracias a Dios, en la ciudad donde me mudé, se abrió una academia de programación. Gracias a los esfuerzos de mi madre y mis amigos, tuve la oportunidad de ingresar y comencé a aprender lo básico empezando con HTML. Parecía que ya había estudiado esto antes, pero no era así. Era bueno en ello, acababa de salir del colegio y no sabía qué hacer, así que comencé a tomarle cariño con el tiempo. Aunque la computadora con la que empecé era una Dell Inspiron mini muy antigua, era difícil incluso abrir el navegador. Sin embargo, después de mucho trabajo pude comprar mi primera laptop.",
-
-      "Conseguí mi primer trabajo hace un año y medio en una startup. Tuve que adaptarme a tecnologías que no conocía y aprendí a crecer junto a ellas ampliando mis conocimientos en el área del desarrollo de software. Tuve la oportunidad de conocer colegas de todo el mundo y aprender a trabajar en equipo y escuchar a mis compañeros.",
-
-      "Como pasatiempos, suelo investigar sobre geografía y astronomía, dos áreas que disfruto investigando. También soy un gran amante de la música. En el área deportiva, suelo disfrutar de todos los deportes, pero actualmente veo más fútbol. Como programador no puede faltar en su tiempo libre, también le gusta programar. Suelo trabajar mucho en código abierto con mis colegas, innovando ideas y soluciones, también contribuyendo a proyectos existentes."
-    ],
+    "summary": "Programador con +2 años de experiencia en desarrollo de aplicaciones. Especializado en Frontend, apasionado por el Open Source. Me integro en equipos de trabajo diversos y busco construir relaciones sólidas con mis compañeros de trabajo.",
     "profiles": [
       {
         "network": "LinkedIn",
@@ -38,7 +31,7 @@
       "name": "DiensCO",
       "position": "Desarrollador Frontend",
       "startDate": "1 Jun 2023",
-      "endDate": "5 Feb 2025",
+      "endDate": null,
       "summary": [
         "Mantenedor actual de domiplace.com y admin.efici.co",
         "Se ha migrado con el admin.efici.co existente de Vue 2 a Nuxt.js y el rendimiento ha aumentado un 100% en comparación con su versión anterior.",
@@ -79,7 +72,7 @@
       "name": "Shooped",
       "github": "https://github.com/openlabs-dev/shopped",
       "isActive": false,
-      "description": "Una página de aterrizaje impulsada por Open UI.",
+      "description": "Una Landing page impulsada por Open UI.",
       "url": "https://store.openlabs.online",
       "techs": ["TypeScript", "React", "TailwindCSS", "Next.js"]
     }

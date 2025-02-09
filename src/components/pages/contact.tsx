@@ -1,7 +1,6 @@
 'use client'
 
 import { Box, Flex, HStack, panda, Stack } from '@/styled-system/jsx'
-import curriculumJSON from '@/src/static/curriculum.json' with { type: 'json' }
 import { Input } from '@/src/components/ui/input'
 import { Textarea } from '@/src/components/ui/textarea'
 import { Toaster, toast } from 'sonner'
@@ -11,8 +10,12 @@ import { useState, type FormEvent } from 'react'
 import { LoaderIcon } from '@/src/icons'
 import { css } from '@/styled-system/css'
 
-export default function Contact() {
-  const services = curriculumJSON.services as unknown as string[]
+export default function Contact({
+  dictionary,
+}: {
+  dictionary: Record<any, any>
+}) {
+  const services = dictionary.services as unknown as string[]
   const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {

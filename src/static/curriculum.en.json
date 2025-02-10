@@ -8,6 +8,7 @@
     "phone": "+57 3044176141",
     "url": "https://castrogarciajs.dev",
     "summary": "Programmer with +2 years of experience in application development. Specialized in Frontend, passionate about Open Source. I integrate into diverse work teams and seek to build strong relationships with my colleagues.",
+
     "profiles": [
       {
         "network": "LinkedIn",
@@ -25,6 +26,12 @@
         "url": "https://github.com/sebastiandotdev"
       }
     ]
+  },
+  "titles": {
+    "workExperience": "Work experience",
+    "projects": "Projects",
+    "contact": "Contact me",
+    "posts": "Posts"
   },
   "work": [
     {

@@ -16,7 +16,7 @@ export default function Projects({
           textWrap="balance"
           margin="0"
         >
-          Proyectos
+          {dictionary.titles.projects}
         </panda.h2>
       </HStack>
       <Grid columns={{ base: 1, lg: 2 }} gap="6" mt="14">

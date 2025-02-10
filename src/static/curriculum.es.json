@@ -26,6 +26,12 @@
       }
     ]
   },
+  "titles": {
+    "workExperience": "Experiencia laboral",
+    "projects": "Proyectos",
+    "contact": "Contactame",
+    "posts": "Blog"
+  },
   "work": [
     {
       "name": "DiensCO",

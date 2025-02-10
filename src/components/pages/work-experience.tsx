@@ -11,7 +11,7 @@ export default function WorkExperience({
   return (
     <Box marginTop="44">
       <panda.h2 fontSize="2xl" fontWeight="bold" textWrap="balance" margin="0">
-        Experiencia laboral
+        {dictionary.titles.workExperience}
       </panda.h2>
       <Grid columns={{ base: 1, lg: 2 }} gap="6" mt="14">
         {works.map((work, index) => (

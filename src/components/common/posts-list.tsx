@@ -1,5 +1,5 @@
 import { Box, Flex, HStack, Stack, panda } from '@/styled-system/jsx'
-import { Tag } from '@/src/components/recipes/tag'
+import { Tag } from '@/src/components/tag'
 import Link from 'next/link'
 import { ChevronRightIcon, TagIcon } from '@/src/icons'
 import type { Post } from '@/.contentlayer/generated'

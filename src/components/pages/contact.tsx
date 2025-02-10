@@ -69,14 +69,10 @@ export default function Contact({
               textWrap="balance"
               margin="0"
             >
-              Contact me
+              {dictionary.titles.contact}
             </panda.h2>
           </HStack>
           <Box textWrap="balance">
-            <panda.p>
-              Please feel free to contact me using this form or directly by
-              email.
-            </panda.p>
             <Box mt="5">
               <panda.h2 fontSize="lg" fontWeight="semibold" mb="3">
                 Services

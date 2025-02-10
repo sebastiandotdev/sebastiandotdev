@@ -7,7 +7,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@/src/components/ui/tooltip'
+} from '@/src/components/tooltip'
 import { menus } from '@/src/constants/menu'
 import { GithubIcon } from '@/src/icons'
 import Link from 'next/link'

@@ -9,7 +9,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@/src/components/ui/tooltip'
+} from '@/src/components/tooltip'
 
 export default function LanguageSwitcher() {
   const pathname = usePathname()

@@ -1,10 +1,10 @@
 import { Box, Flex, panda } from '@/styled-system/jsx'
 import Image from 'next/image'
 import { css, cx } from '@/styled-system/css'
-import { Paragraph } from '../recipes/paragraph'
-import { button } from '../recipes/button'
+import { Paragraph } from '../paragraph'
+import { button } from '../button'
 import Link from 'next/link'
-import { Badge } from '../recipes/badge'
+import { Badge } from '../badge'
 import { FileIcon, SendIcon } from '../../icons'
 import { iconStyles } from '@/src/components/layouts/overlay-menu'
 

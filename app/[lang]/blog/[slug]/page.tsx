@@ -8,7 +8,7 @@ import { format } from '@formkit/tempo'
 import Link from 'next/link'
 import { ChevronLeftIcon, TagIcon } from '@/src/icons'
 import { css } from '@/styled-system/css'
-import { Tag } from '@/src/components/recipes/tag'
+import { Tag } from '@/src/components/tag'
 
 interface BlogPostProps {
   params: Promise<{

@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import { Box, Container, Flex, panda, Stack } from '@/styled-system/jsx'
-import { Paragraph } from '@/src/components/recipes/paragraph'
+import { Paragraph } from '@/src/components/paragraph'
 import { css } from '@/styled-system/css'
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@/src/components/ui/tooltip'
+} from '@/src/components/tooltip'
 import { social } from '@/src/constants/social'
 import { iconStyles } from './overlay-menu'
 

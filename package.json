@@ -1,8 +1,8 @@
 {
   "name": "sebastiandotdev",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
-  "packageManager": "pnpm@9.15.4",
+  "packageManager": "pnpm@10.2.1",
   "scripts": {
     "prepare": "panda codegen",
     "fmt": "prettier --write .",
@@ -61,6 +61,9 @@
     "overrides": {
       "@types/react": "19.0.8",
       "@types/react-dom": "19.0.3"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "sharp"
+    ]
   }
 }

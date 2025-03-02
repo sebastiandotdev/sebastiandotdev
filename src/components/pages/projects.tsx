@@ -1,12 +1,9 @@
+import type { Dict } from '@/src/types'
 import { Box, Grid, HStack, panda } from '@/styled-system/jsx'
 import ProjectsList from '@/src/components/common/projects-list'
 import { Projects as ProjectType } from '@/src/static/cv'
 
-export default function Projects({
-  dictionary,
-}: {
-  dictionary: Record<any, any>
-}) {
+export default function Projects({ dictionary }: Dict) {
   return (
     <Box id="projects" marginTop="20">
       <HStack>

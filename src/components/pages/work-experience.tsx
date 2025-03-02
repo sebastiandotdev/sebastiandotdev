@@ -1,12 +1,9 @@
-import { Box, Grid, panda } from '@/styled-system/jsx'
+import type { Dict } from '@/src/types'
 import type { Work as WorkType } from '@/src/static/cv'
+import { Box, Grid, panda } from '@/styled-system/jsx'
 import Work from '@/src/components/common/work'
 
-export default function WorkExperience({
-  dictionary,
-}: {
-  dictionary: Record<any, any>
-}) {
+export default function WorkExperience({ dictionary }: Dict) {
   const works = dictionary.work as unknown as WorkType[]
   return (
     <Box marginTop="44">

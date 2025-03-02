@@ -1,14 +1,15 @@
+import type { Dict } from '@/src/types'
 import { Box, Flex, panda } from '@/styled-system/jsx'
 import Image from 'next/image'
 import { css, cx } from '@/styled-system/css'
-import { Paragraph } from '../paragraph'
-import { button } from '../button'
+import { Paragraph } from '@/src/components/paragraph'
+import { button } from '@/src/components/button'
 import Link from 'next/link'
-import { Badge } from '../badge'
-import { FileIcon, SendIcon } from '../../icons'
+import { Badge } from '@/src/components/badge'
+import { FileIcon, SendIcon } from '@/src/icons'
 import { iconStyles } from '@/src/components/layouts/overlay-menu'
 
-export default function Hero({ dictionary }: { dictionary: Record<any, any> }) {
+export default function Hero({ dictionary }: Dict) {
   const { name, online, label, summary, email, cv } = dictionary.basics
 
   return (

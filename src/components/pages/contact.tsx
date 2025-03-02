@@ -1,20 +1,17 @@
 'use client'
 
+import type { Dict } from '@/src/types'
 import { Box, Flex, HStack, panda, Stack } from '@/styled-system/jsx'
 import { Input } from '@/src/components/input'
 import { Textarea } from '@/src/components/textarea'
 import { Toaster, toast } from 'sonner'
-import { Label } from '../label'
-import { Button } from '../button'
+import { Label } from '@/src/components/label'
+import { Button } from '@/src/components/button'
 import { useState, type FormEvent } from 'react'
 import { LoaderIcon } from '@/src/icons'
 import { css } from '@/styled-system/css'
 
-export default function Contact({
-  dictionary,
-}: {
-  dictionary: Record<any, any>
-}) {
+export default function Contact({ dictionary }: Dict) {
   const services = dictionary.services as unknown as string[]
   const [isLoading, setIsLoading] = useState(false)
 

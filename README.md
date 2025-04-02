@@ -6,7 +6,7 @@ Wanna talk about something? Message me on [X](https://x.com) or email me at [seb
 
 You can find me on:
 
-* [My website: sebastiandotdev.xyz](https://sebastiandotdev.xyz/)
-* [X as @sebastiandotdev](https://x.com/sebastiandotdev)
-* [GitHub as @sebastiandotdev (you are here)](https://github.com/sebastiandotdev)
-* [LinkedIn](https://linkedin.com/in/sebastiandotdev)
+- [My website: sebastiandotdev.xyz](https://sebastiandotdev.xyz/)
+- [X as @sebastiandotdev](https://x.com/sebastiandotdev)
+- [GitHub as @sebastiandotdev (you are here)](https://github.com/sebastiandotdev)
+- [LinkedIn](https://linkedin.com/in/sebastiandotdev)

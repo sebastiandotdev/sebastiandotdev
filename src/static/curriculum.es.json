@@ -6,7 +6,7 @@
     "online": "Disponible para trabajar",
     "cv": "/Curriculum-Sebastian.pdf",
     "phone": "+57 3044176141",
-    "url": "https://castrogarciajs.dev",
+    "url": "https://sebastiandotdev.xyz",
     "summary": "Programador con +3 años de experiencia en desarrollo de aplicaciones. Especializado en Frontend, apasionado por el Open Source. Me integro en equipos de trabajo diversos y busco construir relaciones sólidas con mis compañeros de trabajo.",
     "profiles": [
       {
@@ -39,11 +39,23 @@
       "startDate": "1 Jun 2023",
       "endDate": "5 Feb 2025",
       "summary": [
-        "Mantenedor actual de domiplace.com y admin.efici.co",
-        "Se ha migrado con el admin.efici.co existente de Vue 2 a Nuxt.js y el rendimiento ha aumentado un 100% en comparación con su versión anterior.",
-        "Anteriormente domiplace.com solo tenía una aplicación móvil, por lo que mi equipo y yo comenzamos a construir la aplicación web."
-      ],
-      "highlights": ["Inicié la empresa"]
+        "Desarrollé una plataforma de pedidos que integra empresas asociadas y brinda servicios de entrega a domicilio y en restaurantes.",
+        "La idea principal de esta plataforma fue impulsar la comercialización y el uso de las aplicaciones de Domiplace, implementando funcionalidades como DeepLink.",
+        "Se ha desarrollado un sistema de chat para que los clientes puedan comunicarse con el restaurante sobre la gestión de sus pedidos. Durante la conversación, podrán eliminar artículos y modificar el precio de su pedido según sus necesidades.",
+        "Esta app desarrolló funcionalidades muy importantes en la experiencia de usuario, como el filtro de categorías, manejo de zonas horarias para recomendar restaurantes que se ajusten al horario del cliente."
+      ]      
+    },
+    {
+      "name": "ECO EFICI",
+      "position": "Desarrollador Full Stack",
+      "startDate": "17 Feb 2025",
+      "endDate": null,
+      "summary": [
+        "Mantenedor del software Efici, que es un sistema ERP y CRM al mismo tiempo.",
+        "Uno de los puntos importantes que hemos logrado es migrar tecnologías como Vue 2 a Nuxt para un mejor rendimiento y experiencia de desarrollo.",
+        "Hemos implementado módulos estables como un sistema POS, facturación electrónica, gestión de comercios, mensajería y servicios, cocina y, por último,  gestión de cajas registradoras. Todos estos servicios están disponibles en un solo lugar.",
+        "Actualmente, desarrollamos un sistema de inventario que incluye la posibilidad de preparar recetas para productos específicos."
+      ]      
     }
   ],
   "services": [
@@ -65,22 +77,5 @@
       "fluency": "A1"
     }
   ],
-  "projects": [
-    {
-      "name": "Open UI",
-      "isActive": false,
-      "github": "https://github.com/openlabs-dev/ui",
-      "description": "Un sistema de diseño construido con Tailwindcss y Radix UI.",
-      "url": "https://ui.openlabs.online",
-      "techs": ["TypeScript", "React", "TailwindCSS"]
-    },
-    {
-      "name": "Shooped",
-      "github": "https://github.com/openlabs-dev/shopped",
-      "isActive": false,
-      "description": "Una Landing page impulsada por Open UI.",
-      "url": "https://store.openlabs.online",
-      "techs": ["TypeScript", "React", "TailwindCSS", "Next.js"]
-    }
-  ]
+  "projects": []
 }

@@ -2,11 +2,10 @@ Hey! I'm **<a href="https://x.com/sebastiandotdev" target="_blank">@sebastiandot
 
 I'm a software developer and open source enthusiast from Colombia. 🇨🇴
 
-Wanna talk about something? Message me on [X](https://x.com) or email me at [sebastiandotdev@gmail.com](mailto:sebastiandotdev@gmail.com). 🤓
+Wanna talk about something? Message me on Email [sebastiandotdev@gmail.com](mailto:sebastiandotdev@gmail.com). 🤓
 
 You can find me on:
 
 - [My website: sebastiandotdev.xyz](https://sebastiandotdev.xyz/)
-- [X as @sebastiandotdev](https://x.com/sebastiandotdev)
 - [GitHub as @sebastiandotdev (you are here)](https://github.com/sebastiandotdev)
 - [LinkedIn](https://linkedin.com/in/sebastiandotdev)

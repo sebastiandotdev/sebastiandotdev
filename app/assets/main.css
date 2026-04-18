@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root:not([data-theme='light']),
+:root[data-theme='dark'] {
+  --background: oklch(0.171 0 0);
+  --foreground: oklch(0.982 0 0);
+}
+
+:root[data-theme='light'] {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.146 0 0);
+}
+
+html {
+  @apply scroll-pt-20;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* Offset for fixed header - otherwise anchor headers are cutted */
+  scrollbar-gutter: stable;
+}

@@ -8,6 +8,15 @@
 :root[data-theme='dark'] {
   --background: oklch(0.171 0 0);
   --foreground: oklch(0.982 0 0);
+  --sunlight: oklch(90.04% 0.152 94.19);
+  --glacier: oklch(90.21% 0.057 233.14);
+  --bubblegum: oklch(81.87% 0.093 351.05);
+  --orchid: oklch(77.65% 0.136 300.93);
+  --coral: oklch(69.73% 0.193 26.9);
+
+  --border: oklch(0.269 0 0);
+  --border-subtle: oklch(0.239 0 0);
+  --border-hover: oklch(0.371 0 0);
 }
 
 :root[data-theme='light'] {
@@ -22,4 +31,25 @@ html {
   text-rendering: optimizeLegibility;
   /* Offset for fixed header - otherwise anchor headers are cutted */
   scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+}
+
+:focus-visible,
+:-moz-focusring {
+  /* weird Firefox behavior makes it necessary to add `!important` 
+  or otherwise the selector would need to be more specific,
+  which it explicitly should not be. */
+  outline: 2px solid var(--accent) !important;
+  outline-offset: 2px !important;
+}
+
+/* Scrollbar styling */
+* {
+  scrollbar-color: var(--border) var(--background);
 }

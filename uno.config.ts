@@ -1,3 +1,4 @@
+import { createExternalPackageIconLoader } from '@iconify/utils/lib/loader/external-pkg'
 import {
   defineConfig,
   presetIcons,
@@ -10,7 +11,15 @@ export default defineConfig({
   presets: [
     presetWind4(),
     presetIcons({
-      /* options */
+      extraProperties: {
+        display: 'inline-block',
+        'forced-color-adjust': 'preserve-parent-color',
+      },
+      warn: true,
+      scale: 1.2,
+      collections: createExternalPackageIconLoader(
+        '@iconify-json/solar/icons.json',
+      ),
     }),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
@@ -25,6 +34,17 @@ export default defineConfig({
     colors: {
       background: 'var(--background)',
       foreground: 'var(--foreground)',
+      sunlight: 'var(--sunlight)',
+      glacier: 'var(--glacier)',
+      bubblegum: 'var(--bubblegum)',
+      orchid: 'var(--orchid)',
+      coral: 'var(--coral)',
+
+      border: {
+        DEFAULT: 'var(--border)',
+        subtle: 'var(--border-subtle)',
+        hover: 'var(--border-hover)',
+      },
     },
   },
 })

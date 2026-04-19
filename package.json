@@ -20,6 +20,8 @@
     "vue-router": "^5.0.4"
   },
   "devDependencies": {
+    "@iconify-json/solar": "^1.2.5",
+    "@iconify/utils": "^3.1.0",
     "@unocss/nuxt": "^66.6.8",
     "oxfmt": "^0.45.0",
     "oxlint": "^1.60.0",

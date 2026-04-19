@@ -23,8 +23,17 @@ useHead({
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col bg-background text-fg">
-    <h2 class="font-sans text-4xl">cron</h2>
-    <div class="i-solar:add-circle-bold" />
+  <div
+    class="min-h-screen flex flex-col bg-background text-foreground relative overflow-hidden"
+  >
+    <SvgStarFish class="absolute -top-10 -right-10 rotate-15 z-0" />
+    <SvgStarFish class="absolute -bottom-12 -left-12 -rotate-12 z-0" />
+
+    <TheNav />
+
+    <div class="border-t-4 border-foreground -mx-4 mb-12" />
+    <div id="main-content" class="flex-1 flex flex-col" tabindex="-1">
+      <NuxtPage />
+    </div>
   </div>
 </template>

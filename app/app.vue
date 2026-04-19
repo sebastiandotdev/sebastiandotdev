@@ -24,6 +24,7 @@ useHead({
 
 <template>
   <div class="min-h-screen flex flex-col bg-background text-fg">
-    <h2>Hola</h2>
+    <h2 class="font-sans text-4xl">cron</h2>
+    <div class="i-solar:add-circle-bold" />
   </div>
 </template>

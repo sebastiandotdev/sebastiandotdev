@@ -27,6 +27,12 @@ export default defineNuxtConfig({
         preload: true,
         global: true,
       },
+      {
+        name: 'Geist Mono',
+        weights: ['400', '500', '600'],
+        preload: true,
+        global: true,
+      },
     ],
   },
 })

@@ -1,32 +1,73 @@
 <script setup lang="ts">
+// Tus navItems originales intocables
 const navItems = [
-  { label: 'about //', href: '#about' },
-  { label: 'portfolio', href: '#portfolio', active: true },
-  { label: 'hire me', href: '#contact' },
+  { label: 'home', href: '#home', active: true },
+  { label: 'contact', href: '#contact' },
+  { label: 'project', href: '#project' },
+]
+
+const cornerNodes = [
+  '-top-[7px] -left-[7px]',
+  '-top-[7px] -right-[7px]',
+  '-bottom-[7px] -left-[7px]',
+  '-bottom-[7px] -right-[7px]',
 ]
 </script>
 
 <template>
-  <header class="sticky top-0 z-50">
-    <nav class="flex justify-center mb-8 p-10">
-      <div class="border-2 border-foreground flex items-stretch">
+  <header class="sticky top-0 z-50 p-4 md:p-8">
+    <nav
+      class="flex flex-col md:flex-row justify-center items-stretch gap-4 md:gap-6 text-foreground"
+    >
+      <div
+        class="relative flex flex-col md:flex-row bg-background border-2 border-foreground"
+      >
         <div
-          class="pl-6 pr-12 py-3 flex items-center gap-2 border-r-2 border-foreground"
+          v-for="pos in cornerNodes"
+          :key="pos"
+          :class="[
+            'absolute w-[8px] h-[8px] border-2 border-foreground bg-background z-10',
+            pos,
+          ]"
+        ></div>
+
+        <div
+          class="flex items-center justify-start gap-3 p-2 font-mono font-bold w-full md:w-[250px] border-b-2 md:border-b-0 md:border-r-2 border-foreground"
         >
-          <div class="i-solar:star-bold" />
-          <span class="text-lg">sebastiandotdev</span>
+          <span class="text-base leading-none">sebastiandotdev</span>
         </div>
-        <NuxtLink
-          v-for="item in navItems"
-          :key="item.label"
-          :href="item.href"
-          class="px-6 py-3 border-r-2 border-foreground last:border-r-0 hover:bg-foreground hover:text-background transition-colors"
-          :class="{
-            'underline decoration-2 underline-offset-4': item.active,
-          }"
+
+        <div
+          class="flex flex-col md:flex-row divide-y-2 md:divide-y-0 md:divide-x-2 divide-foreground"
         >
-          {{ item.label }}
-        </NuxtLink>
+          <NuxtLink
+            v-for="item in navItems"
+            :key="item.label"
+            :href="item.href"
+            class="flex items-center justify-center w-full md:w-24 lg:w-28 py-2 hover:bg-foreground hover:text-background transition-colors font-mono text-sm leading-none"
+            :class="{
+              'underline decoration-2 underline-offset-4 font-bold':
+                item.active,
+            }"
+          >
+            {{ item.label }}
+          </NuxtLink>
+        </div>
+      </div>
+
+      <div
+        class="relative border-2 border-foreground px-4 py-2 flex items-center justify-center bg-background hover:bg-foreground hover:text-background transition-colors cursor-pointer"
+      >
+        <div
+          v-for="pos in cornerNodes"
+          :key="pos"
+          :class="[
+            'absolute w-[8px] h-[8px] border-2 border-foreground bg-background z-10',
+            pos,
+          ]"
+        ></div>
+
+        <DarkModeToggle />
       </div>
     </nav>
   </header>

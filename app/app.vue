@@ -26,11 +26,13 @@ useHead({
   <div
     class="min-h-screen flex flex-col bg-background text-foreground relative overflow-hidden"
   >
-    <SvgStarFish class="absolute -top-10 -right-10 rotate-15 z-0" />
+    <SvgStarFish class="absolute -top-12 -right-14 rotate-15 z-0" />
     <SvgStarFish class="absolute -bottom-12 -left-12 -rotate-12 z-0" />
 
+    <!-- Navigation -->
     <TheNav />
 
+    <!-- Main Content -->
     <div class="border-t-4 border-foreground -mx-4 mb-12" />
     <div id="main-content" class="flex-1 flex flex-col" tabindex="-1">
       <NuxtPage />

@@ -2,8 +2,8 @@
 // Tus navItems originales intocables
 const navItems = [
   { label: 'home', href: '#home', active: true },
-  { label: 'contact', href: '#contact' },
   { label: 'project', href: '#project' },
+  { label: 'contact', href: '#contact' },
 ]
 
 const cornerNodes = [

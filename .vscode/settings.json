@@ -2,6 +2,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.oxc": "always"
   },
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.localesPaths": ["./i18n/locales"],
   "oxc.fmt.configPath": ".oxfmtrc.json",
   "editor.defaultFormatter": "oxc.oxc-vscode",
   "editor.formatOnSave": true

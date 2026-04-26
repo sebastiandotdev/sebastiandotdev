@@ -1,0 +1,67 @@
+<script setup lang="ts">
+import type { NuxtError } from '#app'
+
+const props = defineProps<{
+  error: NuxtError
+}>()
+
+const status = computed(() => props.error.status || 500)
+const statusText = computed(() => {
+  if (props.error.statusText) return props.error.statusText
+  switch (status.value) {
+    case 401:
+      return $t('error.401')
+    case 404:
+      return $t('error.404')
+    case 500:
+      return $t('error.500')
+    case 503:
+      return $t('error.503')
+    default:
+      return $t('error.default')
+  }
+})
+
+function handleError() {
+  clearError({ redirect: '/' })
+}
+
+useHead({
+  title: `${status.value} - ${statusText.value}`,
+})
+</script>
+
+<template>
+  <div class="min-h-screen flex flex-col bg-bg text-fg">
+    <!-- TODO: Add Header component here -->
+
+    <main
+      class="flex-1 container flex flex-col items-center justify-center py-20 text-center"
+    >
+      <p class="font-mono text-8xl sm:text-9xl font-medium text-fg-subtle mb-4">
+        {{ status }}
+      </p>
+
+      <h1 class="font-mono text-2xl sm:text-3xl font-medium mb-4">
+        {{ statusText }}
+      </h1>
+
+      <p
+        v-if="error.message && error.message !== statusText"
+        class="text-fg-muted text-base max-w-md mb-8"
+      >
+        {{ error.message }}
+      </p>
+
+      <button
+        type="button"
+        class="font-mono text-sm px-6 py-3 bg-fg text-bg rounded-lg transition-all duration-200 hover:bg-fg/90 active:scale-95"
+        @click="handleError"
+      >
+        {{ $t('common.go_back_home') }}
+      </button>
+    </main>
+
+    <!-- TODO: Add Footer component here -->
+  </div>
+</template>

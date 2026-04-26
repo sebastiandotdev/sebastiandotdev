@@ -1,0 +1,28 @@
+{
+  "$schema": "../schema.json",
+  "seo": {
+    "home": {
+      "title": "sebasiandotdev - Software Engineer",
+      "description": "Joan Sebastian Garcia entusiasta del código abierto."
+    }
+  },
+  "nav": {
+    "home": "Inicio",
+    "blog": "Blog",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "source": "código fuente"
+  },
+  "error": {
+    "401": "No autorizado",
+    "404": "Página no encontrada",
+    "500": "Error interno del servidor",
+    "503": "Servicio no disponible",
+    "default": "Error desconocido"
+  },
+  "common": {
+    "go_back_home": "Volver al home"
+  }
+}

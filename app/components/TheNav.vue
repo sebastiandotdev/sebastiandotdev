@@ -1,10 +1,28 @@
 <script setup lang="ts">
-// Tus navItems originales intocables
-const navItems = [
-  { label: 'home', href: '#home', active: true },
-  { label: 'project', href: '#project' },
-  { label: 'contact', href: '#contact' },
-]
+const navItems = computed(() => [
+  {
+    name: 'Projects',
+    label: $t('nav.projects'),
+    to: { name: 'projects' },
+    external: false,
+    type: 'link',
+  },
+  {
+    name: 'Contact',
+    label: $t('nav.contact'),
+    to: { name: 'contact' },
+    external: false,
+    type: 'link',
+  },
+
+  {
+    name: 'Blog',
+    label: $t('nav.blog'),
+    to: { name: 'blog' },
+    external: false,
+    type: 'link',
+  },
+])
 
 const cornerNodes = [
   '-top-[7px] -left-[7px]',
@@ -34,7 +52,13 @@ const cornerNodes = [
         <div
           class="flex items-center justify-start gap-3 p-2 font-mono font-bold w-full md:w-[250px] border-b-2 md:border-b-0 md:border-r-2 border-foreground"
         >
-          <span class="text-base leading-none">sebastiandotdev</span>
+          <NuxtLink
+            to="/"
+            :aria-label="$t('nav.home')"
+            class="font-mono text-lg font-medium text-fg hover:text-fg transition-colors duration-200 focus-ring me-4"
+          >
+            <span class="text-base leading-none">sebastiandotdev</span>
+          </NuxtLink>
         </div>
 
         <div
@@ -42,13 +66,9 @@ const cornerNodes = [
         >
           <NuxtLink
             v-for="item in navItems"
-            :key="item.label"
-            :href="item.href"
+            :key="item.name"
+            :to="item.to"
             class="flex items-center justify-center w-full md:w-24 lg:w-28 py-2 hover:bg-foreground hover:text-background transition-colors font-mono text-sm leading-none"
-            :class="{
-              'underline decoration-2 underline-offset-4 font-bold':
-                item.active,
-            }"
           >
             {{ item.label }}
           </NuxtLink>

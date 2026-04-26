@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "sebastiandotdev i18n locales files",
+  "description": "Schema for sebastiandotdev i18n translation files.",
+  "type": "object",
+  "properties": {
+    "seo": {
+      "type": "object",
+      "properties": {
+        "home": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "nav": {
+      "type": "object",
+      "properties": {
+        "home": {
+          "type": "string"
+        },
+        "blog": {
+          "type": "string"
+        },
+        "projects": {
+          "type": "string"
+        },
+        "contact": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "footer": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "error": {
+      "type": "object",
+      "properties": {
+        "401": {
+          "type": "string"
+        },
+        "404": {
+          "type": "string"
+        },
+        "500": {
+          "type": "string"
+        },
+        "503": {
+          "type": "string"
+        },
+        "default": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "common": {
+      "type": "object",
+      "properties": {
+        "go_back_home": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

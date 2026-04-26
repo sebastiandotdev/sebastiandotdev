@@ -1,3 +1,5 @@
+import { currentLocales } from './i18n/i18n'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -7,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vueuse/nuxt',
     '@nuxt/fonts',
+    '@nuxtjs/i18n',
   ],
 
   colorMode: {
@@ -34,5 +37,17 @@ export default defineNuxtConfig({
         global: true,
       },
     ],
+  },
+  vite: {
+    optimizeDeps: {
+      include: ['@vueuse/core'],
+    },
+  },
+  i18n: {
+    locales: currentLocales,
+    defaultLocale: 'en',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: false,
+    langDir: 'locales',
   },
 })

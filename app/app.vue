@@ -2,6 +2,7 @@
 const colorMode = useColorMode()
 const darkMode = usePreferredDark()
 
+const { locale } = useI18n()
 const colorScheme = computed(() => {
   return {
     system: darkMode ? 'dark light' : 'light dark',
@@ -12,7 +13,7 @@ const colorScheme = computed(() => {
 
 useHead({
   htmlAttrs: {
-    lang: () => 'en',
+    lang: () => locale.value,
     dir: () => 'ltr',
   },
   titleTemplate: (titleChunk) => {

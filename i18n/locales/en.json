@@ -7,13 +7,14 @@
     }
   },
   "nav": {
-    "home": "Home",
-    "blog": "Blog",
-    "projects": "Projects",
-    "contact": "Contact"
+    "home": "home",
+    "blog": "about",
+    "projects": "projects",
+    "contact": "contact"
   },
   "footer": {
-    "source": "source"
+    "source": "source",
+    "portfolio_2026": "Portfolio 2026"
   },
   "error": {
     "401": "Unauthorized",
@@ -24,5 +25,11 @@
   },
   "common": {
     "go_back_home": "Go to home"
+  },
+  "hero": {
+    "title_part1": "I design ✍️ top",
+    "title_part2": "notch",
+    "highlight": "websites",
+    "cta": "See Portfolio"
   }
 }

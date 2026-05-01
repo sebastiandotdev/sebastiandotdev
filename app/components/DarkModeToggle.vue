@@ -15,9 +15,15 @@ const toggle = () => {
   <button
     @click="toggle"
     aria-label="Toggle color mode"
-    class="px-3 py-2 rounded-md border-2 border-foreground hover:bg-foreground/5 transition flex items-center gap-2"
+    class="text-foreground hover:opacity-70 transition-opacity flex items-center justify-center p-2"
   >
-    <div v-if="isDark" class="i-solar:sun-bold" />
-    <div v-else class="i-solar:moon-bold" />
+    <div
+      v-if="isDark"
+      class="i-solar:sun-bold text-[32px] md:text-[48px]"
+    />
+    <div
+      v-else
+      class="i-solar:moon-bold text-[32px] md:text-[48px]"
+    />
   </button>
 </template>

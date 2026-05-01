@@ -7,13 +7,14 @@
     }
   },
   "nav": {
-    "home": "Inicio",
-    "blog": "Blog",
-    "projects": "Proyectos",
-    "contact": "Contacto"
+    "home": "inicio",
+    "blog": "sobre mi",
+    "projects": "portafolio",
+    "contact": "contrátame"
   },
   "footer": {
-    "source": "código fuente"
+    "source": "código fuente",
+    "portfolio_2026": "Portafolio 2026"
   },
   "error": {
     "401": "No autorizado",
@@ -24,5 +25,11 @@
   },
   "common": {
     "go_back_home": "Volver al home"
+  },
+  "hero": {
+    "title_part1": "Diseño ✍️ sitios",
+    "title_part2": "web de",
+    "highlight": "alto nivel",
+    "cta": "Ver Portafolio"
   }
 }

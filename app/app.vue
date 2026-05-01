@@ -34,5 +34,8 @@ useHead({
     <div id="main-content" class="flex-1 flex flex-col" tabindex="-1">
       <NuxtPage />
     </div>
+
+    <!-- Footer -->
+    <TheFooter />
   </div>
 </template>

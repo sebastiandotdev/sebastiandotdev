@@ -2,7 +2,7 @@
 const colorMode = useColorMode()
 const darkMode = usePreferredDark()
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const colorScheme = computed(() => {
   return {
     system: darkMode ? 'dark light' : 'light dark',
@@ -17,7 +17,7 @@ useHead({
     dir: () => 'ltr',
   },
   titleTemplate: (titleChunk) => {
-    return titleChunk ? titleChunk : 'sebastiandotdev - Software Engineer'
+    return titleChunk ? titleChunk : t('seo.home.title')
   },
   meta: [{ name: 'color-scheme', content: colorScheme }],
 })

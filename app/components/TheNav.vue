@@ -1,18 +1,18 @@
 <script setup lang="ts">
 const navLinks = [
   {
-    label: 'LinkedIn',
-    url: 'https://linkedin.com/in/sebastiandotdev',
+    label: 'nav.linkedin',
+    url: SOCIAL_LINKS.LINKEDIN,
     icon: 'i-logos:linkedin-icon',
   },
   {
-    label: 'Github',
-    url: 'https://github.com/sebastiandotdev',
+    label: 'nav.github',
+    url: SOCIAL_LINKS.GITHUB,
     icon: 'i-logos:github-icon',
   },
   {
-    label: 'Gmail',
-    url: 'mailto:sebastiandotdev@gmail.com',
+    label: 'nav.gmail',
+    url: SOCIAL_LINKS.GMAIL,
     icon: 'i-logos:google-gmail',
   },
 ]
@@ -26,9 +26,9 @@ const navLinks = [
         :key="link.label"
         :to="link.url"
         target="_blank"
-        class="text-muted hover:text-default transition-colors duration-300"
+        class="text-muted hover:text-default transition-colors duration-300 text-sm"
       >
-        {{ link.label }}
+        {{ $t(link.label) }}
       </NuxtLink>
     </div>
   </nav>

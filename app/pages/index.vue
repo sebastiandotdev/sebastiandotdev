@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { CURRENT_WORK, SOCIAL_LINKS } from '~/utils/constants'
+
 const skills: string[] = [
   'TypeScript',
   'C++',
@@ -19,7 +21,7 @@ const skills: string[] = [
     >
       <img
         src="/sebastiandotdev.jpeg"
-        alt="Mustafa's profile"
+        :alt="$t('hero.title')"
         class="h-full w-full rounded-[inherit] object-cover"
       />
     </span>
@@ -27,40 +29,36 @@ const skills: string[] = [
     <div class="mt-5 flex flex-col gap-2">
       <!-- Introduction -->
       <h1 class="text-2xl font-medium text-default">
-        Hi, I&apos;m Joan Sebastian.
+        {{ $t('hero.title') }}
       </h1>
 
       <!-- Description -->
       <div class="mb-2 text-muted leading-relaxed font-sans">
-        <p>Frontend Software Engineer who develops user-centered products.</p>
-        <p>Passionate to create them with engineering and design principles.</p>
+        <p>{{ $t('hero.subtitle') }}</p>
+        <p>{{ $t('hero.subtitle2') }}</p>
       </div>
     </div>
 
     <!-- Current Work -->
     <p class="text-muted mb-12">
-      Currently working on
-      <span class="text-default font-medium">ECO EFICI</span>
+      {{ $t('hero.current_work') }}
+      <span class="text-default font-medium">{{ CURRENT_WORK.NAME }}</span>
     </p>
 
     <!-- Skills Section -->
     <div class="mb-10">
-      <h2 class="text-default font-medium mb-4">Top Skills</h2>
+      <h2 class="text-default font-medium mb-4">{{ $t('stack.title') }}</h2>
       <div class="flex flex-wrap gap-2 text-muted text-sm">
         <template v-for="(skill, index) in skills" :key="skill">
-          <span>{{ skill }}</span>
+          <span>{{ skill === 'Software Engineer' ? $t('common.software_engineer') : skill }}</span>
           <span v-if="index < skills.length - 1">•</span>
         </template>
       </div>
     </div>
 
     <!-- CTA Button -->
-    <NuxtLink
-      to="mailto:sebastiandotdev@gmail.com"
-      target="_blank"
-      class="btn btn-default"
-    >
-      Say Hello
+    <NuxtLink :to="SOCIAL_LINKS.GMAIL" target="_blank" class="btn btn-default">
+      {{ $t('hero.cta') }}
     </NuxtLink>
   </main>
 </template>

@@ -1,53 +1,55 @@
 <script setup lang="ts">
-const { t } = useI18n()
-
 const socialLinks = [
   {
     name: 'Gmail',
-    url: 'mailto:sebastiandotdev@gmail.com',
+    url: SOCIAL_LINKS.GMAIL,
     icon: 'i-logos:google-gmail',
   },
   {
     name: 'Linkedin',
-    url: 'https://linkedin.com/in/sebastiandotdev',
+    url: SOCIAL_LINKS.LINKEDIN,
     icon: 'i-logos:linkedin-icon',
   },
   {
     name: 'Github',
-    url: 'https://github.com/sebastiandotdev',
+    url: SOCIAL_LINKS.GITHUB,
     icon: 'i-logos:github-icon',
   },
 ]
 </script>
 
 <template>
-  <footer class="mt-auto p-4">
-    <div
-      class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4"
-    >
+  <footer class="mt-auto p-4 max-w-2xl mx-auto w-full">
+    <div class="flex items-center justify-between gap-4">
       <!-- Logo Section -->
       <NuxtLink
-        to="https://github.com/sebastiandotdev"
+        :to="SOCIAL_LINKS.GITHUB"
         target="_blank"
         rel="noopener noreferrer"
-        class="flex items-center gap-4 group"
+        class="flex items-center group text-sm text-muted hover:text-default transition-colors"
       >
-        @sebastiandotdev
+        {{ $t('footer.logo') }}
       </NuxtLink>
 
       <!-- Right Section: Socials & Theme -->
-      <div class="flex items-center gap-4 md:gap-8">
-        <a
-          v-for="link in socialLinks"
-          :key="link.name"
-          :href="link.url"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-foreground hover:opacity-70 transition-opacity"
-          :aria-label="link.name"
-        >
-          <div :class="link.icon"></div>
-        </a>
+      <div class="flex items-center gap-6">
+        <div class="flex items-center gap-4">
+          <a
+            v-for="link in socialLinks"
+            :key="link.name"
+            :href="link.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-muted hover:text-default transition-colors flex items-center"
+            :aria-label="link.name"
+          >
+            <div :class="link.icon" class="size-4" />
+          </a>
+        </div>
+        <div class="h-4 w-px bg-elevated" />
+        <DarkModeToggle class="size-4" />
+        <div class="h-4 w-px bg-elevated" />
+        <LanguageSwitcher />
       </div>
     </div>
   </footer>

@@ -20,6 +20,7 @@ export default defineConfig({
       collections: createExternalPackageIconLoader(
         '@iconify-json/solar/icons.json',
         '@iconify-json/logos/icons.json',
+        '@iconify-json/circle-flags/icons.json',
       ),
     }),
   ],
@@ -27,7 +28,7 @@ export default defineConfig({
   shortcuts: [
     [
       'btn',
-      'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*="size-"])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 px-4 py-2 max-w-min',
+      'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*="size-"])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:ring-[3px] px-4 py-2 max-w-min',
     ],
     [
       'btn-default',

@@ -19,7 +19,7 @@ This project follows the **Nuxt 4** directory structure.
 ## Development Conventions
 
 - **Styling:** Use UnoCSS utility classes. Avoid custom CSS unless necessary (use `uno.config.ts` for theme extensions).
-- **Internationalization:** Always use `$t()` for user-facing strings. Locales are managed in `i18n/locales/`.
+- **Internationalization:** Always use `$t()` for user-facing strings. Locales are managed in `i18n/locales/`. All changes to locale files MUST respect the structure defined in `i18n/schema.json`. Update the schema if new keys or sections are added.
 - **Components:** Follow the `TheComponent.vue` naming convention for singleton components (layouts/nav) and `BaseComponent.vue` or descriptive names for others.
 - **TypeScript:** Use `<script lang="ts" setup>` for all Vue components.
 

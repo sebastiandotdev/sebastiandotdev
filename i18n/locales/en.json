@@ -2,7 +2,7 @@
   "$schema": "../schema.json",
   "seo": {
     "home": {
-      "title": "sebasiandotdev - Software Engineer",
+      "title": "sebastiandotdev - Software Engineer",
       "description": "Joan Sebastian Garcia enthusiastic open source."
     }
   },
@@ -10,11 +10,10 @@
     "home": "home",
     "blog": "about",
     "projects": "projects",
-    "contact": "contact"
-  },
-  "footer": {
-    "source": "source",
-    "portfolio_2026": "Portfolio 2026"
+    "contact": "contact",
+    "linkedin": "LinkedIn",
+    "github": "Github",
+    "gmail": "Gmail"
   },
   "error": {
     "401": "Unauthorized",
@@ -24,14 +23,23 @@
     "default": "Something went wrong"
   },
   "common": {
-    "go_back_home": "Go to home"
+    "go_back_home": "Go to home",
+    "software_engineer": "Software Engineer",
+    "switch_to_english": "Switch to English",
+    "switch_to_spanish": "Switch to Spanish"
   },
   "hero": {
-    "title": "I software developer",
-    "subtitle": "I am a software engineer with 5+ years of experience. I am passionate about open source and I love to build cool projects.",
-    "cta": "Get to know me"
+    "title": "Hi, I'm Joan Sebastian.",
+    "subtitle": "Frontend Software Engineer who develops user-centered products.",
+    "subtitle2": "Passionate to create them with engineering and design principles.",
+    "current_work": "Currently working on",
+    "cta": "Say Hello"
   },
   "stack": {
-    "title": "stack"
+    "title": "Top Skills"
+  },
+  "footer": {
+    "logo": "sebastiandotdev",
+    "source": "source"
   }
 }

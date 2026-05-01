@@ -34,6 +34,15 @@
         },
         "contact": {
           "type": "string"
+        },
+        "linkedin": {
+          "type": "string"
+        },
+        "github": {
+          "type": "string"
+        },
+        "gmail": {
+          "type": "string"
         }
       },
       "additionalProperties": false
@@ -41,10 +50,10 @@
     "footer": {
       "type": "object",
       "properties": {
-        "source": {
+        "logo": {
           "type": "string"
         },
-        "portfolio_2026": {
+        "source": {
           "type": "string"
         }
       },
@@ -75,6 +84,45 @@
       "type": "object",
       "properties": {
         "go_back_home": {
+          "type": "string"
+        },
+        "software_engineer": {
+          "type": "string"
+        },
+        "switch_to_english": {
+          "type": "string"
+        },
+        "switch_to_spanish": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "hero": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "subtitle2": {
+          "type": "string"
+        },
+        "current_work": {
+          "type": "string"
+        },
+        "cta": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "stack": {
+      "type": "object",
+      "properties": {
+        "title": {
           "type": "string"
         }
       },

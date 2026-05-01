@@ -5,35 +5,35 @@ const socialLinks = [
   {
     name: 'Gmail',
     url: 'mailto:sebastiandotdev@gmail.com',
-    icon: 'i-solar:letter-bold',
+    icon: 'i-logos:google-gmail',
+  },
+  {
+    name: 'Linkedin',
+    url: 'https://linkedin.com/in/sebastiandotdev',
+    icon: 'i-logos:linkedin-icon',
+  },
+  {
+    name: 'Github',
+    url: 'https://github.com/sebastiandotdev',
+    icon: 'i-logos:github-icon',
   },
 ]
 </script>
 
 <template>
-  <footer class="mt-auto p-4 md:p-8">
-    <!-- Top Border Line -->
-    <div class="h-[5px] bg-foreground mb-12 md:mb-16"></div>
-
+  <footer class="mt-auto p-4">
     <div
       class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4"
     >
       <!-- Logo Section -->
-      <NuxtLink to="/" class="flex items-center gap-4 group">
-        <div
-          class="i-solar:star-fall-bold text-[36px] md:text-[48px] text-foreground"
-        ></div>
-        <span class="text-[24px] md:text-[36px] font-normal font-sans"
-          >sebastiandotdev</span
-        >
-      </NuxtLink>
-
-      <!-- Center Text -->
-      <p
-        class="text-[24px] md:text-[32px] font-medium font-sans text-center md:absolute md:left-1/2 md:-translate-x-1/2"
+      <NuxtLink
+        to="https://github.com/sebastiandotdev"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-4 group"
       >
-        {{ t('footer.portfolio_2026') }}
-      </p>
+        @sebastiandotdev
+      </NuxtLink>
 
       <!-- Right Section: Socials & Theme -->
       <div class="flex items-center gap-4 md:gap-8">
@@ -46,10 +46,8 @@ const socialLinks = [
           class="text-foreground hover:opacity-70 transition-opacity"
           :aria-label="link.name"
         >
-          <div :class="link.icon" class="text-[32px] md:text-[48px]"></div>
+          <div :class="link.icon"></div>
         </a>
-
-        <DarkModeToggle />
       </div>
     </div>
   </footer>

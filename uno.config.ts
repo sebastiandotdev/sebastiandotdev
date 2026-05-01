@@ -19,35 +19,20 @@ export default defineConfig({
       scale: 1.2,
       collections: createExternalPackageIconLoader(
         '@iconify-json/solar/icons.json',
+        '@iconify-json/logos/icons.json',
       ),
     }),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
   shortcuts: [
-    // buttons
     [
       'btn',
-      'inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-bold ring-offset-background transition-all active:translate-x-1 active:translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-4 border-black',
+      'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*="size-"])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 px-4 py-2 max-w-min',
     ],
-    ['btn-default', 'bg-glacier text-black'],
-    ['btn-destructive', 'bg-coral text-white'],
-    ['btn-outline', 'border-black bg-transparent text-black'],
-    ['btn-secondary', 'bg-bubblegum text-black'],
-    ['btn-ghost', 'border-transparent text-black'],
     [
-      'btn-link',
-      'text-primary underline-offset-4 hover:underline border-transparent',
+      'btn-default',
+      'bg-black hover:bg-black/90 text-white dark:bg-white dark:hover:bg-white/90 dark:text-black',
     ],
-    ['btn-default-size', 'h-10 px-4 py-2'],
-    ['btn-sm', 'h-9 rounded-md px-3'],
-    ['btn-lg', 'h-12 rounded-xl px-8 text-lg'],
-    ['btn-icon', 'h-10 w-10'],
-
-    // Neu-Brutalism
-    ['brutal-border', 'border-4 border-black dark:border-white'],
-    ['brutal-border-thick', 'border-[5px] border-black dark:border-white'],
-    ['brutal-corner-h', 'absolute w-10 h-1 bg-black dark:bg-white'],
-    ['brutal-corner-v', 'absolute h-10 w-1 bg-black dark:bg-white'],
   ],
   theme: {
     spacing: { DEFAULT: '4px' },
@@ -60,21 +45,6 @@ export default defineConfig({
       '3xs': { fontSize: '0.625rem' }, // 10px
       '4xs': { fontSize: '0.5625rem' }, // 9px
       '5xs': { fontSize: '0.5rem' }, // 8px
-    },
-    colors: {
-      background: 'var(--background)',
-      foreground: 'var(--foreground)',
-      sunlight: 'var(--sunlight)',
-      glacier: 'var(--glacier)',
-      bubblegum: 'var(--bubblegum)',
-      orchid: 'var(--orchid)',
-      coral: 'var(--coral)',
-
-      border: {
-        DEFAULT: 'var(--border)',
-        subtle: 'var(--border-subtle)',
-        hover: 'var(--border-hover)',
-      },
     },
   },
 })

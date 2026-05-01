@@ -17,7 +17,7 @@ const toggle = () => {
     aria-label="Toggle color mode"
     class="text-foreground hover:opacity-70 transition-opacity flex items-center justify-center"
   >
-    <div v-if="isDark" class="i-solar:sun-bold text-[32px] md:text-[48px]" />
-    <div v-else class="i-solar:moon-bold text-[32px] md:text-[48px]" />
+    <div v-if="isDark" class="i-solar:sun-bold" />
+    <div v-else class="i-solar:moon-bold" />
   </button>
 </template>

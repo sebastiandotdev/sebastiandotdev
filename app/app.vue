@@ -24,18 +24,19 @@ useHead({
 </script>
 
 <template>
-  <div
-    class="min-h-screen flex flex-col bg-background text-foreground relative overflow-hidden"
-  >
-    <!-- Navigation -->
+  <div class="relative bg-default">
     <TheNav />
 
-    <!-- Main Content -->
-    <div id="main-content" class="flex-1 flex flex-col" tabindex="-1">
-      <NuxtPage />
-    </div>
+    <!-- Dot pattern background -->
+    <div
+      class="fixed inset-0 opacity-10 pointer-events-none"
+      :style="{
+        backgroundImage: `radial-gradient(circle, currentColor 1px, transparent 1px)`,
+        backgroundSize: '30px 30px',
+      }"
+    />
 
-    <!-- Footer -->
-    <TheFooter />
+    <NuxtPage />
   </div>
+  <TheFooter />
 </template>

@@ -30,8 +30,8 @@
   },
   "hero": {
     "title": "Hola, soy Joan Sebastian.",
-    "subtitle": "Ingeniero de Software Frontend que desarrolla productos centrados en el usuario.",
-    "subtitle2": "Apasionado por crearlos con principios de ingeniería y diseño.",
+    "subtitle": "Desarrollador de Software con +4 años de experiencia profesional.",
+    "subtitle2": "Apasionado del Código Abierto.",
     "current_work": "Actualmente trabajando en",
     "cta": "Dile hola"
   },
@@ -40,6 +40,7 @@
   },
   "footer": {
     "logo": "sebastiandotdev",
-    "source": "código fuente"
+    "source": "código fuente",
+    "credit": "diseño por v0"
   }
 }

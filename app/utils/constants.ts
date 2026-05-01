@@ -6,4 +6,5 @@ export const SOCIAL_LINKS = {
 
 export const CURRENT_WORK = {
   NAME: 'ECO EFICI',
+  LINK: 'https://efici.co',
 } as const

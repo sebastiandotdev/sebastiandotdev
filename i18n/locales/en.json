@@ -30,8 +30,8 @@
   },
   "hero": {
     "title": "Hi, I'm Joan Sebastian.",
-    "subtitle": "Frontend Software Engineer who develops user-centered products.",
-    "subtitle2": "Passionate to create them with engineering and design principles.",
+    "subtitle": "Software Developer with +4 years of professional experience.",
+    "subtitle2": "Passionate about Open Source.",
     "current_work": "Currently working on",
     "cta": "Say Hello"
   },
@@ -40,6 +40,7 @@
   },
   "footer": {
     "logo": "sebastiandotdev",
-    "source": "source"
+    "source": "source",
+    "credit": "design by v0"
   }
 }

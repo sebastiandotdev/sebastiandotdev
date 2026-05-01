@@ -22,14 +22,25 @@ const socialLinks = [
   <footer class="mt-auto p-4 max-w-2xl mx-auto w-full">
     <div class="flex items-center justify-between gap-4">
       <!-- Logo Section -->
-      <NuxtLink
-        :to="SOCIAL_LINKS.GITHUB"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="flex items-center group text-sm text-muted hover:text-default transition-colors"
-      >
-        {{ $t('footer.logo') }}
-      </NuxtLink>
+      <div class="flex items-center gap-3">
+        <NuxtLink
+          :to="SOCIAL_LINKS.GITHUB"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center group text-sm text-muted hover:text-default transition-colors"
+        >
+          {{ $t('footer.logo') }}
+        </NuxtLink>
+        <span>•</span>
+        <a
+          href="https://v0.app/templates/simple-dev-portfolio-ZWxaausPnN3?ref=8NK2LZ"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-xs text-muted hover:text-default transition-colors"
+        >
+          {{ $t('footer.credit') }}
+        </a>
+      </div>
 
       <!-- Right Section: Socials & Theme -->
       <div class="flex items-center gap-6">

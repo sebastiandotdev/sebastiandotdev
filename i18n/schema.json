@@ -55,6 +55,9 @@
         },
         "source": {
           "type": "string"
+        },
+        "credit": {
+          "type": "string"
         }
       },
       "additionalProperties": false

@@ -33,7 +33,7 @@ const skills: string[] = [
       </h1>
 
       <!-- Description -->
-      <div class="mb-2 text-muted leading-relaxed font-sans">
+      <div class="mb-8 text-muted leading-relaxed font-sans">
         <p>{{ $t('hero.subtitle') }}</p>
         <p>{{ $t('hero.subtitle2') }}</p>
       </div>
@@ -42,7 +42,12 @@ const skills: string[] = [
     <!-- Current Work -->
     <p class="text-muted mb-12">
       {{ $t('hero.current_work') }}
-      <span class="text-default font-medium">{{ CURRENT_WORK.NAME }}</span>
+      <a
+        :href="CURRENT_WORK.LINK"
+        target="_blank"
+        class="text-default font-medium"
+        >{{ CURRENT_WORK.NAME }}</a
+      >
     </p>
 
     <!-- Skills Section -->
@@ -50,7 +55,11 @@ const skills: string[] = [
       <h2 class="text-default font-medium mb-4">{{ $t('stack.title') }}</h2>
       <div class="flex flex-wrap gap-2 text-muted text-sm">
         <template v-for="(skill, index) in skills" :key="skill">
-          <span>{{ skill === 'Software Engineer' ? $t('common.software_engineer') : skill }}</span>
+          <span>{{
+            skill === 'Software Engineer'
+              ? $t('common.software_engineer')
+              : skill
+          }}</span>
           <span v-if="index < skills.length - 1">•</span>
         </template>
       </div>

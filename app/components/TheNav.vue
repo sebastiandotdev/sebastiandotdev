@@ -28,7 +28,7 @@ const cornerNodes = [
 <template>
   <header class="sticky top-0 z-50 p-4 md:p-8 flex justify-center">
     <nav
-      class="relative flex flex-col md:flex-row items-stretch bg-background border-[5px] border-foreground shadow-[6px_6px_0px_rgba(0,0,0,0.25)]"
+      class="relative flex flex-col md:flex-row items-stretch bg-background brutal-border-thick"
     >
       <!-- Corner Nodes -->
       <div

@@ -27,9 +27,8 @@
     "go_back_home": "Volver al home"
   },
   "hero": {
-    "title_part1": "Diseño ✍️ sitios",
-    "title_part2": "web de",
-    "highlight": "alto nivel",
-    "cta": "Ver Portafolio"
+    "title": "I software developer",
+    "subtitle": "I am a software engineer with 5+ years of experience. I am passionate about open source and I love to build cool projects.",
+    "cta": "Conóceme"
   }
 }

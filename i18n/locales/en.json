@@ -27,9 +27,8 @@
     "go_back_home": "Go to home"
   },
   "hero": {
-    "title_part1": "I design ✍️ top",
-    "title_part2": "notch",
-    "highlight": "websites",
-    "cta": "See Portfolio"
+    "title": "I software developer",
+    "subtitle": "I am a software engineer with 5+ years of experience. I am passionate about open source and I love to build cool projects.",
+    "cta": "Get to know me"
   }
 }

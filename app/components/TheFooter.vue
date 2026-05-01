@@ -32,7 +32,7 @@ const socialLinks = [
       <p
         class="text-[24px] md:text-[32px] font-medium font-sans text-center md:absolute md:left-1/2 md:-translate-x-1/2"
       >
-        {{ t('footer.portfolio_2024') }}
+        {{ t('footer.portfolio_2026') }}
       </p>
 
       <!-- Right Section: Socials & Theme -->

@@ -218,7 +218,7 @@ onBeforeRouteUpdate((to, from) => {
 </script>
 ```
 
-<!-- 
+<!--
 Source references:
 - https://nuxt.com/docs/getting-started/routing
 - https://nuxt.com/docs/directory-structure/app/pages

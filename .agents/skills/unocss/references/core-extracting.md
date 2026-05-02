@@ -37,10 +37,7 @@ For files not in build pipeline:
 ```ts
 export default defineConfig({
   content: {
-    filesystem: [
-      'src/**/*.php',
-      'public/*.html',
-    ],
+    filesystem: ['src/**/*.php', 'public/*.html'],
   },
 })
 ```
@@ -131,7 +128,7 @@ extractors: [
 ]
 ```
 
-<!-- 
+<!--
 Source references:
 - https://unocss.dev/guide/extracting
 -->

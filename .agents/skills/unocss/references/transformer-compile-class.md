@@ -13,9 +13,7 @@ Compiles multiple utility classes into a single hashed class for smaller HTML.
 import { defineConfig, transformerCompileClass } from 'unocss'
 
 export default defineConfig({
-  transformers: [
-    transformerCompileClass(),
-  ],
+  transformers: [transformerCompileClass()],
 })
 ```
 
@@ -63,13 +61,13 @@ Add `:uno:` prefix to mark classes for compilation:
 transformerCompileClass({
   // Custom trigger string (default: ':uno:')
   trigger: ':uno:',
-  
+
   // Custom class prefix (default: 'uno-')
   classPrefix: 'uno-',
-  
+
   // Hash function for class names
   hashFn: (str) => /* custom hash */,
-  
+
   // Keep original classes alongside compiled
   keepOriginal: false,
 })
@@ -94,6 +92,7 @@ Enforce compile class usage across project:
 ```
 
 This rule:
+
 - Warns when class attribute doesn't start with `:uno:`
 - Auto-fixes by adding the prefix
 
@@ -102,10 +101,13 @@ Options:
 ```json
 {
   "rules": {
-    "@unocss/enforce-class-compile": ["warn", {
-      "prefix": ":uno:",
-      "enableFix": true
-    }]
+    "@unocss/enforce-class-compile": [
+      "warn",
+      {
+        "prefix": ":uno:",
+        "enableFix": true
+      }
+    ]
   }
 }
 ```
@@ -115,14 +117,14 @@ Options:
 ```ts
 export default defineConfig({
   transformers: [
-    transformerVariantGroup(),  // Process variant groups first
-    transformerDirectives(),    // Then directives
-    transformerCompileClass(),  // Compile last
+    transformerVariantGroup(), // Process variant groups first
+    transformerDirectives(), // Then directives
+    transformerCompileClass(), // Compile last
   ],
 })
 ```
 
-<!-- 
+<!--
 Source references:
 - https://unocss.dev/transformers/compile-class
 -->

@@ -19,15 +19,14 @@ Example: `@iconify-json/mdi` for Material Design Icons, `@iconify-json/carbon` f
 import { defineConfig, presetIcons } from 'unocss'
 
 export default defineConfig({
-  presets: [
-    presetIcons(),
-  ],
+  presets: [presetIcons()],
 })
 ```
 
 ## Usage
 
 Two naming conventions:
+
 - `<prefix><collection>-<icon>` → `i-ph-anchor-simple-thin`
 - `<prefix><collection>:<icon>` → `i-ph:anchor-simple-thin`
 
@@ -45,7 +44,9 @@ Two naming conventions:
 <button class="i-carbon-sun dark:i-carbon-moon" />
 
 <!-- Hover effect -->
-<div class="i-twemoji-grinning-face-with-smiling-eyes hover:i-twemoji-face-with-tears-of-joy" />
+<div
+  class="i-twemoji-grinning-face-with-smiling-eyes hover:i-twemoji-face-with-tears-of-joy"
+/>
 ```
 
 Browse icons at [icones.js.org](https://icones.js.org/) or [Iconify](https://icon-sets.iconify.design/).
@@ -71,16 +72,16 @@ Icons automatically choose between `mask` (monochrome) and `background-img` (col
 
 ```ts
 presetIcons({
-  scale: 1.2,              // Scale relative to font size
-  prefix: 'i-',            // Class prefix (default)
-  mode: 'auto',            // 'auto' | 'mask' | 'bg'
+  scale: 1.2, // Scale relative to font size
+  prefix: 'i-', // Class prefix (default)
+  mode: 'auto', // 'auto' | 'mask' | 'bg'
   extraProperties: {
-    'display': 'inline-block',
+    display: 'inline-block',
     'vertical-align': 'middle',
   },
-  warn: true,              // Warn on missing icons
-  autoInstall: true,       // Auto-install missing icon sets
-  cdn: 'https://esm.sh/',  // CDN for browser usage
+  warn: true, // Warn on missing icons
+  autoInstall: true, // Auto-install missing icon sets
+  cdn: 'https://esm.sh/', // CDN for browser usage
 })
 ```
 
@@ -92,9 +93,10 @@ presetIcons({
 presetIcons({
   collections: {
     custom: {
-      circle: '<svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50"></circle></svg>',
+      circle:
+        '<svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50"></circle></svg>',
     },
-  }
+  },
 })
 ```
 
@@ -107,11 +109,10 @@ import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
 
 presetIcons({
   collections: {
-    'my-icons': FileSystemIconLoader(
-      './assets/icons',
-      svg => svg.replace(/#fff/, 'currentColor')
+    'my-icons': FileSystemIconLoader('./assets/icons', (svg) =>
+      svg.replace(/#fff/, 'currentColor'),
     ),
-  }
+  },
 })
 ```
 
@@ -122,8 +123,9 @@ import presetIcons from '@unocss/preset-icons/browser'
 
 presetIcons({
   collections: {
-    carbon: () => import('@iconify-json/carbon/icons.json').then(i => i.default),
-  }
+    carbon: () =>
+      import('@iconify-json/carbon/icons.json').then((i) => i.default),
+  },
 })
 ```
 
@@ -147,8 +149,8 @@ presetIcons({
       if (collection === 'mdi') {
         props.width = '2em'
       }
-    }
-  }
+    },
+  },
 })
 ```
 
@@ -178,7 +180,7 @@ Use `icon()` in CSS (requires transformer-directives):
 </a>
 ```
 
-<!-- 
+<!--
 Source references:
 - https://unocss.dev/presets/icons
 -->

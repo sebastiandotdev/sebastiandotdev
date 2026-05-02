@@ -13,10 +13,7 @@ Group utilities in HTML attributes for better readability.
 import { defineConfig, presetAttributify, presetWind3 } from 'unocss'
 
 export default defineConfig({
-  presets: [
-    presetWind3(),
-    presetAttributify(),
-  ],
+  presets: [presetWind3(), presetAttributify()],
 })
 ```
 
@@ -25,7 +22,9 @@ export default defineConfig({
 Instead of long class strings:
 
 ```html
-<button class="bg-blue-400 hover:bg-blue-500 text-sm text-white font-mono font-light py-2 px-4 rounded border-2 border-blue-200">
+<button
+  class="bg-blue-400 hover:bg-blue-500 text-sm text-white font-mono font-light py-2 px-4 rounded border-2 border-blue-200"
+>
   Button
 </button>
 ```
@@ -86,12 +85,12 @@ presetAttributify({
 
 ```ts
 presetAttributify({
-  strict: false,           // Only generate CSS for attributify
-  prefix: 'un-',           // Attribute prefix
-  prefixedOnly: false,     // Require prefix for all
+  strict: false, // Only generate CSS for attributify
+  prefix: 'un-', // Attribute prefix
+  prefixedOnly: false, // Require prefix for all
   nonValuedAttribute: true, // Support valueless attributes
-  ignoreAttributes: [],    // Attributes to ignore
-  trueToNonValued: false,  // Treat value="true" as valueless
+  ignoreAttributes: [], // Attributes to ignore
+  trueToNonValued: false, // Treat value="true" as valueless
 })
 ```
 
@@ -102,10 +101,14 @@ presetAttributify({
 ```ts
 // html.d.ts
 declare module '@vue/runtime-dom' {
-  interface HTMLAttributes { [key: string]: any }
+  interface HTMLAttributes {
+    [key: string]: any
+  }
 }
 declare module '@vue/runtime-core' {
-  interface AllowedComponentProps { [key: string]: any }
+  interface AllowedComponentProps {
+    [key: string]: any
+  }
 }
 export {}
 ```
@@ -128,15 +131,13 @@ For JSX where `<div foo>` becomes `<div foo={true}>`:
 import { transformerAttributifyJsx } from 'unocss'
 
 export default defineConfig({
-  transformers: [
-    transformerAttributifyJsx(),
-  ],
+  transformers: [transformerAttributifyJsx()],
 })
 ```
 
 **Important:** Only use attributify if `uno.config.*` shows `presetAttributify()` is enabled.
 
-<!-- 
+<!--
 Source references:
 - https://unocss.dev/presets/attributify
 -->

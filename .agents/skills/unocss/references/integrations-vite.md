@@ -19,9 +19,7 @@ import UnoCSS from 'unocss/vite'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  plugins: [
-    UnoCSS(),
-  ],
+  plugins: [UnoCSS()],
 })
 ```
 
@@ -32,9 +30,7 @@ Create config file:
 import { defineConfig, presetWind3 } from 'unocss'
 
 export default defineConfig({
-  presets: [
-    presetWind3(),
-  ],
+  presets: [presetWind3()],
 })
 ```
 
@@ -160,10 +156,7 @@ import UnoCSS from 'unocss/vite'
 import solidPlugin from 'vite-plugin-solid'
 
 export default {
-  plugins: [
-    UnoCSS(),
-    solidPlugin(),
-  ],
+  plugins: [UnoCSS(), solidPlugin()],
 }
 ```
 
@@ -174,10 +167,7 @@ import Preact from '@preact/preset-vite'
 import UnoCSS from 'unocss/vite'
 
 export default {
-  plugins: [
-    UnoCSS(),
-    Preact(),
-  ],
+  plugins: [UnoCSS(), Preact()],
 }
 ```
 
@@ -188,10 +178,7 @@ import Elm from 'vite-plugin-elm'
 import UnoCSS from 'unocss/vite'
 
 export default {
-  plugins: [
-    Elm(),
-    UnoCSS(),
-  ],
+  plugins: [Elm(), UnoCSS()],
 }
 ```
 
@@ -200,9 +187,7 @@ export default {
 ```ts
 UnoCSS({
   mode: 'shadow-dom',
-  shortcuts: [
-    { 'cool-blue': 'bg-blue-500 text-white' },
-  ],
+  shortcuts: [{ 'cool-blue': 'bg-blue-500 text-white' }],
 })
 ```
 
@@ -259,10 +244,7 @@ By default, `.js` and `.ts` files are not extracted. Configure to include:
 export default defineConfig({
   content: {
     pipeline: {
-      include: [
-        /\.(vue|svelte|[jt]sx|html)($|\?)/,
-        'src/**/*.{js,ts}',
-      ],
+      include: [/\.(vue|svelte|[jt]sx|html)($|\?)/, 'src/**/*.{js,ts}'],
     },
   },
 })
@@ -277,7 +259,7 @@ export const classes = {
 }
 ```
 
-<!-- 
+<!--
 Source references:
 - https://unocss.dev/integrations/vite
 -->

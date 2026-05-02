@@ -240,28 +240,28 @@ Reference in components:
 
 ## Special Files
 
-| File | Purpose |
-|------|---------|
-| `app.vue` | Root component (optional with pages/) |
-| `app.config.ts` | Runtime app configuration |
-| `error.vue` | Custom error page |
-| `nuxt.config.ts` | Build-time configuration |
-| `.nuxtignore` | Ignore files from Nuxt |
-| `.env` | Environment variables |
+| File             | Purpose                               |
+| ---------------- | ------------------------------------- |
+| `app.vue`        | Root component (optional with pages/) |
+| `app.config.ts`  | Runtime app configuration             |
+| `error.vue`      | Custom error page                     |
+| `nuxt.config.ts` | Build-time configuration              |
+| `.nuxtignore`    | Ignore files from Nuxt                |
+| `.env`           | Environment variables                 |
 
 ## File Naming Conventions
 
-| Pattern | Meaning |
-|---------|---------|
-| `[param]` | Dynamic route parameter |
-| `[[param]]` | Optional parameter |
-| `[...slug]` | Catch-all route |
-| `(group)` | Route group (not in URL) |
-| `.client.vue` | Client-only component |
-| `.server.vue` | Server-only component |
-| `.global.ts` | Global middleware |
+| Pattern       | Meaning                  |
+| ------------- | ------------------------ |
+| `[param]`     | Dynamic route parameter  |
+| `[[param]]`   | Optional parameter       |
+| `[...slug]`   | Catch-all route          |
+| `(group)`     | Route group (not in URL) |
+| `.client.vue` | Client-only component    |
+| `.server.vue` | Server-only component    |
+| `.global.ts`  | Global middleware        |
 
-<!-- 
+<!--
 Source references:
 - https://nuxt.com/docs/directory-structure
 - https://nuxt.com/docs/directory-structure/app

@@ -46,7 +46,7 @@ const { data } = await useFetch('/api/posts', {
   // Only pick specific fields
   pick: ['id', 'title'],
   // Transform response
-  transform: (posts) => posts.map(p => ({ ...p, slug: slugify(p.title) })),
+  transform: (posts) => posts.map((p) => ({ ...p, slug: slugify(p.title) })),
   // Custom key for caching
   key: 'posts-list',
   // Don't fetch on server
@@ -128,14 +128,14 @@ async function submitForm() {
 
 All composables return:
 
-| Property | Type | Description |
-|----------|------|-------------|
-| `data` | `Ref<T>` | Fetched data |
-| `error` | `Ref<Error>` | Error if request failed |
-| `status` | `Ref<'idle' \| 'pending' \| 'success' \| 'error'>` | Request status |
-| `refresh` | `() => Promise` | Refetch data |
-| `execute` | `() => Promise` | Alias for refresh |
-| `clear` | `() => void` | Reset data and error |
+| Property  | Type                                               | Description             |
+| --------- | -------------------------------------------------- | ----------------------- |
+| `data`    | `Ref<T>`                                           | Fetched data            |
+| `error`   | `Ref<Error>`                                       | Error if request failed |
+| `status`  | `Ref<'idle' \| 'pending' \| 'success' \| 'error'>` | Request status          |
+| `refresh` | `() => Promise`                                    | Refetch data            |
+| `execute` | `() => Promise`                                    | Alias for refresh       |
+| `clear`   | `() => void`                                       | Reset data and error    |
 
 ## Lazy Fetching
 
@@ -228,7 +228,7 @@ const data = await $fetch('/api/user', { headers })
 </script>
 ```
 
-<!-- 
+<!--
 Source references:
 - https://nuxt.com/docs/getting-started/data-fetching
 - https://nuxt.com/docs/api/composables/use-fetch

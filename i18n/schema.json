@@ -12,9 +12,6 @@
           "properties": {
             "title": {
               "type": "string"
-            },
-            "description": {
-              "type": "string"
             }
           }
         }
@@ -23,18 +20,6 @@
     "nav": {
       "type": "object",
       "properties": {
-        "home": {
-          "type": "string"
-        },
-        "blog": {
-          "type": "string"
-        },
-        "projects": {
-          "type": "string"
-        },
-        "contact": {
-          "type": "string"
-        },
         "linkedin": {
           "type": "string"
         },
@@ -51,9 +36,6 @@
       "type": "object",
       "properties": {
         "logo": {
-          "type": "string"
-        },
-        "source": {
           "type": "string"
         },
         "credit": {

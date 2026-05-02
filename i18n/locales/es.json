@@ -2,15 +2,10 @@
   "$schema": "../schema.json",
   "seo": {
     "home": {
-      "title": "sebastiandotdev - Ingeniero de Software",
-      "description": "Joan Sebastian Garcia entusiasta del código abierto."
+      "title": "sebastiandotdev - Ingeniero de Software"
     }
   },
   "nav": {
-    "home": "inicio",
-    "blog": "sobre mi",
-    "projects": "portafolio",
-    "contact": "contrátame",
     "linkedin": "LinkedIn",
     "github": "Github",
     "gmail": "Gmail"
@@ -40,7 +35,6 @@
   },
   "footer": {
     "logo": "sebastiandotdev",
-    "source": "código fuente",
     "credit": "diseño por v0"
   }
 }

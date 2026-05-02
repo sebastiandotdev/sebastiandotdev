@@ -26,7 +26,7 @@ const navLinks = [
         :key="link.label"
         :to="link.url"
         target="_blank"
-        class="text-muted hover:text-default transition-colors duration-300 text-sm"
+        class="text-muted hover:text-default transition-colors duration-300 text-sm font-mono"
       >
         {{ $t(link.label) }}
       </NuxtLink>

@@ -19,7 +19,6 @@ export default defineConfig({
       scale: 1.2,
       collections: createExternalPackageIconLoader(
         '@iconify-json/solar/icons.json',
-        '@iconify-json/logos/icons.json',
         '@iconify-json/circle-flags/icons.json',
       ),
     }),
@@ -39,7 +38,6 @@ export default defineConfig({
     spacing: { DEFAULT: '4px' },
     font: {
       mono: "'Geist Mono', 'IBM Plex Sans Arabic', monospace",
-      sans: "'Geist', 'IBM Plex Sans Arabic', system-ui, -apple-system, sans-serif",
     },
     text: {
       '2xs': { fontSize: '0.6875rem' }, // 11px

@@ -24,7 +24,7 @@ useHead({
 </script>
 
 <template>
-  <div class="relative bg-default">
+  <div class="relative bg-default flex flex-col h-dvh overflow-hidden">
     <TheNav />
 
     <!-- Dot pattern background -->
@@ -36,7 +36,10 @@ useHead({
       }"
     />
 
-    <NuxtPage />
+    <div class="flex-1 overflow-y-auto">
+      <NuxtPage />
+    </div>
+
+    <TheFooter />
   </div>
-  <TheFooter />
 </template>

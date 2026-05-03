@@ -14,7 +14,7 @@ const skills: string[] = [
 
 <template>
   <main
-    class="max-w-2xl mx-auto flex flex-col px-6 pt-0 sm:pt-20 relative container mx-auto min-h-[85dvh] font-mono"
+    class="max-w-2xl mx-auto flex flex-col px-6 pt-0 sm:pt-20 relative container mx-auto font-mono"
   >
     <span
       class="inline-flex items-center justify-center shrink-0 select-none rounded-full align-middle bg-elevated size-24 text-xl"

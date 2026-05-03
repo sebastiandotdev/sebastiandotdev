@@ -19,7 +19,7 @@ const socialLinks = [
 </script>
 
 <template>
-  <footer class="mt-auto p-4 max-w-2xl mx-auto w-full font-mono">
+  <footer class="mt-auto p-4 w-full font-mono">
     <div class="flex items-center justify-between gap-4">
       <!-- Logo Section -->
       <div class="flex items-center gap-3">

@@ -6,9 +6,15 @@
     }
   },
   "nav": {
-    "linkedin": "LinkedIn",
-    "github": "Github",
-    "gmail": "Gmail"
+    "projects": "projects",
+    "blog": "blog",
+    "linkedin": "linkedin",
+    "github": "github",
+    "gmail": "gmail",
+    "theme_dark": "dark",
+    "theme_light": "light",
+    "lang_english": "english",
+    "lang_spanish": "spanish"
   },
   "error": {
     "401": "Unauthorized",
@@ -36,5 +42,11 @@
   "footer": {
     "logo": "sebastiandotdev",
     "credit": "design by v0"
+  },
+  "projects": {
+    "search_placeholder": "Search Repositories",
+    "repo_count": "{count} repositories",
+    "view_on_github": "View on GitHub",
+    "no_results": "No repositories found"
   }
 }

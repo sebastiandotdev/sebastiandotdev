@@ -7,6 +7,7 @@
   },
   "nav": {
     "projects": "projects",
+    "readme": "readme",
     "blog": "blog",
     "linkedin": "linkedin",
     "github": "github",
@@ -41,12 +42,49 @@
   },
   "footer": {
     "logo": "sebastiandotdev",
-    "credit": "design by v0"
+    "copyright": "© 2026 Joan Sebastian García. Open source, built with care.",
+    "col_pages": "pages",
+    "col_connect": "connect",
+    "col_built_with": "built with",
+    "link_github": "github",
+    "link_linkedin": "linkedin",
+    "link_gmail": "gmail"
   },
   "projects": {
     "search_placeholder": "Search Repositories",
     "repo_count": "{count} repositories",
     "view_on_github": "View on GitHub",
     "no_results": "No repositories found"
+  },
+  "readme": {
+    "last_updated": "Last updated: 2026",
+    "title": "sebastiandotdev",
+    "description": "Personal portfolio and digital garden of Joan Sebastian García — a software developer from Colombia passionate about building beautiful, open-source tools.",
+    "about_title": "About",
+    "about_p1": "This website serves as my personal portfolio, technical playground, and digital space where I share my work, projects, and thoughts on software development.",
+    "about_p2": "Built with care and attention to detail, following modern web standards and accessible design patterns.",
+    "quickstart_title": "Quick Start",
+    "stack_title": "Tech Stack",
+    "stack_nuxt": "Full-stack Vue framework with SSR and file-based routing",
+    "stack_unocss": "Instant atomic CSS engine with Wind 4 preset",
+    "stack_i18n": "Multilingual support (English & Spanish)",
+    "stack_darkmode": "System-aware theme with manual toggle",
+    "stack_typescript": "Strict type safety across the entire codebase",
+    "stack_font": "Monospaced typeface by Vercel for code aesthetics",
+    "features_title": "Features",
+    "feature_1": "Responsive, terminal-inspired navigation with CLI aesthetics",
+    "feature_2": "GitHub API integration for live project data",
+    "feature_3": "Full internationalization with schema-validated locales",
+    "feature_4": "Dot-pattern background with glassmorphism effects",
+    "structure_title": "Project Structure",
+    "inspirations_title": "Inspirations & Credits",
+    "inspirations_desc": "This project draws inspiration from several outstanding developers and products:",
+    "insp_nav": "CLI-inspired terminal aesthetics from",
+    "insp_projects": "Visual layout and API patterns from",
+    "insp_menu": "Minimalist component design from",
+    "insp_design": "Portfolio base template and overall layout from",
+    "license_title": "License",
+    "license_text": "MIT © 2026 Joan Sebastian García. Open source and free to use.",
+    "star_repo": "Star this repo"
   }
 }

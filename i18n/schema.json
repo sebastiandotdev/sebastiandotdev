@@ -21,6 +21,7 @@
       "type": "object",
       "properties": {
         "projects": { "type": "string" },
+        "readme": { "type": "string" },
         "blog": { "type": "string" },
         "linkedin": { "type": "string" },
         "github": { "type": "string" },
@@ -35,12 +36,14 @@
     "footer": {
       "type": "object",
       "properties": {
-        "logo": {
-          "type": "string"
-        },
-        "credit": {
-          "type": "string"
-        }
+        "logo": { "type": "string" },
+        "copyright": { "type": "string" },
+        "col_pages": { "type": "string" },
+        "col_connect": { "type": "string" },
+        "col_built_with": { "type": "string" },
+        "link_github": { "type": "string" },
+        "link_linkedin": { "type": "string" },
+        "link_gmail": { "type": "string" }
       },
       "additionalProperties": false
     },
@@ -128,6 +131,41 @@
         "no_results": {
           "type": "string"
         }
+      },
+      "additionalProperties": false
+    },
+    "readme": {
+      "type": "object",
+      "properties": {
+        "last_updated": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "about_title": { "type": "string" },
+        "about_p1": { "type": "string" },
+        "about_p2": { "type": "string" },
+        "quickstart_title": { "type": "string" },
+        "stack_title": { "type": "string" },
+        "stack_nuxt": { "type": "string" },
+        "stack_unocss": { "type": "string" },
+        "stack_i18n": { "type": "string" },
+        "stack_darkmode": { "type": "string" },
+        "stack_typescript": { "type": "string" },
+        "stack_font": { "type": "string" },
+        "features_title": { "type": "string" },
+        "feature_1": { "type": "string" },
+        "feature_2": { "type": "string" },
+        "feature_3": { "type": "string" },
+        "feature_4": { "type": "string" },
+        "structure_title": { "type": "string" },
+        "inspirations_title": { "type": "string" },
+        "inspirations_desc": { "type": "string" },
+        "insp_nav": { "type": "string" },
+        "insp_projects": { "type": "string" },
+        "insp_menu": { "type": "string" },
+        "insp_design": { "type": "string" },
+        "license_title": { "type": "string" },
+        "license_text": { "type": "string" },
+        "star_repo": { "type": "string" }
       },
       "additionalProperties": false
     }

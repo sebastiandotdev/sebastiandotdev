@@ -7,6 +7,7 @@
   },
   "nav": {
     "projects": "proyectos",
+    "readme": "readme",
     "blog": "blog",
     "linkedin": "linkedin",
     "github": "github",
@@ -41,12 +42,49 @@
   },
   "footer": {
     "logo": "sebastiandotdev",
-    "credit": "diseño por v0"
+    "copyright": "© 2026 Joan Sebastian García. Código abierto, construido con cuidado.",
+    "col_pages": "páginas",
+    "col_connect": "contacto",
+    "col_built_with": "hecho con",
+    "link_github": "github",
+    "link_linkedin": "linkedin",
+    "link_gmail": "gmail"
   },
   "projects": {
     "search_placeholder": "Buscar Repositorios",
     "repo_count": "{count} repositorios",
     "view_on_github": "Ver en GitHub",
     "no_results": "No se encontraron repositorios"
+  },
+  "readme": {
+    "last_updated": "Última actualización: 2026",
+    "title": "sebastiandotdev",
+    "description": "Portafolio personal y jardín digital de Joan Sebastian García — un desarrollador de software de Colombia apasionado por construir herramientas bellas y de código abierto.",
+    "about_title": "Acerca de",
+    "about_p1": "Este sitio web sirve como mi portafolio personal, laboratorio técnico y espacio digital donde comparto mi trabajo, proyectos y reflexiones sobre el desarrollo de software.",
+    "about_p2": "Construido con cuidado y atención al detalle, siguiendo estándares web modernos y patrones de diseño accesible.",
+    "quickstart_title": "Inicio Rápido",
+    "stack_title": "Stack Tecnológico",
+    "stack_nuxt": "Framework Vue full-stack con SSR y enrutamiento basado en archivos",
+    "stack_unocss": "Motor CSS atómico instantáneo con preset Wind 4",
+    "stack_i18n": "Soporte multilingüe (Inglés y Español)",
+    "stack_darkmode": "Tema adaptable al sistema con cambio manual",
+    "stack_typescript": "Seguridad de tipos estricta en toda la base de código",
+    "stack_font": "Tipografía monoespaciada de Vercel para estética de código",
+    "features_title": "Características",
+    "feature_1": "Navegación responsiva inspirada en terminal con estética CLI",
+    "feature_2": "Integración con la API de GitHub para datos de proyectos en vivo",
+    "feature_3": "Internacionalización completa con locales validados por esquema",
+    "feature_4": "Fondo con patrón de puntos y efectos de glassmorphism",
+    "structure_title": "Estructura del Proyecto",
+    "inspirations_title": "Inspiraciones y Créditos",
+    "inspirations_desc": "Este proyecto se inspira en varios desarrolladores y productos excepcionales:",
+    "insp_nav": "Estética de terminal inspirada en CLI de",
+    "insp_projects": "Diseño visual y patrones de API de",
+    "insp_menu": "Diseño de componentes minimalista de",
+    "insp_design": "Plantilla base del portafolio y diseño general de",
+    "license_title": "Licencia",
+    "license_text": "MIT © 2026 Joan Sebastian García. Código abierto y libre de uso.",
+    "star_repo": "Dale estrella al repo"
   }
 }

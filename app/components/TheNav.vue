@@ -6,6 +6,11 @@ const navLinks = [
     external: false,
   },
   {
+    label: 'nav.readme',
+    url: '/readme',
+    external: false,
+  },
+  {
     label: 'nav.blog',
     url: '/blog',
     external: false,

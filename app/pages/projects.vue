@@ -33,9 +33,7 @@ const filteredRepos = computed(() => {
 </script>
 
 <template>
-  <main
-    class="max-w-2xl mx-auto flex flex-col px-6 pt-6 sm:pt-12 relative container mx-auto font-mono"
-  >
+  <main class="max-w-2xl mx-auto flex flex-col px-6 pt-6 sm:pt-12 relative container font-mono">
     <!-- Search Bar -->
     <div class="relative mb-6">
       <div

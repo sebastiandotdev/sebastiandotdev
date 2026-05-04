@@ -86,5 +86,12 @@
     "license_title": "Licencia",
     "license_text": "MIT © 2026 Joan Sebastian García. Código abierto y libre de uso.",
     "star_repo": "Dale estrella al repo"
+  },
+  "blog": {
+    "seo_title": "Blog — sebastiandotdev",
+    "title": "Blog",
+    "subtitle": "Pensamientos, notas y escritos sobre software y más.",
+    "coming_soon_title": "Aún no hay publicaciones",
+    "coming_soon_description": "Estoy trabajando en contenido increíble. Las publicaciones estarán disponibles muy pronto."
   }
 }

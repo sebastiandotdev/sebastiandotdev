@@ -168,6 +168,17 @@
         "star_repo": { "type": "string" }
       },
       "additionalProperties": false
+    },
+    "blog": {
+      "type": "object",
+      "properties": {
+        "seo_title": { "type": "string" },
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "coming_soon_title": { "type": "string" },
+        "coming_soon_description": { "type": "string" }
+      },
+      "additionalProperties": false
     }
   }
 }

@@ -24,6 +24,15 @@ export default defineConfig({
     }),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
+  variants: [
+    (matcher) => {
+      if (!matcher.startsWith('dark:')) return matcher
+      return {
+        matcher: matcher.slice(5),
+        selector: (s) => `[data-theme="dark"] ${s}`,
+      }
+    },
+  ],
   shortcuts: [
     [
       'btn',

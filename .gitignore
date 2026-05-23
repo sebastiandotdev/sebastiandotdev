@@ -23,7 +23,3 @@ logs
 .env.*
 !.env.example
 skills-lock.json
-
-# Editor
-.vscode/
-.zed/

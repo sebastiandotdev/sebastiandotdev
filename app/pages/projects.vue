@@ -17,16 +17,18 @@ const { data: repos } = await useFetch<ProjectRepo[]>('/api/repos', {
 const searchQuery = ref('')
 
 const filteredRepos = computed(() => {
-  if (!repos.value) return []
-  if (!searchQuery.value) return repos.value
+  if (!repos.value)
+    return []
+  if (!searchQuery.value)
+    return repos.value
 
   const query = searchQuery.value.toLowerCase()
   return repos.value.filter((repo) => {
     return (
-      repo.name.toLowerCase().includes(query) ||
-      repo.description?.toLowerCase().includes(query) ||
-      repo.topics.some((t) => t.toLowerCase().includes(query)) ||
-      repo.language?.toLowerCase().includes(query)
+      repo.name.toLowerCase().includes(query)
+      || repo.description?.toLowerCase().includes(query)
+      || repo.topics.some(t => t.toLowerCase().includes(query))
+      || repo.language?.toLowerCase().includes(query)
     )
   })
 })
@@ -47,7 +49,7 @@ const filteredRepos = computed(() => {
         type="text"
         :placeholder="$t('projects.search_placeholder')"
         class="w-full bg-transparent border border-[#e5e5e5] dark:border-[#262626] rounded-lg py-2.5 pl-10 pr-4 text-sm text-black dark:text-white placeholder:text-black/40 dark:placeholder:text-white/40 outline-none focus:border-black/30 dark:focus:border-white/30 transition-colors"
-      />
+      >
     </div>
 
     <!-- Stats Row -->

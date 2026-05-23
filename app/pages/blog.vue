@@ -12,7 +12,9 @@ useHead({
   >
     <!-- Header -->
     <div class="mb-8 flex flex-col gap-1.5">
-      <p class="text-xs text-black/40 dark:text-white/30 select-none">~/blog</p>
+      <p class="text-xs text-black/40 dark:text-white/30 select-none">
+        ~/blog
+      </p>
       <h1 class="text-2xl font-bold text-black dark:text-white leading-tight">
         {{ $t('blog.title') }}
       </h1>

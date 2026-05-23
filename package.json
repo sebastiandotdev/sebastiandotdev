@@ -1,14 +1,15 @@
 {
   "name": "sebastiandotdev",
-  "private": true,
   "type": "module",
+  "private": true,
+  "packageManager": "pnpm@11.2.2",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "fmt": "oxfmt",
-    "lint": "oxlint --fix",
+    "fmt": "eslint . --fix",
+    "lint": "eslint",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
@@ -22,19 +23,14 @@
     "vue-router": "5.0.4"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^9.0.0",
     "@iconify-json/circle-flags": "^1.2.10",
     "@iconify-json/logos": "^1.2.11",
     "@iconify-json/solar": "1.2.5",
     "@iconify/utils": "3.1.0",
+    "@nuxt/eslint": "^1.15.2",
     "@unocss/nuxt": "66.6.8",
-    "oxfmt": "0.45.0",
-    "oxlint": "1.60.0",
+    "eslint": "^10.4.0",
     "unocss": "66.6.8"
-  },
-  "packageManager": "pnpm@10.33.0",
-  "pnpm": {
-    "overrides": {
-      "unimport": "5.6.0"
-    }
   }
 }

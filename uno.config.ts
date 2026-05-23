@@ -12,7 +12,7 @@ export default defineConfig({
     presetWind4(),
     presetIcons({
       extraProperties: {
-        display: 'inline-block',
+        'display': 'inline-block',
         'forced-color-adjust': 'preserve-parent-color',
       },
       warn: true,
@@ -26,10 +26,11 @@ export default defineConfig({
   transformers: [transformerDirectives(), transformerVariantGroup()],
   variants: [
     (matcher) => {
-      if (!matcher.startsWith('dark:')) return matcher
+      if (!matcher.startsWith('dark:'))
+        return matcher
       return {
         matcher: matcher.slice(5),
-        selector: (s) => `[data-theme="dark"] ${s}`,
+        selector: s => `[data-theme="dark"] ${s}`,
       }
     },
   ],
@@ -46,7 +47,7 @@ export default defineConfig({
   theme: {
     spacing: { DEFAULT: '4px' },
     font: {
-      mono: "'Geist Mono', 'IBM Plex Sans Arabic', monospace",
+      mono: '\'Geist Mono\', \'IBM Plex Sans Arabic\', monospace',
     },
     text: {
       '2xs': { fontSize: '0.6875rem' }, // 11px

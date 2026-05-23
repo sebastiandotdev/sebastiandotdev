@@ -6,11 +6,18 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@unocss/nuxt',
+    '@nuxt/eslint',
     '@nuxtjs/color-mode',
     '@vueuse/nuxt',
     '@nuxt/fonts',
     '@nuxtjs/i18n',
   ],
+
+  eslint: {
+    config: {
+      standalone: false,
+    },
+  },
 
   colorMode: {
     preference: 'system',

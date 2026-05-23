@@ -17,14 +17,14 @@ useHead({
     dir: () => 'ltr',
   },
   titleTemplate: (titleChunk) => {
-    return titleChunk ? titleChunk : t('seo.home.title')
+    return titleChunk || t('seo.home.title')
   },
   meta: [{ name: 'color-scheme', content: colorScheme }],
 })
 </script>
 
 <template>
-  <div class="relative bg-default flex flex-col h-dvh overflow-hidden">
+  <div>
     <TheNav />
 
     <!-- Dot pattern background -->
@@ -39,7 +39,5 @@ useHead({
     <div class="flex-1 overflow-y-auto">
       <NuxtPage />
     </div>
-
-    <TheFooter />
   </div>
 </template>

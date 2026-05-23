@@ -28,8 +28,7 @@ const { t } = useI18n()
       <h1 class="text-xl sm:text-2xl font-bold text-default leading-tight">
         <span
           class="text-emerald-500/70 dark:text-emerald-400/70 mr-2 select-none"
-          >#</span
-        >
+        >#</span>
         {{ t('readme.title') }}
       </h1>
       <p
@@ -58,8 +57,7 @@ const { t } = useI18n()
       >
         <span
           class="text-emerald-500/70 dark:text-emerald-400/70 mr-2 select-none"
-          >##</span
-        >
+        >##</span>
         {{ t('readme.about_title') }}
       </h2>
       <div
@@ -77,8 +75,7 @@ const { t } = useI18n()
       >
         <span
           class="text-emerald-500/70 dark:text-emerald-400/70 mr-2 select-none"
-          >##</span
-        >
+        >##</span>
         {{ t('readme.quickstart_title') }}
       </h2>
 
@@ -92,9 +89,7 @@ const { t } = useI18n()
           <div
             class="i-solar:programming-linear size-3.5 text-black/40 dark:text-white/40"
           />
-          <span class="text-3xs text-black/40 dark:text-white/40"
-            >terminal</span
-          >
+          <span class="text-3xs text-black/40 dark:text-white/40">terminal</span>
         </div>
         <div class="p-4 bg-black/2 dark:bg-white/2">
           <pre
@@ -114,8 +109,7 @@ const { t } = useI18n()
       >
         <span
           class="text-emerald-500/70 dark:text-emerald-400/70 mr-2 select-none"
-          >##</span
-        >
+        >##</span>
         {{ t('readme.stack_title') }}
       </h2>
 
@@ -129,9 +123,7 @@ const { t } = useI18n()
           <div
             class="i-solar:code-square-linear size-3.5 text-black/40 dark:text-white/40"
           />
-          <span class="text-3xs text-black/40 dark:text-white/40"
-            >stack.yml</span
-          >
+          <span class="text-3xs text-black/40 dark:text-white/40">stack.yml</span>
         </div>
         <div class="p-4 bg-black/2 dark:bg-white/2">
           <ul class="text-sm space-y-2.5">
@@ -149,8 +141,7 @@ const { t } = useI18n()
             >
               <span
                 class="text-emerald-500/70 dark:text-emerald-400/70 select-none mt-0.5 shrink-0"
-                >-</span
-              >
+              >-</span>
               <div>
                 <span class="text-black dark:text-white font-medium">{{
                   item.name
@@ -173,8 +164,7 @@ const { t } = useI18n()
       >
         <span
           class="text-emerald-500/70 dark:text-emerald-400/70 mr-2 select-none"
-          >##</span
-        >
+        >##</span>
         {{ t('readme.features_title') }}
       </h2>
       <ol
@@ -183,29 +173,25 @@ const { t } = useI18n()
         <li class="flex items-start gap-2">
           <span
             class="text-black/40 dark:text-white/30 select-none font-medium shrink-0"
-            >1.</span
-          >
+          >1.</span>
           {{ t('readme.feature_1') }}
         </li>
         <li class="flex items-start gap-2">
           <span
             class="text-black/40 dark:text-white/30 select-none font-medium shrink-0"
-            >2.</span
-          >
+          >2.</span>
           {{ t('readme.feature_2') }}
         </li>
         <li class="flex items-start gap-2">
           <span
             class="text-black/40 dark:text-white/30 select-none font-medium shrink-0"
-            >3.</span
-          >
+          >3.</span>
           {{ t('readme.feature_3') }}
         </li>
         <li class="flex items-start gap-2">
           <span
             class="text-black/40 dark:text-white/30 select-none font-medium shrink-0"
-            >4.</span
-          >
+          >4.</span>
           {{ t('readme.feature_4') }}
         </li>
       </ol>
@@ -218,8 +204,7 @@ const { t } = useI18n()
       >
         <span
           class="text-emerald-500/70 dark:text-emerald-400/70 mr-2 select-none"
-          >###</span
-        >
+        >###</span>
         {{ t('readme.structure_title') }}
       </h3>
       <div
@@ -260,8 +245,7 @@ const { t } = useI18n()
       >
         <span
           class="text-emerald-500/70 dark:text-emerald-400/70 mr-2 select-none"
-          >##</span
-        >
+        >##</span>
         {{ t('readme.inspirations_title') }}
       </h2>
       <p class="text-sm text-black/50 dark:text-white/40 mb-4">
@@ -271,12 +255,9 @@ const { t } = useI18n()
         <li class="flex items-start gap-2">
           <span
             class="text-emerald-500/70 dark:text-emerald-400/70 select-none mt-0.5 shrink-0"
-            >*</span
-          >
+          >*</span>
           <div>
-            <span class="text-black dark:text-white font-medium"
-              >Navigation Menu</span
-            >
+            <span class="text-black dark:text-white font-medium">Navigation Menu</span>
             <span class="text-black/40 dark:text-white/40 mx-1.5">—</span>
             <span class="text-black/60 dark:text-[#f0f7ff9e]">{{
               t('readme.insp_nav')
@@ -286,19 +267,15 @@ const { t } = useI18n()
               target="_blank"
               rel="noopener noreferrer"
               class="ml-1.5 text-emerald-600 dark:text-emerald-400 hover:underline"
-              >terminal.shop</a
-            >
+            >terminal.shop</a>
           </div>
         </li>
         <li class="flex items-start gap-2">
           <span
             class="text-emerald-500/70 dark:text-emerald-400/70 select-none mt-0.5 shrink-0"
-            >*</span
-          >
+          >*</span>
           <div>
-            <span class="text-black dark:text-white font-medium"
-              >Projects UI</span
-            >
+            <span class="text-black dark:text-white font-medium">Projects UI</span>
             <span class="text-black/40 dark:text-white/40 mx-1.5">—</span>
             <span class="text-black/60 dark:text-[#f0f7ff9e]">{{
               t('readme.insp_projects')
@@ -308,27 +285,22 @@ const { t } = useI18n()
               target="_blank"
               rel="noopener noreferrer"
               class="ml-1.5 text-emerald-600 dark:text-emerald-400 hover:underline"
-              >GitHub API</a
-            >
+            >GitHub API</a>
             <span class="text-black/30 dark:text-white/30 mx-1">&</span>
             <a
               href="https://pheralb.dev"
               target="_blank"
               rel="noopener noreferrer"
               class="text-emerald-600 dark:text-emerald-400 hover:underline"
-              >pheralb.dev</a
-            >
+            >pheralb.dev</a>
           </div>
         </li>
         <li class="flex items-start gap-2">
           <span
             class="text-emerald-500/70 dark:text-emerald-400/70 select-none mt-0.5 shrink-0"
-            >*</span
-          >
+          >*</span>
           <div>
-            <span class="text-black dark:text-white font-medium"
-              >Menu Mechanics</span
-            >
+            <span class="text-black dark:text-white font-medium">Menu Mechanics</span>
             <span class="text-black/40 dark:text-white/40 mx-1.5">—</span>
             <span class="text-black/60 dark:text-[#f0f7ff9e]">{{
               t('readme.insp_menu')
@@ -338,19 +310,15 @@ const { t } = useI18n()
               target="_blank"
               rel="noopener noreferrer"
               class="ml-1.5 text-emerald-600 dark:text-emerald-400 hover:underline"
-              >v0.dev</a
-            >
+            >v0.dev</a>
           </div>
         </li>
         <li class="flex items-start gap-2">
           <span
             class="text-emerald-500/70 dark:text-emerald-400/70 select-none mt-0.5 shrink-0"
-            >*</span
-          >
+          >*</span>
           <div>
-            <span class="text-black dark:text-white font-medium"
-              >Portfolio Design</span
-            >
+            <span class="text-black dark:text-white font-medium">Portfolio Design</span>
             <span class="text-black/40 dark:text-white/40 mx-1.5">—</span>
             <span class="text-black/60 dark:text-[#f0f7ff9e]">{{
               t('readme.insp_design')
@@ -360,8 +328,7 @@ const { t } = useI18n()
               target="_blank"
               rel="noopener noreferrer"
               class="ml-1.5 text-emerald-600 dark:text-emerald-400 hover:underline"
-              >v0 template</a
-            >
+            >v0 template</a>
           </div>
         </li>
       </ul>
@@ -374,8 +341,7 @@ const { t } = useI18n()
       >
         <span
           class="text-emerald-500/70 dark:text-emerald-400/70 mr-2 select-none"
-          >##</span
-        >
+        >##</span>
         {{ t('readme.license_title') }}
       </h2>
       <p class="text-sm text-black/60 dark:text-[#f0f7ff9e]">
@@ -389,7 +355,7 @@ const { t } = useI18n()
     >
       <span class="text-3xs text-black/30 dark:text-white/20">EOF</span>
       <a
-        :href="SOCIAL_LINKS.GITHUB + '/sebastiandotdev'"
+        :href="`${SOCIAL_LINKS.GITHUB}/sebastiandotdev`"
         target="_blank"
         rel="noopener noreferrer"
         class="text-3xs text-black/30 dark:text-white/20 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors flex items-center gap-1"

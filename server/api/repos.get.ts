@@ -33,8 +33,8 @@ export default defineEventHandler(async (): Promise<ProjectRepo[]> => {
   })
 
   return repos
-    .filter((repo) => !repo.fork)
-    .map((repo) => ({
+    .filter(repo => !repo.fork)
+    .map(repo => ({
       name: repo.name,
       url: repo.html_url,
       description: repo.description ?? '',
